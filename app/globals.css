@@ -75,3 +75,8 @@
 .stuntwatch-leaflet-tooltip::before {
   display: none !important;
 }
+
+.leaflet-tooltip,
+.leaflet-popup-pane {
+  pointer-events: none !important;
+}

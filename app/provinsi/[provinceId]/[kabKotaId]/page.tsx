@@ -2,19 +2,21 @@ import React from "react";
 import { ProvinceDashboardView } from "@/components/province/ProvinceDashboardView";
 
 interface KabKotaDeepLinkPageProps {
-  params: {
+  params: Promise<{
     provinceId: string;
     kabKotaId: string;
-  };
+  }>;
 }
 
-export default function KabKotaDeepLinkPage({
+export default async function KabKotaDeepLinkPage({
   params,
 }: KabKotaDeepLinkPageProps) {
+  const { provinceId, kabKotaId } = await params;
+
   return (
     <ProvinceDashboardView
-      provinceId={params.provinceId}
-      initialKabKotaId={params.kabKotaId}
+      provinceId={provinceId}
+      initialKabKotaId={kabKotaId}
     />
   );
 }

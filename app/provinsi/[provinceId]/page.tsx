@@ -2,11 +2,12 @@ import React from "react";
 import { ProvinceDashboardView } from "@/components/province/ProvinceDashboardView";
 
 interface ProvincePageProps {
-  params: {
+  params: Promise<{
     provinceId: string;
-  };
+  }>;
 }
 
-export default function ProvincePage({ params }: ProvincePageProps) {
-  return <ProvinceDashboardView provinceId={params.provinceId} />;
+export default async function ProvincePage({ params }: ProvincePageProps) {
+  const { provinceId } = await params;
+  return <ProvinceDashboardView provinceId={provinceId} />;
 }
