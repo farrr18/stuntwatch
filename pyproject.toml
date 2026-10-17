@@ -1,0 +1,28 @@
+[project]
+name = "stuntwatch"
+version = "1.0.0"
+description = "AI-based stunting risk early warning system for 514 Indonesian districts."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "xgboost",
+    "shap",
+    "fastapi",
+    "uvicorn[standard]",
+    "together",
+    "requests",
+    "xlsxwriter",
+]
+
+[project.scripts]
+stuntwatch = "stuntwatch.cli.main:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

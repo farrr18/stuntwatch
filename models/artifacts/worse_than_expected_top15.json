@@ -1,0 +1,137 @@
+[
+  {
+    "domain_id":9434,
+    "kabupaten_kota_st":"Dogiyai",
+    "provinsi":"Papua Tengah",
+    "stunting_pct":55.8,
+    "ens_pred":34.8229503632,
+    "prov_loo":33.9285714286,
+    "residual":20.9770496368
+  },
+  {
+    "domain_id":5304,
+    "kabupaten_kota_st":"Timor Tengah Selatan",
+    "provinsi":"Nusa Tenggara Timur",
+    "stunting_pct":56.8,
+    "ens_pred":37.917093277,
+    "prov_loo":34.6380952381,
+    "residual":18.882906723
+  },
+  {
+    "domain_id":6204,
+    "kabupaten_kota_st":"Barito Selatan",
+    "provinsi":"Kalimantan Tengah",
+    "stunting_pct":33.3,
+    "ens_pred":17.3601703644,
+    "prov_loo":20.7461538462,
+    "residual":15.9398296356
+  },
+  {
+    "domain_id":7605,
+    "kabupaten_kota_st":"Pasangkayu",
+    "provinsi":"Sulawesi Barat",
+    "stunting_pct":36.7,
+    "ens_pred":22.329791069,
+    "prov_loo":34.98,
+    "residual":14.370208931
+  },
+  {
+    "domain_id":3217,
+    "kabupaten_kota_st":"Bandung Barat",
+    "provinsi":"Jawa Barat",
+    "stunting_pct":30.8,
+    "ens_pred":17.0245304108,
+    "prov_loo":17.3461538462,
+    "residual":13.7754695892
+  },
+  {
+    "domain_id":8109,
+    "kabupaten_kota_st":"Buru Selatan",
+    "provinsi":"Maluku",
+    "stunting_pct":39.7,
+    "ens_pred":26.3174829483,
+    "prov_loo":28.51,
+    "residual":13.3825170517
+  },
+  {
+    "domain_id":5305,
+    "kabupaten_kota_st":"Timor Tengah Utara",
+    "provinsi":"Nusa Tenggara Timur",
+    "stunting_pct":47.3,
+    "ens_pred":34.0709686279,
+    "prov_loo":35.0904761905,
+    "residual":13.2290313721
+  },
+  {
+    "domain_id":7415,
+    "kabupaten_kota_st":"Buton Selatan",
+    "provinsi":"Sulawesi Tenggara",
+    "stunting_pct":38.9,
+    "ens_pred":26.4716939926,
+    "prov_loo":26.4125,
+    "residual":12.4283060074
+  },
+  {
+    "domain_id":6101,
+    "kabupaten_kota_st":"Sambas",
+    "provinsi":"Kalimantan Barat",
+    "stunting_pct":36.4,
+    "ens_pred":24.6907701492,
+    "prov_loo":24.7846153846,
+    "residual":11.7092298508
+  },
+  {
+    "domain_id":9402,
+    "kabupaten_kota_st":"Jayawijaya",
+    "provinsi":"Papua Pegunungan",
+    "stunting_pct":41.3,
+    "ens_pred":29.6144618988,
+    "prov_loo":39.1428571429,
+    "residual":11.6855381012
+  },
+  {
+    "domain_id":5272,
+    "kabupaten_kota_st":"Kota Bima",
+    "provinsi":"Nusa Tenggara Barat",
+    "stunting_pct":28.4,
+    "ens_pred":16.7557411194,
+    "prov_loo":26.1777777778,
+    "residual":11.6442588806
+  },
+  {
+    "domain_id":1205,
+    "kabupaten_kota_st":"Tapanuli Utara",
+    "provinsi":"Sumatera Utara",
+    "stunting_pct":32.5,
+    "ens_pred":21.3074989319,
+    "prov_loo":22.275,
+    "residual":11.1925010681
+  },
+  {
+    "domain_id":3513,
+    "kabupaten_kota_st":"Probolinggo",
+    "provinsi":"Jawa Timur",
+    "stunting_pct":26.3,
+    "ens_pred":15.2186179161,
+    "prov_loo":15.6324324324,
+    "residual":11.0813820839
+  },
+  {
+    "domain_id":7604,
+    "kabupaten_kota_st":"Mamuju",
+    "provinsi":"Sulawesi Barat",
+    "stunting_pct":38.7,
+    "ens_pred":27.9279499054,
+    "prov_loo":34.58,
+    "residual":10.7720500946
+  },
+  {
+    "domain_id":9112,
+    "kabupaten_kota_st":"Pegunungan Arfak",
+    "provinsi":"Papua Barat",
+    "stunting_pct":39.3,
+    "ens_pred":28.538433075,
+    "prov_loo":23.7666666667,
+    "residual":10.761566925
+  }
+]

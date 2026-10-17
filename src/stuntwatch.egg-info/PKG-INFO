@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: stuntwatch
+Version: 1.0.0
+Summary: AI-based stunting risk early warning system for 514 Indonesian districts.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: xgboost
+Requires-Dist: shap
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: together
+Requires-Dist: requests
+Requires-Dist: xlsxwriter
