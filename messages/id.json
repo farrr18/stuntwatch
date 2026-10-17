@@ -39,7 +39,7 @@
     "indonesia": "Indonesia",
     "mapTitle": "Peta Risiko Kabupaten/Kota — Provinsi {province}",
     "mapSubtitle": "Arahkan kursor atau klik wilayah untuk menyinkronkan peringkat dan panel penjelasan di bawah.",
-    "rankListTitle": "Peringkat Risiko Kabupaten/Kota",
+    "rankListTitle": "Peringkat Aktual SSGI & Prediksi Risiko (Provinsi Proxy)",
     "showingCount": "Menampilkan {shown} dari {total} wilayah",
     "searchPlaceholder": "Cari Kabupaten atau Kota...",
     "filterAll": "Semua",

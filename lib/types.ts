@@ -93,6 +93,7 @@ export interface KabKota {
   actual_tier: string;
   top_feature: string; // e.g., "pengeluaran_kab"
   top_feature_shap: number; // e.g., 5.51
+  data_confidence?: "local" | "partial" | "proxy" | string;
   riskIndex: number; // Display score
   riskLevel: RiskLevel;
   provinceRank: number;

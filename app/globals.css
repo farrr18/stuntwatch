@@ -80,3 +80,8 @@
 .leaflet-popup-pane {
   pointer-events: none !important;
 }
+
+/* Dark-friendly OpenStreetMap basemap tiles in Dark Mode */
+.dark .leaflet-tile-pane {
+  filter: brightness(0.78) contrast(1.12) saturate(0.82);
+}
