@@ -46,92 +46,87 @@ export function KabKotaRankRow({
       onBlur={() => onHover(null)}
       aria-pressed={isSelected}
       aria-label={`Rank ${rankIndex}, ${item.name}, actual SSGI ${item.actual}%, predicted risk (province proxy) ${item.prediction}%, top SHAP +${item.top_feature_shap}, ${levelLabel}`}
-      className={`group flex w-full flex-col gap-2 rounded-xl border p-3 text-left transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+      className={`group flex h-full w-full flex-col justify-between gap-2.5 rounded-xl border p-3.5 text-left transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 ${
         isSelected
-          ? `${band.borderClass} bg-accent/70 shadow-sm ring-1 ring-current/20`
+          ? "border-teal-500/70 bg-teal-50/70 dark:bg-[#182030] shadow-md ring-1 ring-teal-500/40"
           : isHovered
-          ? "border-foreground/40 bg-muted/70"
-          : "border-border/80 bg-background hover:bg-muted/40"
+          ? "border-slate-300 dark:border-slate-700 bg-slate-100/80 dark:bg-[#182030]/75"
+          : "border-slate-200 dark:border-[#232b3e] bg-slate-50/70 dark:bg-[#0d121d] hover:border-slate-300 dark:hover:border-slate-700"
       }`}
     >
-      {/* Top Row: Rank + Name + Proxy Confidence Badge + Actual & Proxy Prediction Badges */}
+      {/* Top Row: Rank + Name + ID + Actual % Badge */}
       <div className="flex items-start justify-between gap-2">
-        <div className="flex min-w-0 items-start gap-2.5">
+        <div className="flex min-w-0 items-start gap-2">
           <span
             className={`inline-flex h-6 min-w-[28px] shrink-0 items-center justify-center rounded-md font-mono text-xs font-bold ${
               isSelected
-                ? "bg-foreground text-background"
-                : "bg-muted text-muted-foreground"
+                ? "bg-teal-600 text-white dark:bg-teal-500 dark:text-slate-950"
+                : "bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300"
             }`}
           >
             #{rankIndex}
           </span>
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-1.5">
-              <span className="truncate text-sm font-bold text-foreground">
+              <span className="truncate text-sm font-bold text-slate-900 dark:text-white">
                 {item.name}
               </span>
-              <span className="inline-flex items-center rounded border border-border bg-muted/60 px-1.5 py-0.5 font-mono text-[10px] font-medium text-muted-foreground">
+              <span className="inline-flex items-center rounded border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/80 px-1.5 py-0.5 font-mono text-[10px] font-medium text-slate-500 dark:text-slate-400">
                 ID {item.domain_id}
               </span>
-              {isProxy && (
-                <span
-                  title={proxyTooltipText}
-                  className="inline-flex items-center gap-1 rounded-md border border-amber-500/40 bg-amber-500/15 px-1.5 py-0.5 text-[10px] font-bold text-amber-800 dark:text-amber-300"
-                >
-                  <AlertTriangle className="h-2.5 w-2.5 shrink-0 text-amber-600 dark:text-amber-400" />
-                  <span>
-                    {locale === "id"
-                      ? "⚠️ Proxy Provinsi"
-                      : "⚠️ Province Proxy"}
-                  </span>
-                </span>
-              )}
             </div>
-            <p className="mt-1 truncate text-[11px] text-muted-foreground">
-              Top Feature:{" "}
-              <span className="font-medium text-foreground">
-                {item.topDriverLabel[locale]}
-              </span>{" "}
-              <span className="font-mono font-bold text-[#D9463E]">
-                (+{item.top_feature_shap.toFixed(2)} SHAP)
-              </span>
-            </p>
           </div>
         </div>
 
-        {/* Right Metrics: Actual SSGI % + Prediksi Risiko (Provinsi Proxy) % */}
-        <div className="flex shrink-0 flex-col items-end gap-1">
-          <span
-            className={`inline-flex items-center gap-1.5 rounded-md border px-2 py-0.5 text-xs font-bold ${band.badgeClass}`}
-          >
-            <span className="font-mono">Aktual {item.actual}%</span>
-            <span className="text-[10px] font-semibold opacity-90">
-              · {item.actual_tier || levelLabel}
-            </span>
-          </span>
-          <span
-            title={isProxy ? proxyTooltipText : undefined}
-            className="font-mono text-[10px] text-muted-foreground"
-          >
+        <span
+          className={`shrink-0 inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[11px] font-bold ${band.badgeClass}`}
+        >
+          <span className="font-mono">Aktual {item.actual}%</span>
+        </span>
+      </div>
+
+      {/* Middle Row: Tier Badge + Proxy Prediction */}
+      <div className="flex flex-wrap items-center justify-between gap-1.5 text-[11px]">
+        <span
+          title={isProxy ? proxyTooltipText : undefined}
+          className="inline-flex items-center gap-1 font-mono text-slate-600 dark:text-slate-300"
+        >
+          {isProxy && (
+            <AlertTriangle className="h-3 w-3 shrink-0 text-amber-500" />
+          )}
+          <span>
             {locale === "id"
-              ? "Prediksi Risiko (Provinsi Proxy):"
-              : "Predicted Risk (Province Proxy):"}{" "}
-            <strong className="text-foreground">{item.prediction}%</strong> (
-            {item.risk_tier})
+              ? "⚠️ Prediksi Risiko (Proxy):"
+              : "⚠️ Predicted Risk (Proxy):"}{" "}
+            <strong className="text-slate-900 dark:text-white">
+              {item.prediction}%
+            </strong>
           </span>
-        </div>
+        </span>
+
+        <span className="rounded bg-slate-200/70 dark:bg-slate-800 px-1.5 py-0.5 text-[10px] font-semibold text-slate-600 dark:text-slate-300">
+          {item.actual_tier || levelLabel}
+        </span>
       </div>
 
       {/* Score Progress Bar */}
-      <div className="flex items-center gap-2">
-        <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
-          <div
-            className={`h-full rounded-full transition-all duration-300 ${band.barClass}`}
-            style={{ width: `${Math.min(100, item.actual * 2)}%` }}
-          />
-        </div>
+      <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800">
+        <div
+          className={`h-full rounded-full transition-all duration-300 ${band.barClass}`}
+          style={{ width: `${Math.min(100, item.actual * 2)}%` }}
+        />
       </div>
+
+      {/* Bottom Row: Top Feature + SHAP */}
+      <p className="truncate text-[11px] text-slate-500 dark:text-slate-400">
+        Top Feature:{" "}
+        <span className="font-medium text-slate-800 dark:text-slate-200">
+          {item.topDriverLabel[locale]}
+        </span>{" "}
+        <span className="font-mono font-bold text-rose-600 dark:text-rose-400">
+          (+{item.top_feature_shap.toFixed(2)} SHAP)
+        </span>
+      </p>
     </button>
   );
 }

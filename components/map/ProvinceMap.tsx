@@ -3,7 +3,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { Globe } from "lucide-react";
 import type { KabKota } from "@/lib/types";
 import { useKabKotaGeo, useMapData } from "@/lib/hooks/useStuntingData";
 import { MapLegend } from "./MapLegend";
@@ -13,8 +13,8 @@ const LeafletProvinceCanvas = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="flex h-[430px] w-full flex-col items-center justify-center rounded-xl bg-sky-50/50 dark:bg-slate-900/70">
-        <div className="h-9 w-9 animate-spin rounded-full border-4 border-muted border-t-[#D9463E]" />
+      <div className="flex h-[460px] sm:h-[520px] w-full flex-col items-center justify-center rounded-xl bg-sky-50/50 dark:bg-[#0b111e]">
+        <div className="h-9 w-9 animate-spin rounded-full border-4 border-muted border-t-teal-500" />
         <p className="mt-3 text-xs font-medium text-muted-foreground">
           Initializing Provincial Leaflet Map...
         </p>
@@ -48,9 +48,9 @@ export function ProvinceMap({
 
   if (isLoading || !geoData) {
     return (
-      <div className="flex h-[520px] w-full flex-col items-center justify-center rounded-2xl border border-border bg-card p-6 shadow-sm">
-        <div className="h-9 w-9 animate-spin rounded-full border-4 border-muted border-t-[#D9463E]" />
-        <p className="mt-3 text-sm font-medium text-muted-foreground">
+      <div className="flex h-[520px] w-full flex-col items-center justify-center rounded-2xl border border-slate-200 dark:border-[#232b3e] bg-white dark:bg-[#111622] p-5 shadow-sm">
+        <div className="h-9 w-9 animate-spin rounded-full border-4 border-muted border-t-teal-500" />
+        <p className="mt-3 text-sm font-medium text-slate-500 dark:text-slate-400">
           Loading {provinceName} District Boundaries...
         </p>
       </div>
@@ -58,22 +58,26 @@ export function ProvinceMap({
   }
 
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.98 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
-      className="relative flex flex-col justify-between rounded-2xl border border-border bg-card p-4 shadow-sm"
-    >
+    <div className="w-full rounded-2xl border border-slate-200 dark:border-[#232b3e] bg-white dark:bg-[#111622] p-5 shadow-sm">
       {/* Card Header */}
-      <div className="mb-3">
-        <h2 className="text-base font-bold text-foreground sm:text-lg">
-          {t("mapTitle", { province: provinceName })}
-        </h2>
-        <p className="text-xs text-muted-foreground">{t("mapSubtitle")}</p>
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <h2 className="text-base font-bold text-slate-900 dark:text-white sm:text-lg">
+            {t("mapTitle", { province: provinceName })}
+          </h2>
+          <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">
+            {t("mapSubtitle")}
+          </p>
+        </div>
+
+        <span className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 dark:border-[#232b3e] bg-slate-50 dark:bg-[#182030] px-2.5 py-1 font-mono text-[11px] font-semibold text-slate-600 dark:text-slate-300">
+          <Globe className="h-3.5 w-3.5 text-teal-600 dark:text-teal-400" />
+          <span>EPSG: 4326</span>
+        </span>
       </div>
 
-      {/* Interactive Zoomed Leaflet Canvas */}
-      <div className="relative h-[430px] w-full overflow-hidden rounded-xl border border-border/60 bg-sky-50/50 dark:bg-slate-900/70">
+      {/* Full-Width Interactive Zoomed Leaflet Canvas + Floating Legend */}
+      <div className="relative mt-4 h-[460px] sm:h-[520px] w-full overflow-hidden rounded-xl border border-slate-200 dark:border-[#232b3e] bg-sky-50/50 dark:bg-[#0b111e] isolate">
         <LeafletProvinceCanvas
           provinceId={provinceId}
           geoData={geoData}
@@ -84,12 +88,12 @@ export function ProvinceMap({
           onSelectKabKota={onSelectKabKota}
           onHoverKabKota={onHoverKabKota}
         />
-      </div>
 
-      {/* Bottom Legend */}
-      <div className="mt-3">
-        <MapLegend />
+        {/* Floating Bottom-Left Legend Card Inside Map Frame */}
+        <div className="pointer-events-auto absolute bottom-4 left-4 z-[400] max-w-[calc(100%-32px)] sm:w-[390px]">
+          <MapLegend collapsible />
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

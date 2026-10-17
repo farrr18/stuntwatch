@@ -63,47 +63,25 @@ export function KabKotaRankList({
   }, [items, searchQuery, selectedBand, sortBy]);
 
   return (
-    <div className="flex h-full max-h-[640px] flex-col rounded-2xl border border-border bg-card p-4 shadow-sm">
-      {/* Header + Data Equity & Proxy Transparency Framing */}
-      <div className="mb-2.5 flex flex-col gap-1.5">
-        <div className="flex items-baseline justify-between gap-2">
-          <div>
-            <h2 className="text-sm font-extrabold text-foreground sm:text-base">
-              {locale === "id"
-                ? "Peringkat Aktual SSGI & Prediksi Risiko (Provinsi Proxy)"
-                : "SSGI Actual Ranking & Predicted Risk (Province Proxy)"}
-            </h2>
-            <p className="text-[11px] text-muted-foreground">
-              {t("rankListTitle")}
-            </p>
-          </div>
-          <span className="shrink-0 font-mono text-xs font-semibold text-muted-foreground">
-            {t("showingCount", {
-              shown: filteredItems.length,
-              total: items.length,
-            })}
+    <div className="flex w-full flex-col gap-4">
+      {/* Amber Data Equity & Proxy Cautionary Banner */}
+      <div className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-amber-500/30 bg-amber-500/10 px-3.5 py-2.5 text-xs text-amber-950 dark:text-amber-200">
+        <span className="inline-flex items-center gap-2 font-medium">
+          <AlertTriangle className="h-4 w-4 shrink-0 text-amber-600 dark:text-amber-400" />
+          <span>
+            {locale === "id"
+              ? "⚠️ Diurutkan berdasarkan Aktual SSGI (%) tertinggi. Nilai prediksi dengan tanda ⚠️ menggunakan rata-rata Proxy Provinsi."
+              : "⚠️ Sorted by highest SSGI Actual (%). Predictions marked ⚠️ rely on Province Proxy averages."}
           </span>
-        </div>
-
-        {/* Data Equity Sub-Banner */}
-        <div className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 px-2.5 py-1.5 text-[11px] text-amber-950 dark:text-amber-200">
-          <span className="inline-flex items-center gap-1.5 font-medium">
-            <AlertTriangle className="h-3.5 w-3.5 shrink-0 text-amber-600 dark:text-amber-400" />
-            <span>
-              {locale === "id"
-                ? "Diurutkan berdasarkan Aktual SSGI (%) tertinggi. Wilayah dengan ⚠️ Proxy Provinsi menggunakan rata-rata indikator provinsi."
-                : "Sorted by highest SSGI Actual (%). Districts marked ⚠️ Province Proxy rely on provincial indicator averages."}
-            </span>
+        </span>
+        {proxyCount > 0 && (
+          <span className="rounded-md bg-amber-500/20 px-2 py-0.5 font-mono text-[11px] font-bold">
+            {proxyCount}/{items.length} Proxy
           </span>
-          {proxyCount > 0 && (
-            <span className="rounded bg-amber-500/20 px-1.5 py-0.5 font-mono text-[10px] font-bold">
-              {proxyCount}/{items.length} Proxy
-            </span>
-          )}
-        </div>
+        )}
       </div>
 
-      {/* Filter Controls */}
+      {/* Search Input, Sort Toggle (Aktual % vs Top SHAP), and Tier Filter Pills */}
       <RankFilters
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
@@ -113,28 +91,30 @@ export function KabKotaRankList({
         onSortByChange={setSortBy}
       />
 
-      {/* Scrollable List */}
+      {/* 4-Column Responsive Grid of District Cards */}
       <div
         role="region"
         aria-label={t("rankListTitle")}
-        className="mt-3 flex-1 space-y-2 overflow-y-auto pr-1"
+        className="w-full"
       >
         {filteredItems.length === 0 ? (
-          <div className="flex h-40 items-center justify-center rounded-xl border border-dashed border-border p-4 text-center text-xs text-muted-foreground">
+          <div className="flex h-36 items-center justify-center rounded-xl border border-dashed border-slate-300 dark:border-[#232b3e] p-4 text-center text-xs text-slate-500 dark:text-slate-400">
             {t("noResults")}
           </div>
         ) : (
-          filteredItems.map((item, idx) => (
-            <KabKotaRankRow
-              key={item.id}
-              item={item}
-              rankIndex={idx + 1}
-              isSelected={selectedKabKotaId === item.id}
-              isHovered={hoveredKabKotaId === item.id}
-              onSelect={onSelectKabKota}
-              onHover={onHoverKabKota}
-            />
-          ))
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {filteredItems.map((item, idx) => (
+              <KabKotaRankRow
+                key={item.id}
+                item={item}
+                rankIndex={idx + 1}
+                isSelected={selectedKabKotaId === item.id}
+                isHovered={hoveredKabKotaId === item.id}
+                onSelect={onSelectKabKota}
+                onHover={onHoverKabKota}
+              />
+            ))}
+          </div>
         )}
       </div>
     </div>

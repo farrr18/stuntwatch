@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo, useEffect, useRef } from "react";
 import { MapContainer, TileLayer, GeoJSON, useMap } from "react-leaflet";
 import L from "leaflet";
 import { useTheme } from "next-themes";
@@ -35,21 +35,44 @@ interface HoveredDistrictTooltip {
 }
 
 function ProvinceBoundsFitter({
+  wrapperRef,
   geoData,
   provinceId,
 }: {
+  wrapperRef: React.RefObject<HTMLDivElement | null>;
   geoData: MapFeatureCollection;
   provinceId: string;
 }) {
   const map = useMap();
 
   useEffect(() => {
+    map.invalidateSize({ animate: false });
     const layer = L.geoJSON(geoData as GeoJSON.FeatureCollection);
     const bounds = layer.getBounds();
     if (bounds.isValid()) {
-      map.fitBounds(bounds, { padding: [22, 22], maxZoom: 9 });
+      map.fitBounds(bounds, { padding: [28, 28], maxZoom: 9 });
     }
   }, [map, geoData, provinceId]);
+
+  useEffect(() => {
+    const el = wrapperRef.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+
+    let timer: ReturnType<typeof setTimeout> | null = null;
+    const observer = new ResizeObserver(() => {
+      map.invalidateSize({ animate: false });
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => {
+        map.invalidateSize({ animate: false });
+      }, 220);
+    });
+
+    observer.observe(el);
+    return () => {
+      if (timer) clearTimeout(timer);
+      observer.disconnect();
+    };
+  }, [map, wrapperRef]);
 
   return null;
 }
@@ -60,12 +83,14 @@ export default function LeafletProvinceCanvas({
   kabKotaList,
   mapData,
   selectedKabKotaId,
+  hoveredKabKotaId,
   onSelectKabKota,
   onHoverKabKota,
 }: LeafletProvinceCanvasProps) {
   const { resolvedTheme } = useTheme();
   const { locale } = useAppLocale();
   const isDark = resolvedTheme === "dark";
+  const wrapperRef = useRef<HTMLDivElement | null>(null);
 
   // Single React state for floating tooltip — guarantees at most ONE tooltip can ever exist
   const [hoveredFeature, setHoveredFeature] =
@@ -86,6 +111,7 @@ export default function LeafletProvinceCanvas({
 
   return (
     <div
+      ref={wrapperRef}
       className="relative h-full w-full"
       onMouseLeave={() => {
         setHoveredFeature(null);
@@ -98,18 +124,23 @@ export default function LeafletProvinceCanvas({
         minZoom={4}
         maxZoom={11}
         scrollWheelZoom={true}
-        className="h-full w-full rounded-xl"
-        style={{ height: "100%", width: "100%", minHeight: "420px" }}
+        zoomControl={true}
+        className="h-full w-full"
+        style={{ height: "100%", width: "100%", minHeight: "460px" }}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
-        <ProvinceBoundsFitter geoData={geoData} provinceId={provinceId} />
+        <ProvinceBoundsFitter
+          wrapperRef={wrapperRef}
+          geoData={geoData}
+          provinceId={provinceId}
+        />
 
         <GeoJSON
-          key={`prov-kab-${provinceId}-${selectedKabKotaId}-${isDark}`}
+          key={`prov-kab-${provinceId}-${selectedKabKotaId}-${hoveredKabKotaId ?? "none"}-${isDark}`}
           data={geoData}
           style={(feature?: Feature<Geometry, GeoFeatureProperties>) => {
             const kabId = String(feature?.id ?? feature?.properties?.id ?? "");
@@ -117,6 +148,7 @@ export default function LeafletProvinceCanvas({
             const mapEntry = mapData?.[kabId];
 
             const isSelected = selectedKabKotaId === kabId;
+            const isHovered = hoveredKabKotaId === kabId;
 
             const fillColor =
               mapEntry?.color ??
@@ -124,13 +156,15 @@ export default function LeafletProvinceCanvas({
 
             return {
               fillColor,
-              fillOpacity: isSelected ? 0.95 : 0.78,
+              fillOpacity: isSelected || isHovered ? 0.95 : 0.8,
               color: isSelected
                 ? "#fbbf24"
+                : isHovered
+                ? "#2dd4bf"
                 : isDark
                 ? "rgba(15, 23, 42, 0.8)"
                 : "rgba(255, 255, 255, 0.85)",
-              weight: isSelected ? 3.2 : 1.2,
+              weight: isSelected ? 3.2 : isHovered ? 2.6 : 1.2,
             };
           }}
           onEachFeature={(
@@ -200,7 +234,7 @@ export default function LeafletProvinceCanvas({
                     : isDark
                     ? "rgba(15, 23, 42, 0.8)"
                     : "rgba(255, 255, 255, 0.85)",
-                  fillOpacity: isSelected ? 0.95 : 0.78,
+                  fillOpacity: isSelected ? 0.95 : 0.8,
                 });
                 setHoveredFeature(null);
                 onHoverKabKota(null);

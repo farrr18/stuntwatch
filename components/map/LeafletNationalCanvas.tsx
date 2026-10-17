@@ -43,6 +43,7 @@ interface LeafletNationalCanvasProps {
     id: string;
     timestamp: number;
   } | null;
+  compact?: boolean;
   onHoverProvince: (slug: string | null) => void;
   onSelectProvince: (slug: string) => void;
   onSelectDistrict: (provinceSlug: string, domainId: string) => void;
@@ -72,6 +73,7 @@ function MapResizeAndBoundsController({
   allKabGeo,
   selectedIslandGroup,
   flyToTarget,
+  compact = false,
 }: {
   wrapperRef: React.RefObject<HTMLDivElement | null>;
   provincesGeo: MapFeatureCollection;
@@ -82,17 +84,19 @@ function MapResizeAndBoundsController({
     id: string;
     timestamp: number;
   } | null;
+  compact?: boolean;
 }) {
   const map = useMap();
   const lastWidthRef = useRef<number>(0);
 
   // Fit full Indonesian archipelago on initial mount & when island filter changes
   useEffect(() => {
+    const pad: [number, number] = compact ? [12, 12] : [20, 20];
     map.invalidateSize({ animate: false });
 
     if (selectedIslandGroup === "ALL") {
       map.fitBounds(INDONESIA_BOUNDS, {
-        padding: [20, 20],
+        padding: pad,
         maxZoom: 6,
         animate: true,
       });
@@ -112,13 +116,14 @@ function MapResizeAndBoundsController({
         map.fitBounds(bounds, { padding: [28, 28], maxZoom: 7, animate: true });
       }
     }
-  }, [map, provincesGeo, selectedIslandGroup]);
+  }, [map, provincesGeo, selectedIslandGroup, compact]);
 
   // Coordinate ResizeObserver when side drawer collapses/expands or fullscreen toggles
   useEffect(() => {
     const el = wrapperRef.current;
     if (!el || typeof ResizeObserver === "undefined") return;
 
+    const pad: [number, number] = compact ? [12, 12] : [20, 20];
     let timer: ReturnType<typeof setTimeout> | null = null;
     const observer = new ResizeObserver((entries) => {
       const entry = entries[0];
@@ -136,7 +141,7 @@ function MapResizeAndBoundsController({
         ) {
           lastWidthRef.current = newWidth;
           map.fitBounds(INDONESIA_BOUNDS, {
-            padding: [20, 20],
+            padding: pad,
             maxZoom: 6,
             animate: true,
           });
@@ -149,7 +154,7 @@ function MapResizeAndBoundsController({
       if (timer) clearTimeout(timer);
       observer.disconnect();
     };
-  }, [map, wrapperRef, selectedIslandGroup]);
+  }, [map, wrapperRef, selectedIslandGroup, compact]);
 
   // Fly to province or district when triggered from the side drawer
   useEffect(() => {
@@ -198,6 +203,7 @@ export default function LeafletNationalCanvas({
   selectedIslandGroup,
   activeTierFilter = null,
   flyToTarget = null,
+  compact = false,
   onHoverProvince,
   onSelectProvince,
   onSelectDistrict,
@@ -235,8 +241,8 @@ export default function LeafletNationalCanvas({
     >
       <MapContainer
         bounds={INDONESIA_BOUNDS}
-        boundsOptions={{ padding: [20, 20] }}
-        minZoom={4}
+        boundsOptions={{ padding: compact ? [12, 12] : [20, 20] }}
+        minZoom={compact ? 3 : 4}
         maxZoom={11}
         maxBounds={MAX_OCEAN_BOUNDS}
         maxBoundsViscosity={0.85}
@@ -256,6 +262,7 @@ export default function LeafletNationalCanvas({
           allKabGeo={allKabGeo}
           selectedIslandGroup={selectedIslandGroup}
           flyToTarget={flyToTarget}
+          compact={compact}
         />
 
         {/* Mode 1: 514 Kabupaten/Kota Choropleth Heatmap directly from GET /api/map-data */}
