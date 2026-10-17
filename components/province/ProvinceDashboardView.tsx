@@ -96,13 +96,13 @@ export function ProvinceDashboardView({
           aria-label="Provincial KPI Summary"
           className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
         >
-          {/* KPI 1: Avg Predicted & Avg Actual */}
+          {/* KPI 1: Avg Predicted (Province Proxy) & Avg Actual SSGI */}
           <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
             <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground">
               <span>
                 {locale === "id"
-                  ? "Rata-rata Prediksi vs Aktual"
-                  : "Avg Predicted vs Actual"}
+                  ? "Prediksi Risiko (Provinsi Proxy) vs Aktual"
+                  : "Predicted Risk (Province Proxy) vs Actual"}
               </span>
               <Activity className="h-4 w-4 text-[#D9463E]" />
             </div>
@@ -111,7 +111,7 @@ export function ProvinceDashboardView({
                 {summary.avg_predicted}%
               </span>
               <span className="font-mono text-xs font-semibold text-muted-foreground">
-                (Aktual: {summary.avg_actual}%)
+                (Aktual SSGI: {summary.avg_actual}%)
               </span>
             </div>
             <p className="mt-1 font-mono text-[11px] text-muted-foreground">

@@ -100,6 +100,7 @@ export interface KabKota {
   nationalRank: number;
   totalNational: number;
   topDriverLabel: LocalizedText;
+  data_confidence?: string;
 }
 
 export interface LiveShapFeature {

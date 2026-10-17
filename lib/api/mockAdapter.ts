@@ -758,6 +758,9 @@ export async function fetchKabKotaByProvince(
       nationalRank: natRankMap.get(item.domain_id) ?? idx + 1,
       totalNational: allNationalSorted.length || 514,
       topDriverLabel: fMeta.label,
+      data_confidence:
+        (item as { data_confidence?: string }).data_confidence ??
+        (item.top_feature?.endsWith("_prov_pct") ? "proxy" : "high"),
     };
   });
 }
