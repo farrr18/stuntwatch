@@ -39,7 +39,7 @@
     "indonesia": "Indonesia",
     "mapTitle": "Regency/City Risk Map — {province} Province",
     "mapSubtitle": "Hover or click any district to synchronize the ranked list and the explanation panel below.",
-    "rankListTitle": "SSGI Actual Ranking & Predicted Risk (Province Proxy)",
+    "rankListTitle": "Regency / City Risk Ranking",
     "showingCount": "Showing {shown} of {total} districts",
     "searchPlaceholder": "Search Kabupaten or Kota...",
     "filterAll": "All",

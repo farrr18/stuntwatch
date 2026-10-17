@@ -662,7 +662,6 @@ export async function fetchKabKotaByProvince(
       actual_tier: string;
       top_feature: string;
       top_feature_shap: number;
-      data_confidence?: string;
     }>;
   }
 
@@ -686,7 +685,6 @@ export async function fetchKabKotaByProvince(
       prediction: number;
       actual: number;
       risk_tier: string;
-      data_confidence?: string;
     }>).filter((k) => resolveProvinceSlug(k.provinsi) === slug);
 
     data = {
@@ -711,25 +709,15 @@ export async function fetchKabKotaByProvince(
           : "Rendah",
         top_feature: "akses_air_minum_layak_prov_pct",
         top_feature_shap: 2.85,
-        data_confidence: k.data_confidence ?? "proxy",
       })),
     };
   }
 
-  // Global national rank and data_confidence lookup from live-kabupaten snapshot
-  const allNationalRaw = liveKabupatenFallback as Array<{
+  // Global national rank lookup by actual prevalence descending
+  const allNationalSorted = [...(liveKabupatenFallback as Array<{
     domain_id: number;
     actual: number;
-    data_confidence?: string;
-  }>;
-  const confidenceMap = new Map<number, string>();
-  allNationalRaw.forEach((k) => {
-    if (k.data_confidence) confidenceMap.set(k.domain_id, k.data_confidence);
-  });
-
-  const allNationalSorted = [...allNationalRaw].sort(
-    (a, b) => b.actual - a.actual
-  );
+  }>)].sort((a, b) => b.actual - a.actual);
   const natRankMap = new Map<number, number>();
   allNationalSorted.forEach((k, i) => natRankMap.set(k.domain_id, i + 1));
 
@@ -746,11 +734,6 @@ export async function fetchKabKotaByProvince(
     const fMeta = getFeatureMeta(item.top_feature);
     const actualScore = Number((item.actual ?? item.prediction).toFixed(1));
     const predScore = Number(item.prediction.toFixed(2));
-    const rawConfidence =
-      item.data_confidence ?? confidenceMap.get(item.domain_id);
-    const resolvedConfidence =
-      rawConfidence ??
-      (item.top_feature?.endsWith("_prov_pct") ? "proxy" : "local");
 
     return {
       id: String(item.domain_id),
@@ -768,7 +751,6 @@ export async function fetchKabKotaByProvince(
       actual_tier: item.actual_tier ?? item.risk_tier,
       top_feature: item.top_feature,
       top_feature_shap: Number((item.top_feature_shap ?? 0).toFixed(2)),
-      data_confidence: resolvedConfidence,
       riskIndex: actualScore,
       riskLevel: getRiskLevelFromScore(actualScore, item.actual_tier || item.risk_tier),
       provinceRank: idx + 1,

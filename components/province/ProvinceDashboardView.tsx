@@ -101,8 +101,8 @@ export function ProvinceDashboardView({
             <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground">
               <span>
                 {locale === "id"
-                  ? "Prediksi Risiko (Provinsi Proxy) vs Aktual"
-                  : "Predicted Risk (Province Proxy) vs Actual"}
+                  ? "Rata-rata Prediksi vs Aktual"
+                  : "Avg Predicted vs Actual"}
               </span>
               <Activity className="h-4 w-4 text-[#D9463E]" />
             </div>
@@ -111,7 +111,7 @@ export function ProvinceDashboardView({
                 {summary.avg_predicted}%
               </span>
               <span className="font-mono text-xs font-semibold text-muted-foreground">
-                (Aktual SSGI: {summary.avg_actual}%)
+                (Aktual: {summary.avg_actual}%)
               </span>
             </div>
             <p className="mt-1 font-mono text-[11px] text-muted-foreground">
