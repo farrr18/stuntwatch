@@ -1,0 +1,172 @@
+[
+  {
+    "id": "1705",
+    "provinceId": "17",
+    "provinceName": "Bengkulu",
+    "name": "Kab. Bengkulu Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 60,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 10,
+    "nationalRank": 181,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "1703",
+    "provinceId": "17",
+    "provinceName": "Bengkulu",
+    "name": "Kab. Bengkulu Tengah",
+    "type": "Kabupaten",
+    "riskIndex": 57,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 10,
+    "nationalRank": 222,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "1707",
+    "provinceId": "17",
+    "provinceName": "Bengkulu",
+    "name": "Kab. Rejang Lebong",
+    "type": "Kabupaten",
+    "riskIndex": 57,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 10,
+    "nationalRank": 223,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "1702",
+    "provinceId": "17",
+    "provinceName": "Bengkulu",
+    "name": "Kab. Seluma",
+    "type": "Kabupaten",
+    "riskIndex": 53,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 10,
+    "nationalRank": 278,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1709",
+    "provinceId": "17",
+    "provinceName": "Bengkulu",
+    "name": "Kab. Mukomuko",
+    "type": "Kabupaten",
+    "riskIndex": 53,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 10,
+    "nationalRank": 279,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1704",
+    "provinceId": "17",
+    "provinceName": "Bengkulu",
+    "name": "Kab. Bengkulu Utara",
+    "type": "Kabupaten",
+    "riskIndex": 48,
+    "riskLevel": "moderate",
+    "provinceRank": 6,
+    "totalInProvince": 10,
+    "nationalRank": 322,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1701",
+    "provinceId": "17",
+    "provinceName": "Bengkulu",
+    "name": "Kab. Kaur",
+    "type": "Kabupaten",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 7,
+    "totalInProvince": 10,
+    "nationalRank": 360,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1708",
+    "provinceId": "17",
+    "provinceName": "Bengkulu",
+    "name": "Kab. Lebong",
+    "type": "Kabupaten",
+    "riskIndex": 39,
+    "riskLevel": "moderate",
+    "provinceRank": 8,
+    "totalInProvince": 10,
+    "nationalRank": 413,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1706",
+    "provinceId": "17",
+    "provinceName": "Bengkulu",
+    "name": "Kab. Kepahiang",
+    "type": "Kabupaten",
+    "riskIndex": 36,
+    "riskLevel": "moderate",
+    "provinceRank": 9,
+    "totalInProvince": 10,
+    "nationalRank": 434,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1710",
+    "provinceId": "17",
+    "provinceName": "Bengkulu",
+    "name": "Kota Bengkulu",
+    "type": "Kota",
+    "riskIndex": 34,
+    "riskLevel": "moderate",
+    "provinceRank": 10,
+    "totalInProvince": 10,
+    "nationalRank": 450,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  }
+]

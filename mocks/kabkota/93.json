@@ -1,0 +1,70 @@
+[
+  {
+    "id": "9302",
+    "provinceId": "93",
+    "provinceName": "Papua Selatan",
+    "name": "Kab. Mappi",
+    "type": "Kabupaten",
+    "riskIndex": 90,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 4,
+    "nationalRank": 15,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9301",
+    "provinceId": "93",
+    "provinceName": "Papua Selatan",
+    "name": "Kab. Asmat",
+    "type": "Kabupaten",
+    "riskIndex": 82,
+    "riskLevel": "very_high",
+    "provinceRank": 2,
+    "totalInProvince": 4,
+    "nationalRank": 41,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9304",
+    "provinceId": "93",
+    "provinceName": "Papua Selatan",
+    "name": "Kab. Merauke",
+    "type": "Kabupaten",
+    "riskIndex": 75,
+    "riskLevel": "very_high",
+    "provinceRank": 3,
+    "totalInProvince": 4,
+    "nationalRank": 79,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "9303",
+    "provinceId": "93",
+    "provinceName": "Papua Selatan",
+    "name": "Kab. Boven Digoel",
+    "type": "Kabupaten",
+    "riskIndex": 73,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 4,
+    "nationalRank": 94,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  }
+]

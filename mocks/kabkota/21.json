@@ -1,0 +1,121 @@
+[
+  {
+    "id": "2105",
+    "provinceId": "21",
+    "provinceName": "Kepulauan Riau",
+    "name": "Kab. Bintan",
+    "type": "Kabupaten",
+    "riskIndex": 40,
+    "riskLevel": "moderate",
+    "provinceRank": 1,
+    "totalInProvince": 7,
+    "nationalRank": 401,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "2103",
+    "provinceId": "21",
+    "provinceName": "Kepulauan Riau",
+    "name": "Kab. Kepulauan Anambas",
+    "type": "Kabupaten",
+    "riskIndex": 39,
+    "riskLevel": "moderate",
+    "provinceRank": 2,
+    "totalInProvince": 7,
+    "nationalRank": 414,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "2101",
+    "provinceId": "21",
+    "provinceName": "Kepulauan Riau",
+    "name": "Kab. Lingga",
+    "type": "Kabupaten",
+    "riskIndex": 25,
+    "riskLevel": "moderate",
+    "provinceRank": 3,
+    "totalInProvince": 7,
+    "nationalRank": 489,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "2104",
+    "provinceId": "21",
+    "provinceName": "Kepulauan Riau",
+    "name": "Kab. Karimun",
+    "type": "Kabupaten",
+    "riskIndex": 25,
+    "riskLevel": "moderate",
+    "provinceRank": 4,
+    "totalInProvince": 7,
+    "nationalRank": 490,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "2102",
+    "provinceId": "21",
+    "provinceName": "Kepulauan Riau",
+    "name": "Kab. Natuna",
+    "type": "Kabupaten",
+    "riskIndex": 21,
+    "riskLevel": "low",
+    "provinceRank": 5,
+    "totalInProvince": 7,
+    "nationalRank": 496,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "2106",
+    "provinceId": "21",
+    "provinceName": "Kepulauan Riau",
+    "name": "Kota Tanjungpinang",
+    "type": "Kota",
+    "riskIndex": 21,
+    "riskLevel": "low",
+    "provinceRank": 6,
+    "totalInProvince": 7,
+    "nationalRank": 497,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "2107",
+    "provinceId": "21",
+    "provinceName": "Kepulauan Riau",
+    "name": "Kota Batam",
+    "type": "Kota",
+    "riskIndex": 15,
+    "riskLevel": "low",
+    "provinceRank": 7,
+    "totalInProvince": 7,
+    "nationalRank": 502,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  }
+]

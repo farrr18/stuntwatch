@@ -1,0 +1,172 @@
+[
+  {
+    "id": "8207",
+    "provinceId": "82",
+    "provinceName": "Maluku Utara",
+    "name": "Kab. Halmahera Utara",
+    "type": "Kabupaten",
+    "riskIndex": 76,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 10,
+    "nationalRank": 72,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "8206",
+    "provinceId": "82",
+    "provinceName": "Maluku Utara",
+    "name": "Kab. Halmahera Barat",
+    "type": "Kabupaten",
+    "riskIndex": 73,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 10,
+    "nationalRank": 93,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "8201",
+    "provinceId": "82",
+    "provinceName": "Maluku Utara",
+    "name": "Kab. Pulau Taliabu",
+    "type": "Kabupaten",
+    "riskIndex": 70,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 10,
+    "nationalRank": 114,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "8204",
+    "provinceId": "82",
+    "provinceName": "Maluku Utara",
+    "name": "Kab. Halmahera Timur",
+    "type": "Kabupaten",
+    "riskIndex": 68,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 10,
+    "nationalRank": 126,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "8208",
+    "provinceId": "82",
+    "provinceName": "Maluku Utara",
+    "name": "Kab. Pulau Morotai",
+    "type": "Kabupaten",
+    "riskIndex": 65,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 10,
+    "nationalRank": 145,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "8203",
+    "provinceId": "82",
+    "provinceName": "Maluku Utara",
+    "name": "Kab. Halmahera Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 58,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 10,
+    "nationalRank": 217,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "8202",
+    "provinceId": "82",
+    "provinceName": "Maluku Utara",
+    "name": "Kab. Kepulauan Sula",
+    "type": "Kabupaten",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 10,
+    "nationalRank": 247,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "8210",
+    "provinceId": "82",
+    "provinceName": "Maluku Utara",
+    "name": "Kota Ternate",
+    "type": "Kota",
+    "riskIndex": 55,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 10,
+    "nationalRank": 260,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "8205",
+    "provinceId": "82",
+    "provinceName": "Maluku Utara",
+    "name": "Kab. Halmahera Tengah",
+    "type": "Kabupaten",
+    "riskIndex": 54,
+    "riskLevel": "high",
+    "provinceRank": 9,
+    "totalInProvince": 10,
+    "nationalRank": 274,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Berat Badan Lahir Rendah (BBLR)",
+      "en": "Low Birth Weight (LBW) Prevalence"
+    }
+  },
+  {
+    "id": "8209",
+    "provinceId": "82",
+    "provinceName": "Maluku Utara",
+    "name": "Kota Tidore Kepulauan",
+    "type": "Kota",
+    "riskIndex": 54,
+    "riskLevel": "high",
+    "provinceRank": 10,
+    "totalInProvince": 10,
+    "nationalRank": 275,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  }
+]

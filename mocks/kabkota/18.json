@@ -1,0 +1,257 @@
+[
+  {
+    "id": "1804",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kab. Way Kanan",
+    "type": "Kabupaten",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 15,
+    "nationalRank": 235,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1809",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kab. Pesawaran",
+    "type": "Kabupaten",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 15,
+    "nationalRank": 236,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1812",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kab. Tulang Bawang Barat",
+    "type": "Kabupaten",
+    "riskIndex": 54,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 15,
+    "nationalRank": 267,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1801",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kab. Pesisir Barat",
+    "type": "Kabupaten",
+    "riskIndex": 52,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 15,
+    "nationalRank": 289,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1807",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kab. Lampung Timur",
+    "type": "Kabupaten",
+    "riskIndex": 52,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 15,
+    "nationalRank": 290,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1803",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kab. Lampung Barat",
+    "type": "Kabupaten",
+    "riskIndex": 48,
+    "riskLevel": "moderate",
+    "provinceRank": 6,
+    "totalInProvince": 15,
+    "nationalRank": 323,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1808",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kab. Lampung Tengah",
+    "type": "Kabupaten",
+    "riskIndex": 48,
+    "riskLevel": "moderate",
+    "provinceRank": 7,
+    "totalInProvince": 15,
+    "nationalRank": 324,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1805",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kab. Lampung Utara",
+    "type": "Kabupaten",
+    "riskIndex": 43,
+    "riskLevel": "moderate",
+    "provinceRank": 8,
+    "totalInProvince": 15,
+    "nationalRank": 382,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1813",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kab. Pringsewu",
+    "type": "Kabupaten",
+    "riskIndex": 38,
+    "riskLevel": "moderate",
+    "provinceRank": 9,
+    "totalInProvince": 15,
+    "nationalRank": 422,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1811",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kab. Mesuji",
+    "type": "Kabupaten",
+    "riskIndex": 36,
+    "riskLevel": "moderate",
+    "provinceRank": 10,
+    "totalInProvince": 15,
+    "nationalRank": 435,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1802",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kab. Tanggamus",
+    "type": "Kabupaten",
+    "riskIndex": 34,
+    "riskLevel": "moderate",
+    "provinceRank": 11,
+    "totalInProvince": 15,
+    "nationalRank": 451,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1806",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kab. Lampung Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 32,
+    "riskLevel": "moderate",
+    "provinceRank": 12,
+    "totalInProvince": 15,
+    "nationalRank": 461,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1810",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kab. Tulang Bawang",
+    "type": "Kabupaten",
+    "riskIndex": 31,
+    "riskLevel": "moderate",
+    "provinceRank": 13,
+    "totalInProvince": 15,
+    "nationalRank": 468,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1815",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kota Metro",
+    "type": "Kota",
+    "riskIndex": 28,
+    "riskLevel": "moderate",
+    "provinceRank": 14,
+    "totalInProvince": 15,
+    "nationalRank": 483,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1814",
+    "provinceId": "18",
+    "provinceName": "Lampung",
+    "name": "Kota Bandar Lampung",
+    "type": "Kota",
+    "riskIndex": 24,
+    "riskLevel": "low",
+    "provinceRank": 15,
+    "totalInProvince": 15,
+    "nationalRank": 492,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  }
+]

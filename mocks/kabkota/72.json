@@ -1,0 +1,223 @@
+[
+  {
+    "id": "7202",
+    "provinceId": "72",
+    "provinceName": "Sulawesi Tengah",
+    "name": "Kab. Donggala",
+    "type": "Kabupaten",
+    "riskIndex": 80,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 13,
+    "nationalRank": 49,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7208",
+    "provinceId": "72",
+    "provinceName": "Sulawesi Tengah",
+    "name": "Kab. Banggai Kepulauan",
+    "type": "Kabupaten",
+    "riskIndex": 79,
+    "riskLevel": "very_high",
+    "provinceRank": 2,
+    "totalInProvince": 13,
+    "nationalRank": 52,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7205",
+    "provinceId": "72",
+    "provinceName": "Sulawesi Tengah",
+    "name": "Kab. Poso",
+    "type": "Kabupaten",
+    "riskIndex": 75,
+    "riskLevel": "very_high",
+    "provinceRank": 3,
+    "totalInProvince": 13,
+    "nationalRank": 76,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7201",
+    "provinceId": "72",
+    "provinceName": "Sulawesi Tengah",
+    "name": "Kab. Sigi",
+    "type": "Kabupaten",
+    "riskIndex": 71,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 13,
+    "nationalRank": 104,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Angka Perkawinan Usia Anak",
+      "en": "Child & Early Marriage Rate"
+    }
+  },
+  {
+    "id": "7206",
+    "provinceId": "72",
+    "provinceName": "Sulawesi Tengah",
+    "name": "Kab. Toli-Toli",
+    "type": "Kabupaten",
+    "riskIndex": 70,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 13,
+    "nationalRank": 110,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7204",
+    "provinceId": "72",
+    "provinceName": "Sulawesi Tengah",
+    "name": "Kab. Tojo Una-Una",
+    "type": "Kabupaten",
+    "riskIndex": 69,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 13,
+    "nationalRank": 119,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7203",
+    "provinceId": "72",
+    "provinceName": "Sulawesi Tengah",
+    "name": "Kab. Parigi Moutong",
+    "type": "Kabupaten",
+    "riskIndex": 67,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 13,
+    "nationalRank": 131,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7211",
+    "provinceId": "72",
+    "provinceName": "Sulawesi Tengah",
+    "name": "Kab. Morowali Utara",
+    "type": "Kabupaten",
+    "riskIndex": 67,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 13,
+    "nationalRank": 132,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7212",
+    "provinceId": "72",
+    "provinceName": "Sulawesi Tengah",
+    "name": "Kab. Morowali",
+    "type": "Kabupaten",
+    "riskIndex": 67,
+    "riskLevel": "high",
+    "provinceRank": 9,
+    "totalInProvince": 13,
+    "nationalRank": 133,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7207",
+    "provinceId": "72",
+    "provinceName": "Sulawesi Tengah",
+    "name": "Kab. Buol",
+    "type": "Kabupaten",
+    "riskIndex": 60,
+    "riskLevel": "high",
+    "provinceRank": 10,
+    "totalInProvince": 13,
+    "nationalRank": 187,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Berat Badan Lahir Rendah (BBLR)",
+      "en": "Low Birth Weight (LBW) Prevalence"
+    }
+  },
+  {
+    "id": "7209",
+    "provinceId": "72",
+    "provinceName": "Sulawesi Tengah",
+    "name": "Kab. Banggai Laut",
+    "type": "Kabupaten",
+    "riskIndex": 59,
+    "riskLevel": "high",
+    "provinceRank": 11,
+    "totalInProvince": 13,
+    "nationalRank": 201,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7210",
+    "provinceId": "72",
+    "provinceName": "Sulawesi Tengah",
+    "name": "Kab. Banggai",
+    "type": "Kabupaten",
+    "riskIndex": 58,
+    "riskLevel": "high",
+    "provinceRank": 12,
+    "totalInProvince": 13,
+    "nationalRank": 215,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7213",
+    "provinceId": "72",
+    "provinceName": "Sulawesi Tengah",
+    "name": "Kota Palu",
+    "type": "Kota",
+    "riskIndex": 47,
+    "riskLevel": "moderate",
+    "provinceRank": 13,
+    "totalInProvince": 13,
+    "nationalRank": 344,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  }
+]

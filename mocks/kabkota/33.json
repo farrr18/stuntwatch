@@ -1,0 +1,597 @@
+[
+  {
+    "id": "3301",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Brebes",
+    "type": "Kabupaten",
+    "riskIndex": 62,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 35,
+    "nationalRank": 162,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "3318",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Sragen",
+    "type": "Kabupaten",
+    "riskIndex": 61,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 35,
+    "nationalRank": 174,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3305",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Kebumen",
+    "type": "Kabupaten",
+    "riskIndex": 60,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 35,
+    "nationalRank": 183,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3303",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Pemalang",
+    "type": "Kabupaten",
+    "riskIndex": 59,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 35,
+    "nationalRank": 194,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "3314",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Purworejo",
+    "type": "Kabupaten",
+    "riskIndex": 59,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 35,
+    "nationalRank": 195,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3320",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Sukoharjo",
+    "type": "Kabupaten",
+    "riskIndex": 59,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 35,
+    "nationalRank": 196,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3325",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Kudus",
+    "type": "Kabupaten",
+    "riskIndex": 57,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 35,
+    "nationalRank": 225,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3326",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Jepara",
+    "type": "Kabupaten",
+    "riskIndex": 57,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 35,
+    "nationalRank": 226,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3317",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Boyolali",
+    "type": "Kabupaten",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 9,
+    "totalInProvince": 35,
+    "nationalRank": 237,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3310",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Banyumas",
+    "type": "Kabupaten",
+    "riskIndex": 55,
+    "riskLevel": "high",
+    "provinceRank": 10,
+    "totalInProvince": 35,
+    "nationalRank": 253,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3302",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Wonosobo",
+    "type": "Kabupaten",
+    "riskIndex": 53,
+    "riskLevel": "high",
+    "provinceRank": 11,
+    "totalInProvince": 35,
+    "nationalRank": 282,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3304",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Banjarnegara",
+    "type": "Kabupaten",
+    "riskIndex": 52,
+    "riskLevel": "high",
+    "provinceRank": 12,
+    "totalInProvince": 35,
+    "nationalRank": 291,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3307",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Tegal",
+    "type": "Kabupaten",
+    "riskIndex": 52,
+    "riskLevel": "high",
+    "provinceRank": 13,
+    "totalInProvince": 35,
+    "nationalRank": 292,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3319",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Karanganyar",
+    "type": "Kabupaten",
+    "riskIndex": 51,
+    "riskLevel": "high",
+    "provinceRank": 14,
+    "totalInProvince": 35,
+    "nationalRank": 301,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3312",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Magelang",
+    "type": "Kabupaten",
+    "riskIndex": 50,
+    "riskLevel": "high",
+    "provinceRank": 15,
+    "totalInProvince": 35,
+    "nationalRank": 307,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3322",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Blora",
+    "type": "Kabupaten",
+    "riskIndex": 48,
+    "riskLevel": "moderate",
+    "provinceRank": 16,
+    "totalInProvince": 35,
+    "nationalRank": 328,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Berat Badan Lahir Rendah (BBLR)",
+      "en": "Low Birth Weight (LBW) Prevalence"
+    }
+  },
+  {
+    "id": "3323",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Rembang",
+    "type": "Kabupaten",
+    "riskIndex": 48,
+    "riskLevel": "moderate",
+    "provinceRank": 17,
+    "totalInProvince": 35,
+    "nationalRank": 329,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3308",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Pekalongan",
+    "type": "Kabupaten",
+    "riskIndex": 47,
+    "riskLevel": "moderate",
+    "provinceRank": 18,
+    "totalInProvince": 35,
+    "nationalRank": 343,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3306",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Purbalingga",
+    "type": "Kabupaten",
+    "riskIndex": 46,
+    "riskLevel": "moderate",
+    "provinceRank": 19,
+    "totalInProvince": 35,
+    "nationalRank": 352,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3321",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Grobogan",
+    "type": "Kabupaten",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 20,
+    "totalInProvince": 35,
+    "nationalRank": 362,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3329",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Semarang",
+    "type": "Kabupaten",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 21,
+    "totalInProvince": 35,
+    "nationalRank": 363,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3311",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Cilacap",
+    "type": "Kabupaten",
+    "riskIndex": 44,
+    "riskLevel": "moderate",
+    "provinceRank": 22,
+    "totalInProvince": 35,
+    "nationalRank": 375,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3316",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Klaten",
+    "type": "Kabupaten",
+    "riskIndex": 44,
+    "riskLevel": "moderate",
+    "provinceRank": 23,
+    "totalInProvince": 35,
+    "nationalRank": 376,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3324",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Pati",
+    "type": "Kabupaten",
+    "riskIndex": 43,
+    "riskLevel": "moderate",
+    "provinceRank": 24,
+    "totalInProvince": 35,
+    "nationalRank": 384,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3334",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kota Surakarta",
+    "type": "Kota",
+    "riskIndex": 42,
+    "riskLevel": "moderate",
+    "provinceRank": 25,
+    "totalInProvince": 35,
+    "nationalRank": 394,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3327",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Demak",
+    "type": "Kabupaten",
+    "riskIndex": 41,
+    "riskLevel": "moderate",
+    "provinceRank": 26,
+    "totalInProvince": 35,
+    "nationalRank": 395,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3335",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kota Semarang",
+    "type": "Kota",
+    "riskIndex": 41,
+    "riskLevel": "moderate",
+    "provinceRank": 27,
+    "totalInProvince": 35,
+    "nationalRank": 396,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3309",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Batang",
+    "type": "Kabupaten",
+    "riskIndex": 40,
+    "riskLevel": "moderate",
+    "provinceRank": 28,
+    "totalInProvince": 35,
+    "nationalRank": 406,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3331",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kota Pekalongan",
+    "type": "Kota",
+    "riskIndex": 40,
+    "riskLevel": "moderate",
+    "provinceRank": 29,
+    "totalInProvince": 35,
+    "nationalRank": 407,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3315",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Wonogiri",
+    "type": "Kabupaten",
+    "riskIndex": 39,
+    "riskLevel": "moderate",
+    "provinceRank": 30,
+    "totalInProvince": 35,
+    "nationalRank": 418,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3333",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kota Salatiga",
+    "type": "Kota",
+    "riskIndex": 39,
+    "riskLevel": "moderate",
+    "provinceRank": 31,
+    "totalInProvince": 35,
+    "nationalRank": 419,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3313",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Temanggung",
+    "type": "Kabupaten",
+    "riskIndex": 38,
+    "riskLevel": "moderate",
+    "provinceRank": 32,
+    "totalInProvince": 35,
+    "nationalRank": 423,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3328",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kab. Kendal",
+    "type": "Kabupaten",
+    "riskIndex": 38,
+    "riskLevel": "moderate",
+    "provinceRank": 33,
+    "totalInProvince": 35,
+    "nationalRank": 424,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3332",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kota Magelang",
+    "type": "Kota",
+    "riskIndex": 36,
+    "riskLevel": "moderate",
+    "provinceRank": 34,
+    "totalInProvince": 35,
+    "nationalRank": 438,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3330",
+    "provinceId": "33",
+    "provinceName": "Jawa Tengah",
+    "name": "Kota Tegal",
+    "type": "Kota",
+    "riskIndex": 30,
+    "riskLevel": "moderate",
+    "provinceRank": 35,
+    "totalInProvince": 35,
+    "nationalRank": 476,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  }
+]

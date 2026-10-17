@@ -1,0 +1,240 @@
+[
+  {
+    "id": "6101",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kab. Melawi",
+    "type": "Kabupaten",
+    "riskIndex": 74,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 14,
+    "nationalRank": 84,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "6108",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kab. Sambas",
+    "type": "Kabupaten",
+    "riskIndex": 74,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 14,
+    "nationalRank": 85,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6106",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kab. Landak",
+    "type": "Kabupaten",
+    "riskIndex": 73,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 14,
+    "nationalRank": 91,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6103",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kab. Sintang",
+    "type": "Kabupaten",
+    "riskIndex": 71,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 14,
+    "nationalRank": 103,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "6104",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kab. Sekadau",
+    "type": "Kabupaten",
+    "riskIndex": 70,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 14,
+    "nationalRank": 108,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6112",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kab. Mempawah",
+    "type": "Kabupaten",
+    "riskIndex": 70,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 14,
+    "nationalRank": 109,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6105",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kab. Sanggau",
+    "type": "Kabupaten",
+    "riskIndex": 64,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 14,
+    "nationalRank": 151,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "6110",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kab. Ketapang",
+    "type": "Kabupaten",
+    "riskIndex": 62,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 14,
+    "nationalRank": 164,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6111",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kab. Kubu Raya",
+    "type": "Kabupaten",
+    "riskIndex": 59,
+    "riskLevel": "high",
+    "provinceRank": 9,
+    "totalInProvince": 14,
+    "nationalRank": 199,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "6107",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kab. Bengkayang",
+    "type": "Kabupaten",
+    "riskIndex": 58,
+    "riskLevel": "high",
+    "provinceRank": 10,
+    "totalInProvince": 14,
+    "nationalRank": 212,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6102",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kab. Kapuas Hulu",
+    "type": "Kabupaten",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 11,
+    "totalInProvince": 14,
+    "nationalRank": 239,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6109",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kab. Kayong Utara",
+    "type": "Kabupaten",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 12,
+    "totalInProvince": 14,
+    "nationalRank": 240,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6113",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kota Singkawang",
+    "type": "Kota",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 13,
+    "totalInProvince": 14,
+    "nationalRank": 241,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "6114",
+    "provinceId": "61",
+    "provinceName": "Kalimantan Barat",
+    "name": "Kota Pontianak",
+    "type": "Kota",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 14,
+    "totalInProvince": 14,
+    "nationalRank": 369,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Angka Perkawinan Usia Anak",
+      "en": "Child & Early Marriage Rate"
+    }
+  }
+]

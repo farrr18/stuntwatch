@@ -1,0 +1,572 @@
+[
+  {
+    "id": "53",
+    "name": "Nusa Tenggara Timur",
+    "islandGroup": "Bali & Nusa Tenggara",
+    "riskIndex": 89,
+    "riskLevel": "very_high",
+    "nationalRank": 1,
+    "totalKabKota": 22,
+    "highRiskKabKotaCount": 22,
+    "stuntingPrevalenceEst": 35.3,
+    "centroid": [
+      121.08,
+      -9.4
+    ]
+  },
+  {
+    "id": "95",
+    "name": "Papua Pegunungan",
+    "islandGroup": "Maluku & Papua",
+    "riskIndex": 87,
+    "riskLevel": "very_high",
+    "nationalRank": 2,
+    "totalKabKota": 8,
+    "highRiskKabKotaCount": 8,
+    "stuntingPrevalenceEst": 34.8,
+    "centroid": [
+      139.3,
+      -4.3
+    ]
+  },
+  {
+    "id": "94",
+    "name": "Papua Tengah",
+    "islandGroup": "Maluku & Papua",
+    "riskIndex": 84,
+    "riskLevel": "very_high",
+    "nationalRank": 3,
+    "totalKabKota": 8,
+    "highRiskKabKotaCount": 8,
+    "stuntingPrevalenceEst": 34.5,
+    "centroid": [
+      136.5,
+      -3.9
+    ]
+  },
+  {
+    "id": "76",
+    "name": "Sulawesi Barat",
+    "islandGroup": "Sulawesi",
+    "riskIndex": 83,
+    "riskLevel": "very_high",
+    "nationalRank": 4,
+    "totalKabKota": 6,
+    "highRiskKabKotaCount": 6,
+    "stuntingPrevalenceEst": 35,
+    "centroid": [
+      119.23,
+      -2.45
+    ]
+  },
+  {
+    "id": "93",
+    "name": "Papua Selatan",
+    "islandGroup": "Maluku & Papua",
+    "riskIndex": 79,
+    "riskLevel": "very_high",
+    "nationalRank": 5,
+    "totalKabKota": 4,
+    "highRiskKabKotaCount": 4,
+    "stuntingPrevalenceEst": 31.2,
+    "centroid": [
+      139.6,
+      -6.8
+    ]
+  },
+  {
+    "id": "92",
+    "name": "Papua Barat",
+    "islandGroup": "Maluku & Papua",
+    "riskIndex": 78,
+    "riskLevel": "very_high",
+    "nationalRank": 6,
+    "totalKabKota": 7,
+    "highRiskKabKotaCount": 7,
+    "stuntingPrevalenceEst": 30,
+    "centroid": [
+      133.5,
+      -2.1
+    ]
+  },
+  {
+    "id": "52",
+    "name": "Nusa Tenggara Barat",
+    "islandGroup": "Bali & Nusa Tenggara",
+    "riskIndex": 76,
+    "riskLevel": "very_high",
+    "nationalRank": 7,
+    "totalKabKota": 10,
+    "highRiskKabKotaCount": 10,
+    "stuntingPrevalenceEst": 32.7,
+    "centroid": [
+      117.36,
+      -8.65
+    ]
+  },
+  {
+    "id": "96",
+    "name": "Papua Barat Daya",
+    "islandGroup": "Maluku & Papua",
+    "riskIndex": 75,
+    "riskLevel": "very_high",
+    "nationalRank": 8,
+    "totalKabKota": 6,
+    "highRiskKabKotaCount": 6,
+    "stuntingPrevalenceEst": 29.8,
+    "centroid": [
+      131.6,
+      -1.2
+    ]
+  },
+  {
+    "id": "91",
+    "name": "Papua",
+    "islandGroup": "Maluku & Papua",
+    "riskIndex": 72,
+    "riskLevel": "high",
+    "nationalRank": 9,
+    "totalKabKota": 9,
+    "highRiskKabKotaCount": 9,
+    "stuntingPrevalenceEst": 28.6,
+    "centroid": [
+      138.8,
+      -2.5
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Aceh",
+    "islandGroup": "Sumatera",
+    "riskIndex": 68,
+    "riskLevel": "high",
+    "nationalRank": 10,
+    "totalKabKota": 23,
+    "highRiskKabKotaCount": 22,
+    "stuntingPrevalenceEst": 29.4,
+    "centroid": [
+      96.75,
+      4.69
+    ]
+  },
+  {
+    "id": "72",
+    "name": "Sulawesi Tengah",
+    "islandGroup": "Sulawesi",
+    "riskIndex": 67,
+    "riskLevel": "high",
+    "nationalRank": 11,
+    "totalKabKota": 13,
+    "highRiskKabKotaCount": 12,
+    "stuntingPrevalenceEst": 28.2,
+    "centroid": [
+      121,
+      -1.43
+    ]
+  },
+  {
+    "id": "74",
+    "name": "Sulawesi Tenggara",
+    "islandGroup": "Sulawesi",
+    "riskIndex": 66,
+    "riskLevel": "high",
+    "nationalRank": 12,
+    "totalKabKota": 17,
+    "highRiskKabKotaCount": 16,
+    "stuntingPrevalenceEst": 27.7,
+    "centroid": [
+      122.17,
+      -4.14
+    ]
+  },
+  {
+    "id": "73",
+    "name": "Sulawesi Selatan",
+    "islandGroup": "Sulawesi",
+    "riskIndex": 65,
+    "riskLevel": "high",
+    "nationalRank": 13,
+    "totalKabKota": 24,
+    "highRiskKabKotaCount": 23,
+    "stuntingPrevalenceEst": 27.2,
+    "centroid": [
+      119.97,
+      -3.66
+    ]
+  },
+  {
+    "id": "61",
+    "name": "Kalimantan Barat",
+    "islandGroup": "Kalimantan",
+    "riskIndex": 64,
+    "riskLevel": "high",
+    "nationalRank": 14,
+    "totalKabKota": 14,
+    "highRiskKabKotaCount": 13,
+    "stuntingPrevalenceEst": 27.8,
+    "centroid": [
+      110.5,
+      -0.13
+    ]
+  },
+  {
+    "id": "81",
+    "name": "Maluku",
+    "islandGroup": "Maluku & Papua",
+    "riskIndex": 63,
+    "riskLevel": "high",
+    "nationalRank": 15,
+    "totalKabKota": 11,
+    "highRiskKabKotaCount": 9,
+    "stuntingPrevalenceEst": 26.1,
+    "centroid": [
+      129.5,
+      -4.2
+    ]
+  },
+  {
+    "id": "82",
+    "name": "Maluku Utara",
+    "islandGroup": "Maluku & Papua",
+    "riskIndex": 61,
+    "riskLevel": "high",
+    "nationalRank": 16,
+    "totalKabKota": 10,
+    "highRiskKabKotaCount": 10,
+    "stuntingPrevalenceEst": 26.1,
+    "centroid": [
+      127.8,
+      0.78
+    ]
+  },
+  {
+    "id": "62",
+    "name": "Kalimantan Tengah",
+    "islandGroup": "Kalimantan",
+    "riskIndex": 59,
+    "riskLevel": "high",
+    "nationalRank": 17,
+    "totalKabKota": 14,
+    "highRiskKabKotaCount": 13,
+    "stuntingPrevalenceEst": 26.9,
+    "centroid": [
+      113.4,
+      -1.68
+    ]
+  },
+  {
+    "id": "75",
+    "name": "Gorontalo",
+    "islandGroup": "Sulawesi",
+    "riskIndex": 57,
+    "riskLevel": "high",
+    "nationalRank": 18,
+    "totalKabKota": 6,
+    "highRiskKabKotaCount": 5,
+    "stuntingPrevalenceEst": 23.8,
+    "centroid": [
+      122.45,
+      0.69
+    ]
+  },
+  {
+    "id": "63",
+    "name": "Kalimantan Selatan",
+    "islandGroup": "Kalimantan",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "nationalRank": 19,
+    "totalKabKota": 13,
+    "highRiskKabKotaCount": 11,
+    "stuntingPrevalenceEst": 24.6,
+    "centroid": [
+      115.35,
+      -3.09
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Sumatera Utara",
+    "islandGroup": "Sumatera",
+    "riskIndex": 54,
+    "riskLevel": "high",
+    "nationalRank": 20,
+    "totalKabKota": 33,
+    "highRiskKabKotaCount": 17,
+    "stuntingPrevalenceEst": 21.1,
+    "centroid": [
+      99.15,
+      2.11
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Sumatera Barat",
+    "islandGroup": "Sumatera",
+    "riskIndex": 52,
+    "riskLevel": "high",
+    "nationalRank": 21,
+    "totalKabKota": 19,
+    "highRiskKabKotaCount": 8,
+    "stuntingPrevalenceEst": 23.6,
+    "centroid": [
+      100.6,
+      -0.74
+    ]
+  },
+  {
+    "id": "32",
+    "name": "Jawa Barat",
+    "islandGroup": "Jawa",
+    "riskIndex": 49,
+    "riskLevel": "moderate",
+    "nationalRank": 22,
+    "totalKabKota": 27,
+    "highRiskKabKotaCount": 6,
+    "stuntingPrevalenceEst": 20.2,
+    "centroid": [
+      107.61,
+      -6.91
+    ]
+  },
+  {
+    "id": "33",
+    "name": "Jawa Tengah",
+    "islandGroup": "Jawa",
+    "riskIndex": 48,
+    "riskLevel": "moderate",
+    "nationalRank": 23,
+    "totalKabKota": 35,
+    "highRiskKabKotaCount": 15,
+    "stuntingPrevalenceEst": 20.8,
+    "centroid": [
+      110.14,
+      -7.15
+    ]
+  },
+  {
+    "id": "64",
+    "name": "Kalimantan Timur",
+    "islandGroup": "Kalimantan",
+    "riskIndex": 48,
+    "riskLevel": "moderate",
+    "nationalRank": 24,
+    "totalKabKota": 10,
+    "highRiskKabKotaCount": 4,
+    "stuntingPrevalenceEst": 23.9,
+    "centroid": [
+      116.4,
+      0.53
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Bengkulu",
+    "islandGroup": "Sumatera",
+    "riskIndex": 47,
+    "riskLevel": "moderate",
+    "nationalRank": 25,
+    "totalKabKota": 10,
+    "highRiskKabKotaCount": 5,
+    "stuntingPrevalenceEst": 19.8,
+    "centroid": [
+      102.26,
+      -3.79
+    ]
+  },
+  {
+    "id": "65",
+    "name": "Kalimantan Utara",
+    "islandGroup": "Kalimantan",
+    "riskIndex": 47,
+    "riskLevel": "moderate",
+    "nationalRank": 26,
+    "totalKabKota": 5,
+    "highRiskKabKotaCount": 4,
+    "stuntingPrevalenceEst": 22.1,
+    "centroid": [
+      116.1,
+      3.07
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Sumatera Selatan",
+    "islandGroup": "Sumatera",
+    "riskIndex": 46,
+    "riskLevel": "moderate",
+    "nationalRank": 27,
+    "totalKabKota": 17,
+    "highRiskKabKotaCount": 8,
+    "stuntingPrevalenceEst": 18.6,
+    "centroid": [
+      104.1,
+      -3.32
+    ]
+  },
+  {
+    "id": "36",
+    "name": "Banten",
+    "islandGroup": "Jawa",
+    "riskIndex": 46,
+    "riskLevel": "moderate",
+    "nationalRank": 28,
+    "totalKabKota": 8,
+    "highRiskKabKotaCount": 2,
+    "stuntingPrevalenceEst": 20,
+    "centroid": [
+      106.15,
+      -6.4
+    ]
+  },
+  {
+    "id": "35",
+    "name": "Jawa Timur",
+    "islandGroup": "Jawa",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "nationalRank": 29,
+    "totalKabKota": 38,
+    "highRiskKabKotaCount": 11,
+    "stuntingPrevalenceEst": 19.2,
+    "centroid": [
+      112.5,
+      -7.65
+    ]
+  },
+  {
+    "id": "71",
+    "name": "Sulawesi Utara",
+    "islandGroup": "Sulawesi",
+    "riskIndex": 43,
+    "riskLevel": "moderate",
+    "nationalRank": 30,
+    "totalKabKota": 15,
+    "highRiskKabKotaCount": 6,
+    "stuntingPrevalenceEst": 20.5,
+    "centroid": [
+      124.5,
+      0.95
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Riau",
+    "islandGroup": "Sumatera",
+    "riskIndex": 42,
+    "riskLevel": "moderate",
+    "nationalRank": 31,
+    "totalKabKota": 12,
+    "highRiskKabKotaCount": 5,
+    "stuntingPrevalenceEst": 17,
+    "centroid": [
+      101.7,
+      0.5
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Lampung",
+    "islandGroup": "Sumatera",
+    "riskIndex": 41,
+    "riskLevel": "moderate",
+    "nationalRank": 32,
+    "totalKabKota": 15,
+    "highRiskKabKotaCount": 5,
+    "stuntingPrevalenceEst": 15.2,
+    "centroid": [
+      105,
+      -4.85
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Jambi",
+    "islandGroup": "Sumatera",
+    "riskIndex": 38,
+    "riskLevel": "moderate",
+    "nationalRank": 33,
+    "totalKabKota": 11,
+    "highRiskKabKotaCount": 1,
+    "stuntingPrevalenceEst": 18,
+    "centroid": [
+      102.7,
+      -1.61
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Kepulauan Bangka Belitung",
+    "islandGroup": "Sumatera",
+    "riskIndex": 34,
+    "riskLevel": "moderate",
+    "nationalRank": 34,
+    "totalKabKota": 7,
+    "highRiskKabKotaCount": 0,
+    "stuntingPrevalenceEst": 18.5,
+    "centroid": [
+      106.4,
+      -2.5
+    ]
+  },
+  {
+    "id": "21",
+    "name": "Kepulauan Riau",
+    "islandGroup": "Sumatera",
+    "riskIndex": 27,
+    "riskLevel": "moderate",
+    "nationalRank": 35,
+    "totalKabKota": 7,
+    "highRiskKabKotaCount": 0,
+    "stuntingPrevalenceEst": 15.4,
+    "centroid": [
+      104.5,
+      0.9
+    ]
+  },
+  {
+    "id": "34",
+    "name": "DI Yogyakarta",
+    "islandGroup": "Jawa",
+    "riskIndex": 24,
+    "riskLevel": "low",
+    "nationalRank": 36,
+    "totalKabKota": 5,
+    "highRiskKabKotaCount": 0,
+    "stuntingPrevalenceEst": 16.4,
+    "centroid": [
+      110.36,
+      -7.87
+    ]
+  },
+  {
+    "id": "31",
+    "name": "DKI Jakarta",
+    "islandGroup": "Jawa",
+    "riskIndex": 22,
+    "riskLevel": "low",
+    "nationalRank": 37,
+    "totalKabKota": 6,
+    "highRiskKabKotaCount": 0,
+    "stuntingPrevalenceEst": 14.8,
+    "centroid": [
+      106.84,
+      -6.2
+    ]
+  },
+  {
+    "id": "51",
+    "name": "Bali",
+    "islandGroup": "Bali & Nusa Tenggara",
+    "riskIndex": 14,
+    "riskLevel": "low",
+    "nationalRank": 38,
+    "totalKabKota": 9,
+    "highRiskKabKotaCount": 0,
+    "stuntingPrevalenceEst": 8,
+    "centroid": [
+      115.18,
+      -8.4
+    ]
+  }
+]

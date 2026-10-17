@@ -1,0 +1,138 @@
+[
+  {
+    "id": "9508",
+    "provinceId": "95",
+    "provinceName": "Papua Pegunungan",
+    "name": "Kab. Jayawijaya",
+    "type": "Kabupaten",
+    "riskIndex": 96,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 8,
+    "nationalRank": 7,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9503",
+    "provinceId": "95",
+    "provinceName": "Papua Pegunungan",
+    "name": "Kab. Mamberamo Tengah",
+    "type": "Kabupaten",
+    "riskIndex": 95,
+    "riskLevel": "very_high",
+    "provinceRank": 2,
+    "totalInProvince": 8,
+    "nationalRank": 8,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9507",
+    "provinceId": "95",
+    "provinceName": "Papua Pegunungan",
+    "name": "Kab. Pegunungan Bintang",
+    "type": "Kabupaten",
+    "riskIndex": 95,
+    "riskLevel": "very_high",
+    "provinceRank": 3,
+    "totalInProvince": 8,
+    "nationalRank": 9,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9506",
+    "provinceId": "95",
+    "provinceName": "Papua Pegunungan",
+    "name": "Kab. Yahukimo",
+    "type": "Kabupaten",
+    "riskIndex": 93,
+    "riskLevel": "very_high",
+    "provinceRank": 4,
+    "totalInProvince": 8,
+    "nationalRank": 12,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9504",
+    "provinceId": "95",
+    "provinceName": "Papua Pegunungan",
+    "name": "Kab. Yalimo",
+    "type": "Kabupaten",
+    "riskIndex": 86,
+    "riskLevel": "very_high",
+    "provinceRank": 5,
+    "totalInProvince": 8,
+    "nationalRank": 29,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9501",
+    "provinceId": "95",
+    "provinceName": "Papua Pegunungan",
+    "name": "Kab. Nduga",
+    "type": "Kabupaten",
+    "riskIndex": 83,
+    "riskLevel": "very_high",
+    "provinceRank": 6,
+    "totalInProvince": 8,
+    "nationalRank": 37,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9502",
+    "provinceId": "95",
+    "provinceName": "Papua Pegunungan",
+    "name": "Kab. Lanny Jaya",
+    "type": "Kabupaten",
+    "riskIndex": 77,
+    "riskLevel": "very_high",
+    "provinceRank": 7,
+    "totalInProvince": 8,
+    "nationalRank": 60,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9505",
+    "provinceId": "95",
+    "provinceName": "Papua Pegunungan",
+    "name": "Kab. Tolikara",
+    "type": "Kabupaten",
+    "riskIndex": 77,
+    "riskLevel": "very_high",
+    "provinceRank": 8,
+    "totalInProvince": 8,
+    "nationalRank": 61,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  }
+]

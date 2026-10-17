@@ -1,0 +1,155 @@
+[
+  {
+    "id": "9103",
+    "provinceId": "91",
+    "provinceName": "Papua",
+    "name": "Kab. Mamberamo Raya",
+    "type": "Kabupaten",
+    "riskIndex": 87,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 9,
+    "nationalRank": 25,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9104",
+    "provinceId": "91",
+    "provinceName": "Papua",
+    "name": "Kab. Kepulauan Yapen",
+    "type": "Kabupaten",
+    "riskIndex": 87,
+    "riskLevel": "very_high",
+    "provinceRank": 2,
+    "totalInProvince": 9,
+    "nationalRank": 26,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9106",
+    "provinceId": "91",
+    "provinceName": "Papua",
+    "name": "Kab. Sarmi",
+    "type": "Kabupaten",
+    "riskIndex": 81,
+    "riskLevel": "very_high",
+    "provinceRank": 3,
+    "totalInProvince": 9,
+    "nationalRank": 44,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9105",
+    "provinceId": "91",
+    "provinceName": "Papua",
+    "name": "Kab. Biak Numfor",
+    "type": "Kabupaten",
+    "riskIndex": 80,
+    "riskLevel": "very_high",
+    "provinceRank": 4,
+    "totalInProvince": 9,
+    "nationalRank": 50,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9102",
+    "provinceId": "91",
+    "provinceName": "Papua",
+    "name": "Kab. Waropen",
+    "type": "Kabupaten",
+    "riskIndex": 74,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 9,
+    "nationalRank": 89,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9108",
+    "provinceId": "91",
+    "provinceName": "Papua",
+    "name": "Kab. Jayapura",
+    "type": "Kabupaten",
+    "riskIndex": 74,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 9,
+    "nationalRank": 90,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "9101",
+    "provinceId": "91",
+    "provinceName": "Papua",
+    "name": "Kab. Supiori",
+    "type": "Kabupaten",
+    "riskIndex": 70,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 9,
+    "nationalRank": 115,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "9107",
+    "provinceId": "91",
+    "provinceName": "Papua",
+    "name": "Kab. Keerom",
+    "type": "Kabupaten",
+    "riskIndex": 65,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 9,
+    "nationalRank": 146,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "9109",
+    "provinceId": "91",
+    "provinceName": "Papua",
+    "name": "Kota Jayapura",
+    "type": "Kota",
+    "riskIndex": 58,
+    "riskLevel": "high",
+    "provinceRank": 9,
+    "totalInProvince": 9,
+    "nationalRank": 218,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  }
+]

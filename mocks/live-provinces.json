@@ -1,0 +1,572 @@
+[
+  {
+    "province": "Papua Pegunungan",
+    "slug": "papua-pegunungan",
+    "n_kabupaten": 8,
+    "avg_predicted": 38.94,
+    "avg_actual": 39.41,
+    "max_predicted": 44.73,
+    "highest_risk_kabupaten": "Nduga",
+    "tier_counts": {
+      "Rendah": 0,
+      "Sedang": 1,
+      "Tinggi": 3,
+      "Sangat Tinggi": 4
+    }
+  },
+  {
+    "province": "Papua Tengah",
+    "slug": "papua-tengah",
+    "n_kabupaten": 8,
+    "avg_predicted": 36.37,
+    "avg_actual": 36.66,
+    "max_predicted": 46.79,
+    "highest_risk_kabupaten": "Paniai",
+    "tier_counts": {
+      "Rendah": 0,
+      "Sedang": 1,
+      "Tinggi": 4,
+      "Sangat Tinggi": 3
+    }
+  },
+  {
+    "province": "Nusa Tenggara Timur",
+    "slug": "nusa-tenggara-timur",
+    "n_kabupaten": 22,
+    "avg_predicted": 36.14,
+    "avg_actual": 35.65,
+    "max_predicted": 46.11,
+    "highest_risk_kabupaten": "Manggarai Barat",
+    "tier_counts": {
+      "Rendah": 0,
+      "Sedang": 1,
+      "Tinggi": 17,
+      "Sangat Tinggi": 4
+    }
+  },
+  {
+    "province": "Papua Selatan",
+    "slug": "papua-selatan",
+    "n_kabupaten": 4,
+    "avg_predicted": 31.95,
+    "avg_actual": 26.73,
+    "max_predicted": 36.23,
+    "highest_risk_kabupaten": "Asmat",
+    "tier_counts": {
+      "Rendah": 0,
+      "Sedang": 1,
+      "Tinggi": 3,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Papua Barat Daya",
+    "slug": "papua-barat-daya",
+    "n_kabupaten": 6,
+    "avg_predicted": 30.72,
+    "avg_actual": 31.95,
+    "max_predicted": 34.74,
+    "highest_risk_kabupaten": "Maybrat",
+    "tier_counts": {
+      "Rendah": 0,
+      "Sedang": 3,
+      "Tinggi": 3,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Papua",
+    "slug": "papua",
+    "n_kabupaten": 9,
+    "avg_predicted": 29.15,
+    "avg_actual": 27.81,
+    "max_predicted": 42.5,
+    "highest_risk_kabupaten": "Mamberamo Raya",
+    "tier_counts": {
+      "Rendah": 1,
+      "Sedang": 6,
+      "Tinggi": 0,
+      "Sangat Tinggi": 2
+    }
+  },
+  {
+    "province": "Sulawesi Barat",
+    "slug": "sulawesi-barat",
+    "n_kabupaten": 6,
+    "avg_predicted": 28.97,
+    "avg_actual": 35.27,
+    "max_predicted": 34.93,
+    "highest_risk_kabupaten": "Polewali Mandar",
+    "tier_counts": {
+      "Rendah": 1,
+      "Sedang": 2,
+      "Tinggi": 3,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Maluku",
+    "slug": "maluku",
+    "n_kabupaten": 11,
+    "avg_predicted": 28.5,
+    "avg_actual": 29.53,
+    "max_predicted": 34.22,
+    "highest_risk_kabupaten": "Kepulauan Aru",
+    "tier_counts": {
+      "Rendah": 0,
+      "Sedang": 6,
+      "Tinggi": 5,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Aceh",
+    "slug": "aceh",
+    "n_kabupaten": 23,
+    "avg_predicted": 27.83,
+    "avg_actual": 28.51,
+    "max_predicted": 31.1,
+    "highest_risk_kabupaten": "Aceh Utara",
+    "tier_counts": {
+      "Rendah": 0,
+      "Sedang": 16,
+      "Tinggi": 7,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Papua Barat",
+    "slug": "papua-barat",
+    "n_kabupaten": 7,
+    "avg_predicted": 26.43,
+    "avg_actual": 25.99,
+    "max_predicted": 32.89,
+    "highest_risk_kabupaten": "Teluk Wondama",
+    "tier_counts": {
+      "Rendah": 0,
+      "Sedang": 5,
+      "Tinggi": 2,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Sulawesi Tengah",
+    "slug": "sulawesi-tengah",
+    "n_kabupaten": 13,
+    "avg_predicted": 26.24,
+    "avg_actual": 26.05,
+    "max_predicted": 30.75,
+    "highest_risk_kabupaten": "Banggai Kepulauan",
+    "tier_counts": {
+      "Rendah": 0,
+      "Sedang": 12,
+      "Tinggi": 1,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Sulawesi Tenggara",
+    "slug": "sulawesi-tenggara",
+    "n_kabupaten": 17,
+    "avg_predicted": 26.1,
+    "avg_actual": 27.15,
+    "max_predicted": 32.16,
+    "highest_risk_kabupaten": "Buton Tengah",
+    "tier_counts": {
+      "Rendah": 1,
+      "Sedang": 14,
+      "Tinggi": 2,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Kalimantan Barat",
+    "slug": "kalimantan-barat",
+    "n_kabupaten": 14,
+    "avg_predicted": 26.05,
+    "avg_actual": 25.61,
+    "max_predicted": 35.21,
+    "highest_risk_kabupaten": "Kayong Utara",
+    "tier_counts": {
+      "Rendah": 1,
+      "Sedang": 11,
+      "Tinggi": 2,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Sulawesi Selatan",
+    "slug": "sulawesi-selatan",
+    "n_kabupaten": 24,
+    "avg_predicted": 24.56,
+    "avg_actual": 25.08,
+    "max_predicted": 29.53,
+    "highest_risk_kabupaten": "Tana Toraja",
+    "tier_counts": {
+      "Rendah": 2,
+      "Sedang": 22,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Kalimantan Timur",
+    "slug": "kalimantan-timur",
+    "n_kabupaten": 10,
+    "avg_predicted": 23.38,
+    "avg_actual": 23.66,
+    "max_predicted": 29.85,
+    "highest_risk_kabupaten": "Paser",
+    "tier_counts": {
+      "Rendah": 1,
+      "Sedang": 9,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Sumatera Utara",
+    "slug": "sumatera-utara",
+    "n_kabupaten": 33,
+    "avg_predicted": 23.24,
+    "avg_actual": 22.58,
+    "max_predicted": 32.39,
+    "highest_risk_kabupaten": "Nias Selatan",
+    "tier_counts": {
+      "Rendah": 7,
+      "Sedang": 24,
+      "Tinggi": 2,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Sumatera Barat",
+    "slug": "sumatera-barat",
+    "n_kabupaten": 19,
+    "avg_predicted": 22.74,
+    "avg_actual": 23.28,
+    "max_predicted": 27.26,
+    "highest_risk_kabupaten": "Pesisir Selatan",
+    "tier_counts": {
+      "Rendah": 6,
+      "Sedang": 13,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Maluku Utara",
+    "slug": "maluku-utara",
+    "n_kabupaten": 10,
+    "avg_predicted": 22.42,
+    "avg_actual": 21.85,
+    "max_predicted": 25.72,
+    "highest_risk_kabupaten": "Pulau Morotai",
+    "tier_counts": {
+      "Rendah": 1,
+      "Sedang": 9,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Gorontalo",
+    "slug": "gorontalo",
+    "n_kabupaten": 6,
+    "avg_predicted": 22.32,
+    "avg_actual": 22.35,
+    "max_predicted": 25.97,
+    "highest_risk_kabupaten": "Boalemo",
+    "tier_counts": {
+      "Rendah": 2,
+      "Sedang": 4,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Kalimantan Selatan",
+    "slug": "kalimantan-selatan",
+    "n_kabupaten": 13,
+    "avg_predicted": 22.28,
+    "avg_actual": 21.33,
+    "max_predicted": 27.95,
+    "highest_risk_kabupaten": "Barito Kuala",
+    "tier_counts": {
+      "Rendah": 3,
+      "Sedang": 10,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Kalimantan Utara",
+    "slug": "kalimantan-utara",
+    "n_kabupaten": 5,
+    "avg_predicted": 22.18,
+    "avg_actual": 16.72,
+    "max_predicted": 23.94,
+    "highest_risk_kabupaten": "Tana Tidung",
+    "tier_counts": {
+      "Rendah": 1,
+      "Sedang": 4,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Nusa Tenggara Barat",
+    "slug": "nusa-tenggara-barat",
+    "n_kabupaten": 10,
+    "avg_predicted": 21.99,
+    "avg_actual": 26.4,
+    "max_predicted": 27.6,
+    "highest_risk_kabupaten": "Lombok Tengah",
+    "tier_counts": {
+      "Rendah": 2,
+      "Sedang": 8,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Bengkulu",
+    "slug": "bengkulu",
+    "n_kabupaten": 10,
+    "avg_predicted": 21.54,
+    "avg_actual": 20.34,
+    "max_predicted": 23.88,
+    "highest_risk_kabupaten": "Bengkulu Utara",
+    "tier_counts": {
+      "Rendah": 3,
+      "Sedang": 7,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Kalimantan Tengah",
+    "slug": "kalimantan-tengah",
+    "n_kabupaten": 14,
+    "avg_predicted": 21.27,
+    "avg_actual": 21.64,
+    "max_predicted": 26.22,
+    "highest_risk_kabupaten": "Kotawaringin Barat",
+    "tier_counts": {
+      "Rendah": 6,
+      "Sedang": 8,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Bangka Belitung",
+    "slug": "bangka-belitung",
+    "n_kabupaten": 7,
+    "avg_predicted": 21.12,
+    "avg_actual": 19.91,
+    "max_predicted": 25.55,
+    "highest_risk_kabupaten": "Bangka Selatan",
+    "tier_counts": {
+      "Rendah": 2,
+      "Sedang": 5,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Sulawesi Utara",
+    "slug": "sulawesi-utara",
+    "n_kabupaten": 15,
+    "avg_predicted": 19.44,
+    "avg_actual": 20.65,
+    "max_predicted": 22.43,
+    "highest_risk_kabupaten": "Kepulauan Sangihe",
+    "tier_counts": {
+      "Rendah": 6,
+      "Sedang": 9,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Lampung",
+    "slug": "lampung",
+    "n_kabupaten": 15,
+    "avg_predicted": 19.32,
+    "avg_actual": 16.43,
+    "max_predicted": 23.44,
+    "highest_risk_kabupaten": "Mesuji",
+    "tier_counts": {
+      "Rendah": 9,
+      "Sedang": 6,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Jawa Barat",
+    "slug": "jawa-barat",
+    "n_kabupaten": 27,
+    "avg_predicted": 18.79,
+    "avg_actual": 17.84,
+    "max_predicted": 23.55,
+    "highest_risk_kabupaten": "Tasikmalaya",
+    "tier_counts": {
+      "Rendah": 18,
+      "Sedang": 9,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Sumatera Selatan",
+    "slug": "sumatera-selatan",
+    "n_kabupaten": 17,
+    "avg_predicted": 18.72,
+    "avg_actual": 19.38,
+    "max_predicted": 23.02,
+    "highest_risk_kabupaten": "Ogan Komering Ulu Selatan",
+    "tier_counts": {
+      "Rendah": 11,
+      "Sedang": 6,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Kepulauan Riau",
+    "slug": "kepulauan-riau",
+    "n_kabupaten": 7,
+    "avg_predicted": 18.69,
+    "avg_actual": 16.96,
+    "max_predicted": 22.12,
+    "highest_risk_kabupaten": "Kota Tanjung Pinang",
+    "tier_counts": {
+      "Rendah": 4,
+      "Sedang": 3,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Jawa Tengah",
+    "slug": "jawa-tengah",
+    "n_kabupaten": 35,
+    "avg_predicted": 17.89,
+    "avg_actual": 18.18,
+    "max_predicted": 23.65,
+    "highest_risk_kabupaten": "Batang",
+    "tier_counts": {
+      "Rendah": 26,
+      "Sedang": 9,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Banten",
+    "slug": "banten",
+    "n_kabupaten": 8,
+    "avg_predicted": 17.52,
+    "avg_actual": 20.75,
+    "max_predicted": 24.59,
+    "highest_risk_kabupaten": "Lebak",
+    "tier_counts": {
+      "Rendah": 6,
+      "Sedang": 2,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Riau",
+    "slug": "riau",
+    "n_kabupaten": 12,
+    "avg_predicted": 17.44,
+    "avg_actual": 18.76,
+    "max_predicted": 22.83,
+    "highest_risk_kabupaten": "Kepulauan Meranti",
+    "tier_counts": {
+      "Rendah": 11,
+      "Sedang": 1,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "DKI Jakarta",
+    "slug": "dki-jakarta",
+    "n_kabupaten": 6,
+    "avg_predicted": 16.61,
+    "avg_actual": 17.6,
+    "max_predicted": 21.06,
+    "highest_risk_kabupaten": "Kepulauan Seribu",
+    "tier_counts": {
+      "Rendah": 5,
+      "Sedang": 1,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Jawa Timur",
+    "slug": "jawa-timur",
+    "n_kabupaten": 38,
+    "avg_predicted": 16.46,
+    "avg_actual": 15.91,
+    "max_predicted": 28.9,
+    "highest_risk_kabupaten": "Bondowoso",
+    "tier_counts": {
+      "Rendah": 31,
+      "Sedang": 7,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "DI Yogyakarta",
+    "slug": "di-yogyakarta",
+    "n_kabupaten": 5,
+    "avg_predicted": 15.64,
+    "avg_actual": 17.26,
+    "max_predicted": 18.61,
+    "highest_risk_kabupaten": "Kulon Progo",
+    "tier_counts": {
+      "Rendah": 5,
+      "Sedang": 0,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Jambi",
+    "slug": "jambi",
+    "n_kabupaten": 11,
+    "avg_predicted": 14.34,
+    "avg_actual": 14.87,
+    "max_predicted": 17.97,
+    "highest_risk_kabupaten": "Tebo",
+    "tier_counts": {
+      "Rendah": 11,
+      "Sedang": 0,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  },
+  {
+    "province": "Bali",
+    "slug": "bali",
+    "n_kabupaten": 9,
+    "avg_predicted": 13.64,
+    "avg_actual": 8.81,
+    "max_predicted": 19.95,
+    "highest_risk_kabupaten": "Karangasem",
+    "tier_counts": {
+      "Rendah": 9,
+      "Sedang": 0,
+      "Tinggi": 0,
+      "Sangat Tinggi": 0
+    }
+  }
+]

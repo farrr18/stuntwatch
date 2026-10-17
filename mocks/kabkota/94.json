@@ -1,0 +1,138 @@
+[
+  {
+    "id": "9406",
+    "provinceId": "94",
+    "provinceName": "Papua Tengah",
+    "name": "Kab. Paniai",
+    "type": "Kabupaten",
+    "riskIndex": 96,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 8,
+    "nationalRank": 6,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9407",
+    "provinceId": "94",
+    "provinceName": "Papua Tengah",
+    "name": "Kab. Nabire",
+    "type": "Kabupaten",
+    "riskIndex": 86,
+    "riskLevel": "very_high",
+    "provinceRank": 2,
+    "totalInProvince": 8,
+    "nationalRank": 28,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9402",
+    "provinceId": "94",
+    "provinceName": "Papua Tengah",
+    "name": "Kab. Puncak",
+    "type": "Kabupaten",
+    "riskIndex": 84,
+    "riskLevel": "very_high",
+    "provinceRank": 3,
+    "totalInProvince": 8,
+    "nationalRank": 30,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9404",
+    "provinceId": "94",
+    "provinceName": "Papua Tengah",
+    "name": "Kab. Dogiyai",
+    "type": "Kabupaten",
+    "riskIndex": 78,
+    "riskLevel": "very_high",
+    "provinceRank": 4,
+    "totalInProvince": 8,
+    "nationalRank": 55,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9403",
+    "provinceId": "94",
+    "provinceName": "Papua Tengah",
+    "name": "Kab. Puncak Jaya",
+    "type": "Kabupaten",
+    "riskIndex": 76,
+    "riskLevel": "very_high",
+    "provinceRank": 5,
+    "totalInProvince": 8,
+    "nationalRank": 74,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9401",
+    "provinceId": "94",
+    "provinceName": "Papua Tengah",
+    "name": "Kab. Intan Jaya",
+    "type": "Kabupaten",
+    "riskIndex": 75,
+    "riskLevel": "very_high",
+    "provinceRank": 6,
+    "totalInProvince": 8,
+    "nationalRank": 80,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9405",
+    "provinceId": "94",
+    "provinceName": "Papua Tengah",
+    "name": "Kab. Deiyai",
+    "type": "Kabupaten",
+    "riskIndex": 75,
+    "riskLevel": "very_high",
+    "provinceRank": 7,
+    "totalInProvince": 8,
+    "nationalRank": 81,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9408",
+    "provinceId": "94",
+    "provinceName": "Papua Tengah",
+    "name": "Kab. Mimika",
+    "type": "Kabupaten",
+    "riskIndex": 75,
+    "riskLevel": "very_high",
+    "provinceRank": 8,
+    "totalInProvince": 8,
+    "nationalRank": 82,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  }
+]

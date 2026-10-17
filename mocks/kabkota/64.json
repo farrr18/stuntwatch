@@ -1,0 +1,172 @@
+[
+  {
+    "id": "6405",
+    "provinceId": "64",
+    "provinceName": "Kalimantan Timur",
+    "name": "Kab. Paser",
+    "type": "Kabupaten",
+    "riskIndex": 62,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 10,
+    "nationalRank": 166,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "6401",
+    "provinceId": "64",
+    "provinceName": "Kalimantan Timur",
+    "name": "Kab. Mahakam Ulu",
+    "type": "Kabupaten",
+    "riskIndex": 61,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 10,
+    "nationalRank": 177,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6403",
+    "provinceId": "64",
+    "provinceName": "Kalimantan Timur",
+    "name": "Kab. Kutai Kartanegara",
+    "type": "Kabupaten",
+    "riskIndex": 60,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 10,
+    "nationalRank": 186,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6404",
+    "provinceId": "64",
+    "provinceName": "Kalimantan Timur",
+    "name": "Kab. Kutai Timur",
+    "type": "Kabupaten",
+    "riskIndex": 53,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 10,
+    "nationalRank": 286,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6406",
+    "provinceId": "64",
+    "provinceName": "Kalimantan Timur",
+    "name": "Kab. Penajam Paser Utara",
+    "type": "Kabupaten",
+    "riskIndex": 48,
+    "riskLevel": "moderate",
+    "provinceRank": 5,
+    "totalInProvince": 10,
+    "nationalRank": 330,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6407",
+    "provinceId": "64",
+    "provinceName": "Kalimantan Timur",
+    "name": "Kab. Berau",
+    "type": "Kabupaten",
+    "riskIndex": 43,
+    "riskLevel": "moderate",
+    "provinceRank": 6,
+    "totalInProvince": 10,
+    "nationalRank": 388,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "6409",
+    "provinceId": "64",
+    "provinceName": "Kalimantan Timur",
+    "name": "Kota Samarinda",
+    "type": "Kota",
+    "riskIndex": 40,
+    "riskLevel": "moderate",
+    "provinceRank": 7,
+    "totalInProvince": 10,
+    "nationalRank": 410,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6402",
+    "provinceId": "64",
+    "provinceName": "Kalimantan Timur",
+    "name": "Kab. Kutai Barat",
+    "type": "Kabupaten",
+    "riskIndex": 38,
+    "riskLevel": "moderate",
+    "provinceRank": 8,
+    "totalInProvince": 10,
+    "nationalRank": 428,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "6408",
+    "provinceId": "64",
+    "provinceName": "Kalimantan Timur",
+    "name": "Kota Bontang",
+    "type": "Kota",
+    "riskIndex": 33,
+    "riskLevel": "moderate",
+    "provinceRank": 9,
+    "totalInProvince": 10,
+    "nationalRank": 457,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "6410",
+    "provinceId": "64",
+    "provinceName": "Kalimantan Timur",
+    "name": "Kota Balikpapan",
+    "type": "Kota",
+    "riskIndex": 33,
+    "riskLevel": "moderate",
+    "provinceRank": 10,
+    "totalInProvince": 10,
+    "nationalRank": 458,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  }
+]

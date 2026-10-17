@@ -1,0 +1,138 @@
+[
+  {
+    "id": "3603",
+    "provinceId": "36",
+    "provinceName": "Banten",
+    "name": "Kab. Serang",
+    "type": "Kabupaten",
+    "riskIndex": 58,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 8,
+    "nationalRank": 211,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3602",
+    "provinceId": "36",
+    "provinceName": "Banten",
+    "name": "Kab. Lebak",
+    "type": "Kabupaten",
+    "riskIndex": 55,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 8,
+    "nationalRank": 257,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3604",
+    "provinceId": "36",
+    "provinceName": "Banten",
+    "name": "Kab. Tangerang",
+    "type": "Kabupaten",
+    "riskIndex": 46,
+    "riskLevel": "moderate",
+    "provinceRank": 3,
+    "totalInProvince": 8,
+    "nationalRank": 353,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3601",
+    "provinceId": "36",
+    "provinceName": "Banten",
+    "name": "Kab. Pandeglang",
+    "type": "Kabupaten",
+    "riskIndex": 43,
+    "riskLevel": "moderate",
+    "provinceRank": 4,
+    "totalInProvince": 8,
+    "nationalRank": 387,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3606",
+    "provinceId": "36",
+    "provinceName": "Banten",
+    "name": "Kota Cilegon",
+    "type": "Kota",
+    "riskIndex": 36,
+    "riskLevel": "moderate",
+    "provinceRank": 5,
+    "totalInProvince": 8,
+    "nationalRank": 439,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3607",
+    "provinceId": "36",
+    "provinceName": "Banten",
+    "name": "Kota Tangerang",
+    "type": "Kota",
+    "riskIndex": 35,
+    "riskLevel": "moderate",
+    "provinceRank": 6,
+    "totalInProvince": 8,
+    "nationalRank": 444,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3608",
+    "provinceId": "36",
+    "provinceName": "Banten",
+    "name": "Kota Tangerang Selatan",
+    "type": "Kota",
+    "riskIndex": 31,
+    "riskLevel": "moderate",
+    "provinceRank": 7,
+    "totalInProvince": 8,
+    "nationalRank": 469,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3605",
+    "provinceId": "36",
+    "provinceName": "Banten",
+    "name": "Kota Serang",
+    "type": "Kota",
+    "riskIndex": 28,
+    "riskLevel": "moderate",
+    "provinceRank": 8,
+    "totalInProvince": 8,
+    "nationalRank": 486,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  }
+]

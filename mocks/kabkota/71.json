@@ -1,0 +1,257 @@
+[
+  {
+    "id": "7111",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kab. Minahasa",
+    "type": "Kabupaten",
+    "riskIndex": 58,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 15,
+    "nationalRank": 214,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "7104",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kab. Bolaang Mongondow",
+    "type": "Kabupaten",
+    "riskIndex": 54,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 15,
+    "nationalRank": 270,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7107",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kab. Kepulauan Siau Tagulandang Biaro",
+    "type": "Kabupaten",
+    "riskIndex": 54,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 15,
+    "nationalRank": 271,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7109",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kab. Minahasa Tenggara",
+    "type": "Kabupaten",
+    "riskIndex": 54,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 15,
+    "nationalRank": 272,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "7106",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kab. Kepulauan Talaud",
+    "type": "Kabupaten",
+    "riskIndex": 53,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 15,
+    "nationalRank": 287,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7110",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kab. Minahasa Utara",
+    "type": "Kabupaten",
+    "riskIndex": 51,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 15,
+    "nationalRank": 303,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "7102",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kab. Bolaang Mongondow Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 49,
+    "riskLevel": "moderate",
+    "provinceRank": 7,
+    "totalInProvince": 15,
+    "nationalRank": 318,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7103",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kab. Bolaang Mongondow Timur",
+    "type": "Kabupaten",
+    "riskIndex": 43,
+    "riskLevel": "moderate",
+    "provinceRank": 8,
+    "totalInProvince": 15,
+    "nationalRank": 389,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "7101",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kab. Bolaang Mongondow Utara",
+    "type": "Kabupaten",
+    "riskIndex": 37,
+    "riskLevel": "moderate",
+    "provinceRank": 9,
+    "totalInProvince": 15,
+    "nationalRank": 433,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "7105",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kab. Kepulauan Sangihe",
+    "type": "Kabupaten",
+    "riskIndex": 34,
+    "riskLevel": "moderate",
+    "provinceRank": 10,
+    "totalInProvince": 15,
+    "nationalRank": 453,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "7108",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kab. Minahasa Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 33,
+    "riskLevel": "moderate",
+    "provinceRank": 11,
+    "totalInProvince": 15,
+    "nationalRank": 459,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Angka Perkawinan Usia Anak",
+      "en": "Child & Early Marriage Rate"
+    }
+  },
+  {
+    "id": "7112",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kota Kotamobagu",
+    "type": "Kota",
+    "riskIndex": 33,
+    "riskLevel": "moderate",
+    "provinceRank": 12,
+    "totalInProvince": 15,
+    "nationalRank": 460,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "7113",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kota Bitung",
+    "type": "Kota",
+    "riskIndex": 31,
+    "riskLevel": "moderate",
+    "provinceRank": 13,
+    "totalInProvince": 15,
+    "nationalRank": 470,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7115",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kota Manado",
+    "type": "Kota",
+    "riskIndex": 31,
+    "riskLevel": "moderate",
+    "provinceRank": 14,
+    "totalInProvince": 15,
+    "nationalRank": 471,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "7114",
+    "provinceId": "71",
+    "provinceName": "Sulawesi Utara",
+    "name": "Kota Tomohon",
+    "type": "Kota",
+    "riskIndex": 23,
+    "riskLevel": "low",
+    "provinceRank": 15,
+    "totalInProvince": 15,
+    "nationalRank": 495,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  }
+]
