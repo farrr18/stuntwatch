@@ -1,0 +1,104 @@
+[
+  {
+    "id": "7602",
+    "provinceId": "76",
+    "provinceName": "Sulawesi Barat",
+    "name": "Kab. Majene",
+    "type": "Kabupaten",
+    "riskIndex": 92,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 6,
+    "nationalRank": 14,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7601",
+    "provinceId": "76",
+    "provinceName": "Sulawesi Barat",
+    "name": "Kab. Polewali Mandar",
+    "type": "Kabupaten",
+    "riskIndex": 89,
+    "riskLevel": "very_high",
+    "provinceRank": 2,
+    "totalInProvince": 6,
+    "nationalRank": 17,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7605",
+    "provinceId": "76",
+    "provinceName": "Sulawesi Barat",
+    "name": "Kab. Mamuju Tengah",
+    "type": "Kabupaten",
+    "riskIndex": 88,
+    "riskLevel": "very_high",
+    "provinceRank": 3,
+    "totalInProvince": 6,
+    "nationalRank": 20,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7603",
+    "provinceId": "76",
+    "provinceName": "Sulawesi Barat",
+    "name": "Kab. Mamasa",
+    "type": "Kabupaten",
+    "riskIndex": 83,
+    "riskLevel": "very_high",
+    "provinceRank": 4,
+    "totalInProvince": 6,
+    "nationalRank": 35,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7606",
+    "provinceId": "76",
+    "provinceName": "Sulawesi Barat",
+    "name": "Kab. Pasangkayu",
+    "type": "Kabupaten",
+    "riskIndex": 77,
+    "riskLevel": "very_high",
+    "provinceRank": 5,
+    "totalInProvince": 6,
+    "nationalRank": 59,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7604",
+    "provinceId": "76",
+    "provinceName": "Sulawesi Barat",
+    "name": "Kab. Mamuju",
+    "type": "Kabupaten",
+    "riskIndex": 76,
+    "riskLevel": "very_high",
+    "provinceRank": 6,
+    "totalInProvince": 6,
+    "nationalRank": 70,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  }
+]

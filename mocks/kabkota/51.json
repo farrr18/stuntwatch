@@ -1,0 +1,155 @@
+[
+  {
+    "id": "5107",
+    "provinceId": "51",
+    "provinceName": "Bali",
+    "name": "Kab. Gianyar",
+    "type": "Kabupaten",
+    "riskIndex": 29,
+    "riskLevel": "moderate",
+    "provinceRank": 1,
+    "totalInProvince": 9,
+    "nationalRank": 480,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "5106",
+    "provinceId": "51",
+    "provinceName": "Bali",
+    "name": "Kab. Tabanan",
+    "type": "Kabupaten",
+    "riskIndex": 27,
+    "riskLevel": "moderate",
+    "provinceRank": 2,
+    "totalInProvince": 9,
+    "nationalRank": 487,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5105",
+    "provinceId": "51",
+    "provinceName": "Bali",
+    "name": "Kab. Klungkung",
+    "type": "Kabupaten",
+    "riskIndex": 23,
+    "riskLevel": "low",
+    "provinceRank": 3,
+    "totalInProvince": 9,
+    "nationalRank": 494,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "5102",
+    "provinceId": "51",
+    "provinceName": "Bali",
+    "name": "Kab. Bangli",
+    "type": "Kabupaten",
+    "riskIndex": 15,
+    "riskLevel": "low",
+    "provinceRank": 4,
+    "totalInProvince": 9,
+    "nationalRank": 504,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "5101",
+    "provinceId": "51",
+    "provinceName": "Bali",
+    "name": "Kab. Karangasem",
+    "type": "Kabupaten",
+    "riskIndex": 12,
+    "riskLevel": "low",
+    "provinceRank": 5,
+    "totalInProvince": 9,
+    "nationalRank": 506,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "5108",
+    "provinceId": "51",
+    "provinceName": "Bali",
+    "name": "Kab. Badung",
+    "type": "Kabupaten",
+    "riskIndex": 11,
+    "riskLevel": "low",
+    "provinceRank": 6,
+    "totalInProvince": 9,
+    "nationalRank": 507,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "5103",
+    "provinceId": "51",
+    "provinceName": "Bali",
+    "name": "Kab. Buleleng",
+    "type": "Kabupaten",
+    "riskIndex": 8,
+    "riskLevel": "low",
+    "provinceRank": 7,
+    "totalInProvince": 9,
+    "nationalRank": 512,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "5104",
+    "provinceId": "51",
+    "provinceName": "Bali",
+    "name": "Kab. Jembrana",
+    "type": "Kabupaten",
+    "riskIndex": 8,
+    "riskLevel": "low",
+    "provinceRank": 8,
+    "totalInProvince": 9,
+    "nationalRank": 513,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "5109",
+    "provinceId": "51",
+    "provinceName": "Bali",
+    "name": "Kota Denpasar",
+    "type": "Kota",
+    "riskIndex": 8,
+    "riskLevel": "low",
+    "provinceRank": 9,
+    "totalInProvince": 9,
+    "nationalRank": 514,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  }
+]

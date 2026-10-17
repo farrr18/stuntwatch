@@ -1,0 +1,325 @@
+[
+  {
+    "id": "1311",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kab. Tanah Datar",
+    "type": "Kabupaten",
+    "riskIndex": 67,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 19,
+    "nationalRank": 128,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1307",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kab. Sijunjung",
+    "type": "Kabupaten",
+    "riskIndex": 60,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 19,
+    "nationalRank": 179,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1305",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kab. Solok Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 57,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 19,
+    "nationalRank": 220,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1309",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kab. Agam",
+    "type": "Kabupaten",
+    "riskIndex": 57,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 19,
+    "nationalRank": 221,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1312",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kab. Dharmasraya",
+    "type": "Kabupaten",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 19,
+    "nationalRank": 233,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Berat Badan Lahir Rendah (BBLR)",
+      "en": "Low Birth Weight (LBW) Prevalence"
+    }
+  },
+  {
+    "id": "1304",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kab. Pesisir Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 55,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 19,
+    "nationalRank": 250,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "1303",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kab. Pasaman",
+    "type": "Kabupaten",
+    "riskIndex": 51,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 19,
+    "nationalRank": 300,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1306",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kab. Solok",
+    "type": "Kabupaten",
+    "riskIndex": 50,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 19,
+    "nationalRank": 304,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1308",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kab. Lima Puluh Kota",
+    "type": "Kabupaten",
+    "riskIndex": 46,
+    "riskLevel": "moderate",
+    "provinceRank": 9,
+    "totalInProvince": 19,
+    "nationalRank": 346,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1301",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kab. Kepulauan Mentawai",
+    "type": "Kabupaten",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 10,
+    "totalInProvince": 19,
+    "nationalRank": 357,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "1310",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kab. Padang Pariaman",
+    "type": "Kabupaten",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 11,
+    "totalInProvince": 19,
+    "nationalRank": 358,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1319",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kota Padang",
+    "type": "Kota",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 12,
+    "totalInProvince": 19,
+    "nationalRank": 359,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "1318",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kota Bukittinggi",
+    "type": "Kota",
+    "riskIndex": 43,
+    "riskLevel": "moderate",
+    "provinceRank": 13,
+    "totalInProvince": 19,
+    "nationalRank": 380,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1302",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kab. Pasaman Barat",
+    "type": "Kabupaten",
+    "riskIndex": 42,
+    "riskLevel": "moderate",
+    "provinceRank": 14,
+    "totalInProvince": 19,
+    "nationalRank": 390,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1315",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kota Sawahlunto",
+    "type": "Kota",
+    "riskIndex": 40,
+    "riskLevel": "moderate",
+    "provinceRank": 15,
+    "totalInProvince": 19,
+    "nationalRank": 400,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1317",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kota Payakumbuh",
+    "type": "Kota",
+    "riskIndex": 37,
+    "riskLevel": "moderate",
+    "provinceRank": 16,
+    "totalInProvince": 19,
+    "nationalRank": 429,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1316",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kota Padang Panjang",
+    "type": "Kota",
+    "riskIndex": 35,
+    "riskLevel": "moderate",
+    "provinceRank": 17,
+    "totalInProvince": 19,
+    "nationalRank": 441,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Berat Badan Lahir Rendah (BBLR)",
+      "en": "Low Birth Weight (LBW) Prevalence"
+    }
+  },
+  {
+    "id": "1313",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kota Pariaman",
+    "type": "Kota",
+    "riskIndex": 34,
+    "riskLevel": "moderate",
+    "provinceRank": 18,
+    "totalInProvince": 19,
+    "nationalRank": 446,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "1314",
+    "provinceId": "13",
+    "provinceName": "Sumatera Barat",
+    "name": "Kota Solok",
+    "type": "Kota",
+    "riskIndex": 34,
+    "riskLevel": "moderate",
+    "provinceRank": 19,
+    "totalInProvince": 19,
+    "nationalRank": 447,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  }
+]

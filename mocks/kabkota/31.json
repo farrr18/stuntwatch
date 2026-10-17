@@ -1,0 +1,104 @@
+[
+  {
+    "id": "3101",
+    "provinceId": "31",
+    "provinceName": "DKI Jakarta",
+    "name": "Kab. Administrasi Kepulauan Seribu",
+    "type": "Kabupaten",
+    "riskIndex": 30,
+    "riskLevel": "moderate",
+    "provinceRank": 1,
+    "totalInProvince": 6,
+    "nationalRank": 475,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3104",
+    "provinceId": "31",
+    "provinceName": "DKI Jakarta",
+    "name": "Kota Administrasi Jakarta Timur",
+    "type": "Kota",
+    "riskIndex": 12,
+    "riskLevel": "low",
+    "provinceRank": 2,
+    "totalInProvince": 6,
+    "nationalRank": 505,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3102",
+    "provinceId": "31",
+    "provinceName": "DKI Jakarta",
+    "name": "Kota Administrasi Jakarta Utara",
+    "type": "Kota",
+    "riskIndex": 8,
+    "riskLevel": "low",
+    "provinceRank": 3,
+    "totalInProvince": 6,
+    "nationalRank": 508,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3103",
+    "provinceId": "31",
+    "provinceName": "DKI Jakarta",
+    "name": "Kota Administrasi Jakarta Barat",
+    "type": "Kota",
+    "riskIndex": 8,
+    "riskLevel": "low",
+    "provinceRank": 4,
+    "totalInProvince": 6,
+    "nationalRank": 509,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Berat Badan Lahir Rendah (BBLR)",
+      "en": "Low Birth Weight (LBW) Prevalence"
+    }
+  },
+  {
+    "id": "3105",
+    "provinceId": "31",
+    "provinceName": "DKI Jakarta",
+    "name": "Kota Administrasi Jakarta Pusat",
+    "type": "Kota",
+    "riskIndex": 8,
+    "riskLevel": "low",
+    "provinceRank": 5,
+    "totalInProvince": 6,
+    "nationalRank": 510,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3106",
+    "provinceId": "31",
+    "provinceName": "DKI Jakarta",
+    "name": "Kota Administrasi Jakarta Selatan",
+    "type": "Kota",
+    "riskIndex": 8,
+    "riskLevel": "low",
+    "provinceRank": 6,
+    "totalInProvince": 6,
+    "nationalRank": 511,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  }
+]

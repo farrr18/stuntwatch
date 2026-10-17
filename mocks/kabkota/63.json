@@ -1,0 +1,223 @@
+[
+  {
+    "id": "6311",
+    "provinceId": "63",
+    "provinceName": "Kalimantan Selatan",
+    "name": "Kab. Tabalong",
+    "type": "Kabupaten",
+    "riskIndex": 67,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 13,
+    "nationalRank": 130,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "6301",
+    "provinceId": "63",
+    "provinceName": "Kalimantan Selatan",
+    "name": "Kab. Hulu Sungai Utara",
+    "type": "Kabupaten",
+    "riskIndex": 64,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 13,
+    "nationalRank": 152,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6304",
+    "provinceId": "63",
+    "provinceName": "Kalimantan Selatan",
+    "name": "Kab. Barito Kuala",
+    "type": "Kabupaten",
+    "riskIndex": 64,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 13,
+    "nationalRank": 153,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6309",
+    "provinceId": "63",
+    "provinceName": "Kalimantan Selatan",
+    "name": "Kab. Kotabaru",
+    "type": "Kabupaten",
+    "riskIndex": 64,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 13,
+    "nationalRank": 154,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "6308",
+    "provinceId": "63",
+    "provinceName": "Kalimantan Selatan",
+    "name": "Kab. Tanah Bumbu",
+    "type": "Kabupaten",
+    "riskIndex": 62,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 13,
+    "nationalRank": 165,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6310",
+    "provinceId": "63",
+    "provinceName": "Kalimantan Selatan",
+    "name": "Kab. Balangan",
+    "type": "Kabupaten",
+    "riskIndex": 61,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 13,
+    "nationalRank": 176,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "6302",
+    "provinceId": "63",
+    "provinceName": "Kalimantan Selatan",
+    "name": "Kab. Hulu Sungai Tengah",
+    "type": "Kabupaten",
+    "riskIndex": 60,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 13,
+    "nationalRank": 184,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "6303",
+    "provinceId": "63",
+    "provinceName": "Kalimantan Selatan",
+    "name": "Kab. Hulu Sungai Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 60,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 13,
+    "nationalRank": 185,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "6306",
+    "provinceId": "63",
+    "provinceName": "Kalimantan Selatan",
+    "name": "Kab. Banjar",
+    "type": "Kabupaten",
+    "riskIndex": 58,
+    "riskLevel": "high",
+    "provinceRank": 9,
+    "totalInProvince": 13,
+    "nationalRank": 213,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "6307",
+    "provinceId": "63",
+    "provinceName": "Kalimantan Selatan",
+    "name": "Kab. Tanah Laut",
+    "type": "Kabupaten",
+    "riskIndex": 57,
+    "riskLevel": "high",
+    "provinceRank": 10,
+    "totalInProvince": 13,
+    "nationalRank": 227,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "6305",
+    "provinceId": "63",
+    "provinceName": "Kalimantan Selatan",
+    "name": "Kab. Tapin",
+    "type": "Kabupaten",
+    "riskIndex": 55,
+    "riskLevel": "high",
+    "provinceRank": 11,
+    "totalInProvince": 13,
+    "nationalRank": 258,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6313",
+    "provinceId": "63",
+    "provinceName": "Kalimantan Selatan",
+    "name": "Kota Banjarbaru",
+    "type": "Kota",
+    "riskIndex": 46,
+    "riskLevel": "moderate",
+    "provinceRank": 12,
+    "totalInProvince": 13,
+    "nationalRank": 354,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "6312",
+    "provinceId": "63",
+    "provinceName": "Kalimantan Selatan",
+    "name": "Kota Banjarmasin",
+    "type": "Kota",
+    "riskIndex": 36,
+    "riskLevel": "moderate",
+    "provinceRank": 13,
+    "totalInProvince": 13,
+    "nationalRank": 440,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  }
+]

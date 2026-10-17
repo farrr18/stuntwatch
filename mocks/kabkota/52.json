@@ -1,0 +1,172 @@
+[
+  {
+    "id": "5205",
+    "provinceId": "52",
+    "provinceName": "Nusa Tenggara Barat",
+    "name": "Kab. Dompu",
+    "type": "Kabupaten",
+    "riskIndex": 87,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 10,
+    "nationalRank": 21,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5208",
+    "provinceId": "52",
+    "provinceName": "Nusa Tenggara Barat",
+    "name": "Kab. Sumbawa Barat",
+    "type": "Kabupaten",
+    "riskIndex": 87,
+    "riskLevel": "very_high",
+    "provinceRank": 2,
+    "totalInProvince": 10,
+    "nationalRank": 22,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5206",
+    "provinceId": "52",
+    "provinceName": "Nusa Tenggara Barat",
+    "name": "Kab. Bima",
+    "type": "Kabupaten",
+    "riskIndex": 82,
+    "riskLevel": "very_high",
+    "provinceRank": 3,
+    "totalInProvince": 10,
+    "nationalRank": 38,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5204",
+    "provinceId": "52",
+    "provinceName": "Nusa Tenggara Barat",
+    "name": "Kab. Lombok Barat",
+    "type": "Kabupaten",
+    "riskIndex": 80,
+    "riskLevel": "very_high",
+    "provinceRank": 4,
+    "totalInProvince": 10,
+    "nationalRank": 47,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5201",
+    "provinceId": "52",
+    "provinceName": "Nusa Tenggara Barat",
+    "name": "Kab. Lombok Utara",
+    "type": "Kabupaten",
+    "riskIndex": 76,
+    "riskLevel": "very_high",
+    "provinceRank": 5,
+    "totalInProvince": 10,
+    "nationalRank": 65,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "5202",
+    "provinceId": "52",
+    "provinceName": "Nusa Tenggara Barat",
+    "name": "Kab. Lombok Tengah",
+    "type": "Kabupaten",
+    "riskIndex": 75,
+    "riskLevel": "very_high",
+    "provinceRank": 6,
+    "totalInProvince": 10,
+    "nationalRank": 75,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "5203",
+    "provinceId": "52",
+    "provinceName": "Nusa Tenggara Barat",
+    "name": "Kab. Lombok Timur",
+    "type": "Kabupaten",
+    "riskIndex": 65,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 10,
+    "nationalRank": 141,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5207",
+    "provinceId": "52",
+    "provinceName": "Nusa Tenggara Barat",
+    "name": "Kab. Sumbawa",
+    "type": "Kabupaten",
+    "riskIndex": 65,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 10,
+    "nationalRank": 142,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "5210",
+    "provinceId": "52",
+    "provinceName": "Nusa Tenggara Barat",
+    "name": "Kota Mataram",
+    "type": "Kota",
+    "riskIndex": 62,
+    "riskLevel": "high",
+    "provinceRank": 9,
+    "totalInProvince": 10,
+    "nationalRank": 163,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "5209",
+    "provinceId": "52",
+    "provinceName": "Nusa Tenggara Barat",
+    "name": "Kota Bima",
+    "type": "Kota",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 10,
+    "totalInProvince": 10,
+    "nationalRank": 238,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  }
+]

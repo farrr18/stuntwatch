@@ -1,0 +1,393 @@
+[
+  {
+    "id": "1102",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Pidie",
+    "type": "Kabupaten",
+    "riskIndex": 83,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 23,
+    "nationalRank": 31,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "1112",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Aceh Jaya",
+    "type": "Kabupaten",
+    "riskIndex": 83,
+    "riskLevel": "very_high",
+    "provinceRank": 2,
+    "totalInProvince": 23,
+    "nationalRank": 32,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1106",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Aceh Tengah",
+    "type": "Kabupaten",
+    "riskIndex": 81,
+    "riskLevel": "very_high",
+    "provinceRank": 3,
+    "totalInProvince": 23,
+    "nationalRank": 42,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "1115",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Gayo Lues",
+    "type": "Kabupaten",
+    "riskIndex": 80,
+    "riskLevel": "very_high",
+    "provinceRank": 4,
+    "totalInProvince": 23,
+    "nationalRank": 46,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1109",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Aceh Tenggara",
+    "type": "Kabupaten",
+    "riskIndex": 77,
+    "riskLevel": "very_high",
+    "provinceRank": 5,
+    "totalInProvince": 23,
+    "nationalRank": 56,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1107",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Aceh Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 76,
+    "riskLevel": "very_high",
+    "provinceRank": 6,
+    "totalInProvince": 23,
+    "nationalRank": 63,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1117",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Aceh Barat Daya",
+    "type": "Kabupaten",
+    "riskIndex": 76,
+    "riskLevel": "very_high",
+    "provinceRank": 7,
+    "totalInProvince": 23,
+    "nationalRank": 64,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "1104",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Bireuen",
+    "type": "Kabupaten",
+    "riskIndex": 74,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 23,
+    "nationalRank": 83,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "1103",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Aceh Timur",
+    "type": "Kabupaten",
+    "riskIndex": 72,
+    "riskLevel": "high",
+    "provinceRank": 9,
+    "totalInProvince": 23,
+    "nationalRank": 96,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "1111",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Nagan Raya",
+    "type": "Kabupaten",
+    "riskIndex": 72,
+    "riskLevel": "high",
+    "provinceRank": 10,
+    "totalInProvince": 23,
+    "nationalRank": 97,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1118",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Simeulue",
+    "type": "Kabupaten",
+    "riskIndex": 71,
+    "riskLevel": "high",
+    "provinceRank": 11,
+    "totalInProvince": 23,
+    "nationalRank": 101,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1113",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Bener Meriah",
+    "type": "Kabupaten",
+    "riskIndex": 68,
+    "riskLevel": "high",
+    "provinceRank": 12,
+    "totalInProvince": 23,
+    "nationalRank": 121,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1110",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Aceh Tamiang",
+    "type": "Kabupaten",
+    "riskIndex": 65,
+    "riskLevel": "high",
+    "provinceRank": 13,
+    "totalInProvince": 23,
+    "nationalRank": 140,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1108",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Aceh Barat",
+    "type": "Kabupaten",
+    "riskIndex": 63,
+    "riskLevel": "high",
+    "provinceRank": 14,
+    "totalInProvince": 23,
+    "nationalRank": 155,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "1101",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Aceh Utara",
+    "type": "Kabupaten",
+    "riskIndex": 62,
+    "riskLevel": "high",
+    "provinceRank": 15,
+    "totalInProvince": 23,
+    "nationalRank": 157,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1123",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kota Banda Aceh",
+    "type": "Kota",
+    "riskIndex": 62,
+    "riskLevel": "high",
+    "provinceRank": 16,
+    "totalInProvince": 23,
+    "nationalRank": 158,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "1122",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kota Sabang",
+    "type": "Kota",
+    "riskIndex": 61,
+    "riskLevel": "high",
+    "provinceRank": 17,
+    "totalInProvince": 23,
+    "nationalRank": 171,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1114",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Pidie Jaya",
+    "type": "Kabupaten",
+    "riskIndex": 60,
+    "riskLevel": "high",
+    "provinceRank": 18,
+    "totalInProvince": 23,
+    "nationalRank": 178,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1105",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Aceh Besar",
+    "type": "Kabupaten",
+    "riskIndex": 58,
+    "riskLevel": "high",
+    "provinceRank": 19,
+    "totalInProvince": 23,
+    "nationalRank": 206,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1116",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kab. Aceh Singkil",
+    "type": "Kabupaten",
+    "riskIndex": 58,
+    "riskLevel": "high",
+    "provinceRank": 20,
+    "totalInProvince": 23,
+    "nationalRank": 207,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1121",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kota Langsa",
+    "type": "Kota",
+    "riskIndex": 54,
+    "riskLevel": "high",
+    "provinceRank": 21,
+    "totalInProvince": 23,
+    "nationalRank": 261,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1119",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kota Subulussalam",
+    "type": "Kota",
+    "riskIndex": 51,
+    "riskLevel": "high",
+    "provinceRank": 22,
+    "totalInProvince": 23,
+    "nationalRank": 299,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1120",
+    "provinceId": "11",
+    "provinceName": "Aceh",
+    "name": "Kota Lhokseumawe",
+    "type": "Kota",
+    "riskIndex": 49,
+    "riskLevel": "moderate",
+    "provinceRank": 23,
+    "totalInProvince": 23,
+    "nationalRank": 312,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  }
+]

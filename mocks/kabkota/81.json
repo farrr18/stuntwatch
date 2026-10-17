@@ -1,0 +1,189 @@
+[
+  {
+    "id": "8105",
+    "provinceId": "81",
+    "provinceName": "Maluku",
+    "name": "Kab. Seram Bagian Timur",
+    "type": "Kabupaten",
+    "riskIndex": 76,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 11,
+    "nationalRank": 71,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "8108",
+    "provinceId": "81",
+    "provinceName": "Maluku",
+    "name": "Kab. Buru Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 72,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 11,
+    "nationalRank": 100,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "8104",
+    "provinceId": "81",
+    "provinceName": "Maluku",
+    "name": "Kab. Seram Bagian Barat",
+    "type": "Kabupaten",
+    "riskIndex": 65,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 11,
+    "nationalRank": 144,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "8106",
+    "provinceId": "81",
+    "provinceName": "Maluku",
+    "name": "Kab. Maluku Tengah",
+    "type": "Kabupaten",
+    "riskIndex": 62,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 11,
+    "nationalRank": 170,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Angka Perkawinan Usia Anak",
+      "en": "Child & Early Marriage Rate"
+    }
+  },
+  {
+    "id": "8101",
+    "provinceId": "81",
+    "provinceName": "Maluku",
+    "name": "Kab. Maluku Barat Daya",
+    "type": "Kabupaten",
+    "riskIndex": 60,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 11,
+    "nationalRank": 188,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "8107",
+    "provinceId": "81",
+    "provinceName": "Maluku",
+    "name": "Kab. Maluku Tenggara",
+    "type": "Kabupaten",
+    "riskIndex": 60,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 11,
+    "nationalRank": 189,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "8103",
+    "provinceId": "81",
+    "provinceName": "Maluku",
+    "name": "Kab. Kepulauan Aru",
+    "type": "Kabupaten",
+    "riskIndex": 59,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 11,
+    "nationalRank": 205,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "8102",
+    "provinceId": "81",
+    "provinceName": "Maluku",
+    "name": "Kab. Kepulauan Tanimbar",
+    "type": "Kabupaten",
+    "riskIndex": 57,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 11,
+    "nationalRank": 231,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "8109",
+    "provinceId": "81",
+    "provinceName": "Maluku",
+    "name": "Kab. Buru",
+    "type": "Kabupaten",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 9,
+    "totalInProvince": 11,
+    "nationalRank": 246,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Berat Badan Lahir Rendah (BBLR)",
+      "en": "Low Birth Weight (LBW) Prevalence"
+    }
+  },
+  {
+    "id": "8111",
+    "provinceId": "81",
+    "provinceName": "Maluku",
+    "name": "Kota Ambon",
+    "type": "Kota",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 10,
+    "totalInProvince": 11,
+    "nationalRank": 370,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "8110",
+    "provinceId": "81",
+    "provinceName": "Maluku",
+    "name": "Kota Tual",
+    "type": "Kota",
+    "riskIndex": 44,
+    "riskLevel": "moderate",
+    "provinceRank": 11,
+    "totalInProvince": 11,
+    "nationalRank": 377,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  }
+]

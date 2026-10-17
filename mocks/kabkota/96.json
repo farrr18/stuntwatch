@@ -1,0 +1,104 @@
+[
+  {
+    "id": "9605",
+    "provinceId": "96",
+    "provinceName": "Papua Barat Daya",
+    "name": "Kab. Sorong",
+    "type": "Kabupaten",
+    "riskIndex": 77,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 6,
+    "nationalRank": 62,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9604",
+    "provinceId": "96",
+    "provinceName": "Papua Barat Daya",
+    "name": "Kab. Raja Ampat",
+    "type": "Kabupaten",
+    "riskIndex": 73,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 6,
+    "nationalRank": 95,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "9602",
+    "provinceId": "96",
+    "provinceName": "Papua Barat Daya",
+    "name": "Kab. Maybrat",
+    "type": "Kabupaten",
+    "riskIndex": 70,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 6,
+    "nationalRank": 118,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "9601",
+    "provinceId": "96",
+    "provinceName": "Papua Barat Daya",
+    "name": "Kab. Tambrauw",
+    "type": "Kabupaten",
+    "riskIndex": 68,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 6,
+    "nationalRank": 127,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "9603",
+    "provinceId": "96",
+    "provinceName": "Papua Barat Daya",
+    "name": "Kab. Sorong Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 67,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 6,
+    "nationalRank": 137,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "9606",
+    "provinceId": "96",
+    "provinceName": "Papua Barat Daya",
+    "name": "Kota Sorong",
+    "type": "Kota",
+    "riskIndex": 67,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 6,
+    "nationalRank": 138,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  }
+]

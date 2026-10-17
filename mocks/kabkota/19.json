@@ -1,0 +1,121 @@
+[
+  {
+    "id": "1903",
+    "provinceId": "19",
+    "provinceName": "Kepulauan Bangka Belitung",
+    "name": "Kab. Bangka Tengah",
+    "type": "Kabupaten",
+    "riskIndex": 48,
+    "riskLevel": "moderate",
+    "provinceRank": 1,
+    "totalInProvince": 7,
+    "nationalRank": 325,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1905",
+    "provinceId": "19",
+    "provinceName": "Kepulauan Bangka Belitung",
+    "name": "Kab. Belitung Timur",
+    "type": "Kabupaten",
+    "riskIndex": 46,
+    "riskLevel": "moderate",
+    "provinceRank": 2,
+    "totalInProvince": 7,
+    "nationalRank": 348,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1904",
+    "provinceId": "19",
+    "provinceName": "Kepulauan Bangka Belitung",
+    "name": "Kab. Bangka",
+    "type": "Kabupaten",
+    "riskIndex": 37,
+    "riskLevel": "moderate",
+    "provinceRank": 3,
+    "totalInProvince": 7,
+    "nationalRank": 431,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1901",
+    "provinceId": "19",
+    "provinceName": "Kepulauan Bangka Belitung",
+    "name": "Kab. Bangka Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 35,
+    "riskLevel": "moderate",
+    "provinceRank": 4,
+    "totalInProvince": 7,
+    "nationalRank": 442,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1902",
+    "provinceId": "19",
+    "provinceName": "Kepulauan Bangka Belitung",
+    "name": "Kab. Bangka Barat",
+    "type": "Kabupaten",
+    "riskIndex": 32,
+    "riskLevel": "moderate",
+    "provinceRank": 5,
+    "totalInProvince": 7,
+    "nationalRank": 462,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1906",
+    "provinceId": "19",
+    "provinceName": "Kepulauan Bangka Belitung",
+    "name": "Kab. Belitung",
+    "type": "Kabupaten",
+    "riskIndex": 25,
+    "riskLevel": "moderate",
+    "provinceRank": 6,
+    "totalInProvince": 7,
+    "nationalRank": 488,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1907",
+    "provinceId": "19",
+    "provinceName": "Kepulauan Bangka Belitung",
+    "name": "Kota Pangkalpinang",
+    "type": "Kota",
+    "riskIndex": 16,
+    "riskLevel": "low",
+    "provinceRank": 7,
+    "totalInProvince": 7,
+    "nationalRank": 501,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  }
+]

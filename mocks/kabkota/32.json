@@ -1,0 +1,461 @@
+[
+  {
+    "id": "3204",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Sukabumi",
+    "type": "Kabupaten",
+    "riskIndex": 62,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 27,
+    "nationalRank": 161,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3209",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Kuningan",
+    "type": "Kabupaten",
+    "riskIndex": 60,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 27,
+    "nationalRank": 182,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3215",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Bogor",
+    "type": "Kabupaten",
+    "riskIndex": 57,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 27,
+    "nationalRank": 224,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3217",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Pangandaran",
+    "type": "Kabupaten",
+    "riskIndex": 53,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 27,
+    "nationalRank": 280,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Berat Badan Lahir Rendah (BBLR)",
+      "en": "Low Birth Weight (LBW) Prevalence"
+    }
+  },
+  {
+    "id": "3218",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Bekasi",
+    "type": "Kabupaten",
+    "riskIndex": 53,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 27,
+    "nationalRank": 281,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3201",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Garut",
+    "type": "Kabupaten",
+    "riskIndex": 50,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 27,
+    "nationalRank": 306,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3211",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Indramayu",
+    "type": "Kabupaten",
+    "riskIndex": 49,
+    "riskLevel": "moderate",
+    "provinceRank": 7,
+    "totalInProvince": 27,
+    "nationalRank": 314,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3202",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Tasikmalaya",
+    "type": "Kabupaten",
+    "riskIndex": 48,
+    "riskLevel": "moderate",
+    "provinceRank": 8,
+    "totalInProvince": 27,
+    "nationalRank": 326,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3216",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Ciamis",
+    "type": "Kabupaten",
+    "riskIndex": 48,
+    "riskLevel": "moderate",
+    "provinceRank": 9,
+    "totalInProvince": 27,
+    "nationalRank": 327,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3206",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Bandung",
+    "type": "Kabupaten",
+    "riskIndex": 47,
+    "riskLevel": "moderate",
+    "provinceRank": 10,
+    "totalInProvince": 27,
+    "nationalRank": 342,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3203",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Cianjur",
+    "type": "Kabupaten",
+    "riskIndex": 46,
+    "riskLevel": "moderate",
+    "provinceRank": 11,
+    "totalInProvince": 27,
+    "nationalRank": 349,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3207",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Sumedang",
+    "type": "Kabupaten",
+    "riskIndex": 46,
+    "riskLevel": "moderate",
+    "provinceRank": 12,
+    "totalInProvince": 27,
+    "nationalRank": 350,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3214",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Karawang",
+    "type": "Kabupaten",
+    "riskIndex": 46,
+    "riskLevel": "moderate",
+    "provinceRank": 13,
+    "totalInProvince": 27,
+    "nationalRank": 351,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3212",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Subang",
+    "type": "Kabupaten",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 14,
+    "totalInProvince": 27,
+    "nationalRank": 361,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3208",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Majalengka",
+    "type": "Kabupaten",
+    "riskIndex": 44,
+    "riskLevel": "moderate",
+    "provinceRank": 15,
+    "totalInProvince": 27,
+    "nationalRank": 374,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3227",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kota Depok",
+    "type": "Kota",
+    "riskIndex": 43,
+    "riskLevel": "moderate",
+    "provinceRank": 16,
+    "totalInProvince": 27,
+    "nationalRank": 383,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3210",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Cirebon",
+    "type": "Kabupaten",
+    "riskIndex": 42,
+    "riskLevel": "moderate",
+    "provinceRank": 17,
+    "totalInProvince": 27,
+    "nationalRank": 393,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "3205",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Bandung Barat",
+    "type": "Kabupaten",
+    "riskIndex": 40,
+    "riskLevel": "moderate",
+    "provinceRank": 18,
+    "totalInProvince": 27,
+    "nationalRank": 402,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "3219",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kota Tasikmalaya",
+    "type": "Kota",
+    "riskIndex": 40,
+    "riskLevel": "moderate",
+    "provinceRank": 19,
+    "totalInProvince": 27,
+    "nationalRank": 403,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3220",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kota Banjar",
+    "type": "Kota",
+    "riskIndex": 40,
+    "riskLevel": "moderate",
+    "provinceRank": 20,
+    "totalInProvince": 27,
+    "nationalRank": 404,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3225",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kota Bandung",
+    "type": "Kota",
+    "riskIndex": 40,
+    "riskLevel": "moderate",
+    "provinceRank": 21,
+    "totalInProvince": 27,
+    "nationalRank": 405,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3213",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kab. Purwakarta",
+    "type": "Kabupaten",
+    "riskIndex": 39,
+    "riskLevel": "moderate",
+    "provinceRank": 22,
+    "totalInProvince": 27,
+    "nationalRank": 415,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3223",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kota Cimahi",
+    "type": "Kota",
+    "riskIndex": 39,
+    "riskLevel": "moderate",
+    "provinceRank": 23,
+    "totalInProvince": 27,
+    "nationalRank": 416,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Berat Badan Lahir Rendah (BBLR)",
+      "en": "Low Birth Weight (LBW) Prevalence"
+    }
+  },
+  {
+    "id": "3226",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kota Bekasi",
+    "type": "Kota",
+    "riskIndex": 39,
+    "riskLevel": "moderate",
+    "provinceRank": 24,
+    "totalInProvince": 27,
+    "nationalRank": 417,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3222",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kota Cirebon",
+    "type": "Kota",
+    "riskIndex": 36,
+    "riskLevel": "moderate",
+    "provinceRank": 25,
+    "totalInProvince": 27,
+    "nationalRank": 436,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3224",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kota Bogor",
+    "type": "Kota",
+    "riskIndex": 36,
+    "riskLevel": "moderate",
+    "provinceRank": 26,
+    "totalInProvince": 27,
+    "nationalRank": 437,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3221",
+    "provinceId": "32",
+    "provinceName": "Jawa Barat",
+    "name": "Kota Sukabumi",
+    "type": "Kota",
+    "riskIndex": 32,
+    "riskLevel": "moderate",
+    "provinceRank": 27,
+    "totalInProvince": 27,
+    "nationalRank": 463,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  }
+]

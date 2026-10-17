@@ -1,0 +1,121 @@
+[
+  {
+    "id": "9203",
+    "provinceId": "92",
+    "provinceName": "Papua Barat",
+    "name": "Kab. Teluk Wondama",
+    "type": "Kabupaten",
+    "riskIndex": 83,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 7,
+    "nationalRank": 36,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9202",
+    "provinceId": "92",
+    "provinceName": "Papua Barat",
+    "name": "Kab. Manokwari Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 81,
+    "riskLevel": "very_high",
+    "provinceRank": 2,
+    "totalInProvince": 7,
+    "nationalRank": 45,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9201",
+    "provinceId": "92",
+    "provinceName": "Papua Barat",
+    "name": "Kab. Pegunungan Arfak",
+    "type": "Kabupaten",
+    "riskIndex": 79,
+    "riskLevel": "very_high",
+    "provinceRank": 3,
+    "totalInProvince": 7,
+    "nationalRank": 54,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9205",
+    "provinceId": "92",
+    "provinceName": "Papua Barat",
+    "name": "Kab. Fakfak",
+    "type": "Kabupaten",
+    "riskIndex": 76,
+    "riskLevel": "very_high",
+    "provinceRank": 4,
+    "totalInProvince": 7,
+    "nationalRank": 73,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9204",
+    "provinceId": "92",
+    "provinceName": "Papua Barat",
+    "name": "Kab. Teluk Bintuni",
+    "type": "Kabupaten",
+    "riskIndex": 71,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 7,
+    "nationalRank": 107,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9206",
+    "provinceId": "92",
+    "provinceName": "Papua Barat",
+    "name": "Kab. Kaimana",
+    "type": "Kabupaten",
+    "riskIndex": 70,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 7,
+    "nationalRank": 116,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "9207",
+    "provinceId": "92",
+    "provinceName": "Papua Barat",
+    "name": "Kab. Manokwari",
+    "type": "Kabupaten",
+    "riskIndex": 70,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 7,
+    "nationalRank": 117,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  }
+]

@@ -1,0 +1,410 @@
+[
+  {
+    "id": "7319",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Maros",
+    "type": "Kabupaten",
+    "riskIndex": 79,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 24,
+    "nationalRank": 53,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7309",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Luwu Timur",
+    "type": "Kabupaten",
+    "riskIndex": 77,
+    "riskLevel": "very_high",
+    "provinceRank": 2,
+    "totalInProvince": 24,
+    "nationalRank": 57,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7301",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Jeneponto",
+    "type": "Kabupaten",
+    "riskIndex": 76,
+    "riskLevel": "very_high",
+    "provinceRank": 3,
+    "totalInProvince": 24,
+    "nationalRank": 66,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7304",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Bone",
+    "type": "Kabupaten",
+    "riskIndex": 76,
+    "riskLevel": "very_high",
+    "provinceRank": 4,
+    "totalInProvince": 24,
+    "nationalRank": 67,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7306",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Tana Toraja",
+    "type": "Kabupaten",
+    "riskIndex": 76,
+    "riskLevel": "very_high",
+    "provinceRank": 5,
+    "totalInProvince": 24,
+    "nationalRank": 68,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7307",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Toraja Utara",
+    "type": "Kabupaten",
+    "riskIndex": 74,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 24,
+    "nationalRank": 86,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7321",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Barru",
+    "type": "Kabupaten",
+    "riskIndex": 74,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 24,
+    "nationalRank": 87,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7312",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Sidrap",
+    "type": "Kabupaten",
+    "riskIndex": 71,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 24,
+    "nationalRank": 105,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7313",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Wajo",
+    "type": "Kabupaten",
+    "riskIndex": 71,
+    "riskLevel": "high",
+    "provinceRank": 9,
+    "totalInProvince": 24,
+    "nationalRank": 106,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7305",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Enrekang",
+    "type": "Kabupaten",
+    "riskIndex": 68,
+    "riskLevel": "high",
+    "provinceRank": 10,
+    "totalInProvince": 24,
+    "nationalRank": 124,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7314",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Soppeng",
+    "type": "Kabupaten",
+    "riskIndex": 67,
+    "riskLevel": "high",
+    "provinceRank": 11,
+    "totalInProvince": 24,
+    "nationalRank": 134,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7316",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Bulukumba",
+    "type": "Kabupaten",
+    "riskIndex": 67,
+    "riskLevel": "high",
+    "provinceRank": 12,
+    "totalInProvince": 24,
+    "nationalRank": 135,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7317",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Bantaeng",
+    "type": "Kabupaten",
+    "riskIndex": 66,
+    "riskLevel": "high",
+    "provinceRank": 13,
+    "totalInProvince": 24,
+    "nationalRank": 139,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7302",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Takalar",
+    "type": "Kabupaten",
+    "riskIndex": 65,
+    "riskLevel": "high",
+    "provinceRank": 14,
+    "totalInProvince": 24,
+    "nationalRank": 143,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7311",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Pinrang",
+    "type": "Kabupaten",
+    "riskIndex": 62,
+    "riskLevel": "high",
+    "provinceRank": 15,
+    "totalInProvince": 24,
+    "nationalRank": 167,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7318",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Kepulauan Selayar",
+    "type": "Kabupaten",
+    "riskIndex": 62,
+    "riskLevel": "high",
+    "provinceRank": 16,
+    "totalInProvince": 24,
+    "nationalRank": 168,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7324",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kota Makassar",
+    "type": "Kota",
+    "riskIndex": 59,
+    "riskLevel": "high",
+    "provinceRank": 17,
+    "totalInProvince": 24,
+    "nationalRank": 202,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7315",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Sinjai",
+    "type": "Kabupaten",
+    "riskIndex": 57,
+    "riskLevel": "high",
+    "provinceRank": 18,
+    "totalInProvince": 24,
+    "nationalRank": 229,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7320",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Pangkajene dan Kepulauan",
+    "type": "Kabupaten",
+    "riskIndex": 57,
+    "riskLevel": "high",
+    "provinceRank": 19,
+    "totalInProvince": 24,
+    "nationalRank": 230,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "7308",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Luwu Utara",
+    "type": "Kabupaten",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 20,
+    "totalInProvince": 24,
+    "nationalRank": 243,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7310",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Luwu",
+    "type": "Kabupaten",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 21,
+    "totalInProvince": 24,
+    "nationalRank": 244,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "7303",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kab. Gowa",
+    "type": "Kabupaten",
+    "riskIndex": 54,
+    "riskLevel": "high",
+    "provinceRank": 22,
+    "totalInProvince": 24,
+    "nationalRank": 273,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7323",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kota Parepare",
+    "type": "Kota",
+    "riskIndex": 52,
+    "riskLevel": "high",
+    "provinceRank": 23,
+    "totalInProvince": 24,
+    "nationalRank": 297,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "7322",
+    "provinceId": "73",
+    "provinceName": "Sulawesi Selatan",
+    "name": "Kota Palopo",
+    "type": "Kota",
+    "riskIndex": 48,
+    "riskLevel": "moderate",
+    "provinceRank": 24,
+    "totalInProvince": 24,
+    "nationalRank": 331,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  }
+]

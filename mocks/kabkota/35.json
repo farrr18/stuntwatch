@@ -1,0 +1,648 @@
+[
+  {
+    "id": "3508",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Jember",
+    "type": "Kabupaten",
+    "riskIndex": 59,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 38,
+    "nationalRank": 197,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "3524",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Nganjuk",
+    "type": "Kabupaten",
+    "riskIndex": 59,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 38,
+    "nationalRank": 198,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3512",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Banyuwangi",
+    "type": "Kabupaten",
+    "riskIndex": 58,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 38,
+    "nationalRank": 210,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3502",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Sampang",
+    "type": "Kabupaten",
+    "riskIndex": 55,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 38,
+    "nationalRank": 254,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3503",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Pamekasan",
+    "type": "Kabupaten",
+    "riskIndex": 55,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 38,
+    "nationalRank": 255,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3522",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Blitar",
+    "type": "Kabupaten",
+    "riskIndex": 55,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 38,
+    "nationalRank": 256,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3506",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Situbondo",
+    "type": "Kabupaten",
+    "riskIndex": 54,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 38,
+    "nationalRank": 268,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3501",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Bangkalan",
+    "type": "Kabupaten",
+    "riskIndex": 52,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 38,
+    "nationalRank": 293,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Angka Perkawinan Usia Anak",
+      "en": "Child & Early Marriage Rate"
+    }
+  },
+  {
+    "id": "3510",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Pasuruan",
+    "type": "Kabupaten",
+    "riskIndex": 52,
+    "riskLevel": "high",
+    "provinceRank": 9,
+    "totalInProvince": 38,
+    "nationalRank": 294,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3511",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Malang",
+    "type": "Kabupaten",
+    "riskIndex": 50,
+    "riskLevel": "high",
+    "provinceRank": 10,
+    "totalInProvince": 38,
+    "nationalRank": 308,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3520",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Trenggalek",
+    "type": "Kabupaten",
+    "riskIndex": 50,
+    "riskLevel": "high",
+    "provinceRank": 11,
+    "totalInProvince": 38,
+    "nationalRank": 309,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3515",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Lamongan",
+    "type": "Kabupaten",
+    "riskIndex": 49,
+    "riskLevel": "moderate",
+    "provinceRank": 12,
+    "totalInProvince": 38,
+    "nationalRank": 315,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3517",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Magetan",
+    "type": "Kabupaten",
+    "riskIndex": 49,
+    "riskLevel": "moderate",
+    "provinceRank": 13,
+    "totalInProvince": 38,
+    "nationalRank": 316,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3504",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Sumenep",
+    "type": "Kabupaten",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 14,
+    "totalInProvince": 38,
+    "nationalRank": 364,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3509",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Lumajang",
+    "type": "Kabupaten",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 15,
+    "totalInProvince": 38,
+    "nationalRank": 365,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3518",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Ponorogo",
+    "type": "Kabupaten",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 16,
+    "totalInProvince": 38,
+    "nationalRank": 366,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3519",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Pacitan",
+    "type": "Kabupaten",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 17,
+    "totalInProvince": 38,
+    "nationalRank": 367,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3526",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Mojokerto",
+    "type": "Kabupaten",
+    "riskIndex": 45,
+    "riskLevel": "moderate",
+    "provinceRank": 18,
+    "totalInProvince": 38,
+    "nationalRank": 368,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3514",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Tuban",
+    "type": "Kabupaten",
+    "riskIndex": 43,
+    "riskLevel": "moderate",
+    "provinceRank": 19,
+    "totalInProvince": 38,
+    "nationalRank": 385,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3516",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Ngawi",
+    "type": "Kabupaten",
+    "riskIndex": 43,
+    "riskLevel": "moderate",
+    "provinceRank": 20,
+    "totalInProvince": 38,
+    "nationalRank": 386,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3523",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Kediri",
+    "type": "Kabupaten",
+    "riskIndex": 41,
+    "riskLevel": "moderate",
+    "provinceRank": 21,
+    "totalInProvince": 38,
+    "nationalRank": 397,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3525",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Jombang",
+    "type": "Kabupaten",
+    "riskIndex": 41,
+    "riskLevel": "moderate",
+    "provinceRank": 22,
+    "totalInProvince": 38,
+    "nationalRank": 398,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3507",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Probolinggo",
+    "type": "Kabupaten",
+    "riskIndex": 40,
+    "riskLevel": "moderate",
+    "provinceRank": 23,
+    "totalInProvince": 38,
+    "nationalRank": 408,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3521",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Tulungagung",
+    "type": "Kabupaten",
+    "riskIndex": 40,
+    "riskLevel": "moderate",
+    "provinceRank": 24,
+    "totalInProvince": 38,
+    "nationalRank": 409,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3505",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Bondowoso",
+    "type": "Kabupaten",
+    "riskIndex": 39,
+    "riskLevel": "moderate",
+    "provinceRank": 25,
+    "totalInProvince": 38,
+    "nationalRank": 420,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3538",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kota Surabaya",
+    "type": "Kota",
+    "riskIndex": 39,
+    "riskLevel": "moderate",
+    "provinceRank": 26,
+    "totalInProvince": 38,
+    "nationalRank": 421,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3527",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Gresik",
+    "type": "Kabupaten",
+    "riskIndex": 38,
+    "riskLevel": "moderate",
+    "provinceRank": 27,
+    "totalInProvince": 38,
+    "nationalRank": 425,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "3528",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Madiun",
+    "type": "Kabupaten",
+    "riskIndex": 38,
+    "riskLevel": "moderate",
+    "provinceRank": 28,
+    "totalInProvince": 38,
+    "nationalRank": 426,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3529",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Sidoarjo",
+    "type": "Kabupaten",
+    "riskIndex": 38,
+    "riskLevel": "moderate",
+    "provinceRank": 29,
+    "totalInProvince": 38,
+    "nationalRank": 427,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3532",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kota Kediri",
+    "type": "Kota",
+    "riskIndex": 37,
+    "riskLevel": "moderate",
+    "provinceRank": 30,
+    "totalInProvince": 38,
+    "nationalRank": 432,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3513",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kab. Bojonegoro",
+    "type": "Kabupaten",
+    "riskIndex": 35,
+    "riskLevel": "moderate",
+    "provinceRank": 31,
+    "totalInProvince": 38,
+    "nationalRank": 443,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3530",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kota Probolinggo",
+    "type": "Kota",
+    "riskIndex": 34,
+    "riskLevel": "moderate",
+    "provinceRank": 32,
+    "totalInProvince": 38,
+    "nationalRank": 452,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3534",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kota Mojokerto",
+    "type": "Kota",
+    "riskIndex": 33,
+    "riskLevel": "moderate",
+    "provinceRank": 33,
+    "totalInProvince": 38,
+    "nationalRank": 456,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3531",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kota Pasuruan",
+    "type": "Kota",
+    "riskIndex": 30,
+    "riskLevel": "moderate",
+    "provinceRank": 34,
+    "totalInProvince": 38,
+    "nationalRank": 477,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "3537",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kota Malang",
+    "type": "Kota",
+    "riskIndex": 30,
+    "riskLevel": "moderate",
+    "provinceRank": 35,
+    "totalInProvince": 38,
+    "nationalRank": 478,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3533",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kota Blitar",
+    "type": "Kota",
+    "riskIndex": 28,
+    "riskLevel": "moderate",
+    "provinceRank": 36,
+    "totalInProvince": 38,
+    "nationalRank": 484,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "3536",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kota Batu",
+    "type": "Kota",
+    "riskIndex": 28,
+    "riskLevel": "moderate",
+    "provinceRank": 37,
+    "totalInProvince": 38,
+    "nationalRank": 485,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "3535",
+    "provinceId": "35",
+    "provinceName": "Jawa Timur",
+    "name": "Kota Madiun",
+    "type": "Kota",
+    "riskIndex": 25,
+    "riskLevel": "moderate",
+    "provinceRank": 38,
+    "totalInProvince": 38,
+    "nationalRank": 491,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Berat Badan Lahir Rendah (BBLR)",
+      "en": "Low Birth Weight (LBW) Prevalence"
+    }
+  }
+]

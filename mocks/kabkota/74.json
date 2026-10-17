@@ -1,0 +1,291 @@
+[
+  {
+    "id": "7403",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Buton Utara",
+    "type": "Kabupaten",
+    "riskIndex": 77,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 17,
+    "nationalRank": 58,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7414",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Kolaka Utara",
+    "type": "Kabupaten",
+    "riskIndex": 76,
+    "riskLevel": "very_high",
+    "provinceRank": 2,
+    "totalInProvince": 17,
+    "nationalRank": 69,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7410",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Konawe Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 75,
+    "riskLevel": "very_high",
+    "provinceRank": 3,
+    "totalInProvince": 17,
+    "nationalRank": 77,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7411",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Konawe Utara",
+    "type": "Kabupaten",
+    "riskIndex": 75,
+    "riskLevel": "very_high",
+    "provinceRank": 4,
+    "totalInProvince": 17,
+    "nationalRank": 78,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7404",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Buton",
+    "type": "Kabupaten",
+    "riskIndex": 74,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 17,
+    "nationalRank": 88,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7407",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Wakatobi",
+    "type": "Kabupaten",
+    "riskIndex": 73,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 17,
+    "nationalRank": 92,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7413",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Kolaka Timur",
+    "type": "Kabupaten",
+    "riskIndex": 72,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 17,
+    "nationalRank": 99,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "7406",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Muna",
+    "type": "Kabupaten",
+    "riskIndex": 70,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 17,
+    "nationalRank": 111,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7412",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Konawe",
+    "type": "Kabupaten",
+    "riskIndex": 70,
+    "riskLevel": "high",
+    "provinceRank": 9,
+    "totalInProvince": 17,
+    "nationalRank": 112,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7401",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Buton Tengah",
+    "type": "Kabupaten",
+    "riskIndex": 69,
+    "riskLevel": "high",
+    "provinceRank": 10,
+    "totalInProvince": 17,
+    "nationalRank": 120,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "7402",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Buton Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 68,
+    "riskLevel": "high",
+    "provinceRank": 11,
+    "totalInProvince": 17,
+    "nationalRank": 125,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7408",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Bombana",
+    "type": "Kabupaten",
+    "riskIndex": 67,
+    "riskLevel": "high",
+    "provinceRank": 12,
+    "totalInProvince": 17,
+    "nationalRank": 136,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7405",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Muna Barat",
+    "type": "Kabupaten",
+    "riskIndex": 62,
+    "riskLevel": "high",
+    "provinceRank": 13,
+    "totalInProvince": 17,
+    "nationalRank": 169,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "7409",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Konawe Kepulauan",
+    "type": "Kabupaten",
+    "riskIndex": 59,
+    "riskLevel": "high",
+    "provinceRank": 14,
+    "totalInProvince": 17,
+    "nationalRank": 203,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7415",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kab. Kolaka",
+    "type": "Kabupaten",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 15,
+    "totalInProvince": 17,
+    "nationalRank": 245,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7417",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kota Kendari",
+    "type": "Kota",
+    "riskIndex": 55,
+    "riskLevel": "high",
+    "provinceRank": 16,
+    "totalInProvince": 17,
+    "nationalRank": 259,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "7416",
+    "provinceId": "74",
+    "provinceName": "Sulawesi Tenggara",
+    "name": "Kota Baubau",
+    "type": "Kota",
+    "riskIndex": 48,
+    "riskLevel": "moderate",
+    "provinceRank": 17,
+    "totalInProvince": 17,
+    "nationalRank": 332,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  }
+]

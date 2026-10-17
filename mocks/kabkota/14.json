@@ -1,0 +1,206 @@
+[
+  {
+    "id": "1406",
+    "provinceId": "14",
+    "provinceName": "Riau",
+    "name": "Kab. Kampar",
+    "type": "Kabupaten",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 12,
+    "nationalRank": 234,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1404",
+    "provinceId": "14",
+    "provinceName": "Riau",
+    "name": "Kab. Indragiri Hilir",
+    "type": "Kabupaten",
+    "riskIndex": 55,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 12,
+    "nationalRank": 251,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1409",
+    "provinceId": "14",
+    "provinceName": "Riau",
+    "name": "Kab. Bengkalis",
+    "type": "Kabupaten",
+    "riskIndex": 55,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 12,
+    "nationalRank": 252,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "1407",
+    "provinceId": "14",
+    "provinceName": "Riau",
+    "name": "Kab. Pelalawan",
+    "type": "Kabupaten",
+    "riskIndex": 54,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 12,
+    "nationalRank": 264,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1408",
+    "provinceId": "14",
+    "provinceName": "Riau",
+    "name": "Kab. Kuantan Singingi",
+    "type": "Kabupaten",
+    "riskIndex": 53,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 12,
+    "nationalRank": 277,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1403",
+    "provinceId": "14",
+    "provinceName": "Riau",
+    "name": "Kab. Rokan Hulu",
+    "type": "Kabupaten",
+    "riskIndex": 47,
+    "riskLevel": "moderate",
+    "provinceRank": 6,
+    "totalInProvince": 12,
+    "nationalRank": 338,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "1410",
+    "provinceId": "14",
+    "provinceName": "Riau",
+    "name": "Kab. Siak",
+    "type": "Kabupaten",
+    "riskIndex": 47,
+    "riskLevel": "moderate",
+    "provinceRank": 7,
+    "totalInProvince": 12,
+    "nationalRank": 339,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1401",
+    "provinceId": "14",
+    "provinceName": "Riau",
+    "name": "Kab. Kepulauan Meranti",
+    "type": "Kabupaten",
+    "riskIndex": 44,
+    "riskLevel": "moderate",
+    "provinceRank": 8,
+    "totalInProvince": 12,
+    "nationalRank": 372,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1402",
+    "provinceId": "14",
+    "provinceName": "Riau",
+    "name": "Kab. Rokan Hilir",
+    "type": "Kabupaten",
+    "riskIndex": 39,
+    "riskLevel": "moderate",
+    "provinceRank": 9,
+    "totalInProvince": 12,
+    "nationalRank": 412,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1405",
+    "provinceId": "14",
+    "provinceName": "Riau",
+    "name": "Kab. Indragiri Hulu",
+    "type": "Kabupaten",
+    "riskIndex": 33,
+    "riskLevel": "moderate",
+    "provinceRank": 10,
+    "totalInProvince": 12,
+    "nationalRank": 454,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "1411",
+    "provinceId": "14",
+    "provinceName": "Riau",
+    "name": "Kota Dumai",
+    "type": "Kota",
+    "riskIndex": 30,
+    "riskLevel": "moderate",
+    "provinceRank": 11,
+    "totalInProvince": 12,
+    "nationalRank": 472,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "1412",
+    "provinceId": "14",
+    "provinceName": "Riau",
+    "name": "Kota Pekanbaru",
+    "type": "Kota",
+    "riskIndex": 28,
+    "riskLevel": "moderate",
+    "provinceRank": 12,
+    "totalInProvince": 12,
+    "nationalRank": 481,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  }
+]

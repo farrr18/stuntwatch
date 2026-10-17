@@ -1,0 +1,87 @@
+[
+  {
+    "id": "6502",
+    "provinceId": "65",
+    "provinceName": "Kalimantan Utara",
+    "name": "Kab. Malinau",
+    "type": "Kabupaten",
+    "riskIndex": 57,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 5,
+    "nationalRank": 228,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "6501",
+    "provinceId": "65",
+    "provinceName": "Kalimantan Utara",
+    "name": "Kab. Nunukan",
+    "type": "Kabupaten",
+    "riskIndex": 52,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 5,
+    "nationalRank": 295,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6503",
+    "provinceId": "65",
+    "provinceName": "Kalimantan Utara",
+    "name": "Kab. Bulungan",
+    "type": "Kabupaten",
+    "riskIndex": 52,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 5,
+    "nationalRank": 296,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "6504",
+    "provinceId": "65",
+    "provinceName": "Kalimantan Utara",
+    "name": "Kab. Tana Tidung",
+    "type": "Kabupaten",
+    "riskIndex": 50,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 5,
+    "nationalRank": 310,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "6505",
+    "provinceId": "65",
+    "provinceName": "Kalimantan Utara",
+    "name": "Kota Tarakan",
+    "type": "Kota",
+    "riskIndex": 32,
+    "riskLevel": "moderate",
+    "provinceRank": 5,
+    "totalInProvince": 5,
+    "nationalRank": 464,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Berat Badan Lahir Rendah (BBLR)",
+      "en": "Low Birth Weight (LBW) Prevalence"
+    }
+  }
+]

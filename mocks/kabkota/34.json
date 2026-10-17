@@ -1,0 +1,87 @@
+[
+  {
+    "id": "3403",
+    "provinceId": "34",
+    "provinceName": "DI Yogyakarta",
+    "name": "Kab. Bantul",
+    "type": "Kabupaten",
+    "riskIndex": 33,
+    "riskLevel": "moderate",
+    "provinceRank": 1,
+    "totalInProvince": 5,
+    "nationalRank": 455,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "3404",
+    "provinceId": "34",
+    "provinceName": "DI Yogyakarta",
+    "name": "Kab. Sleman",
+    "type": "Kabupaten",
+    "riskIndex": 24,
+    "riskLevel": "low",
+    "provinceRank": 2,
+    "totalInProvince": 5,
+    "nationalRank": 493,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3402",
+    "provinceId": "34",
+    "provinceName": "DI Yogyakarta",
+    "name": "Kab. Kulon Progo",
+    "type": "Kabupaten",
+    "riskIndex": 21,
+    "riskLevel": "low",
+    "provinceRank": 3,
+    "totalInProvince": 5,
+    "nationalRank": 498,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Berat Badan Lahir Rendah (BBLR)",
+      "en": "Low Birth Weight (LBW) Prevalence"
+    }
+  },
+  {
+    "id": "3401",
+    "provinceId": "34",
+    "provinceName": "DI Yogyakarta",
+    "name": "Kab. Gunungkidul",
+    "type": "Kabupaten",
+    "riskIndex": 19,
+    "riskLevel": "low",
+    "provinceRank": 4,
+    "totalInProvince": 5,
+    "nationalRank": 500,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "3405",
+    "provinceId": "34",
+    "provinceName": "DI Yogyakarta",
+    "name": "Kota Yogyakarta",
+    "type": "Kota",
+    "riskIndex": 15,
+    "riskLevel": "low",
+    "provinceRank": 5,
+    "totalInProvince": 5,
+    "nationalRank": 503,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  }
+]

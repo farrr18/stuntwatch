@@ -1,0 +1,376 @@
+[
+  {
+    "id": "5301",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Timor Tengah Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 96,
+    "riskLevel": "very_high",
+    "provinceRank": 1,
+    "totalInProvince": 22,
+    "nationalRank": 1,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5302",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Timor Tengah Utara",
+    "type": "Kabupaten",
+    "riskIndex": 96,
+    "riskLevel": "very_high",
+    "provinceRank": 2,
+    "totalInProvince": 22,
+    "nationalRank": 2,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5303",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Sumba Barat Daya",
+    "type": "Kabupaten",
+    "riskIndex": 96,
+    "riskLevel": "very_high",
+    "provinceRank": 3,
+    "totalInProvince": 22,
+    "nationalRank": 3,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5306",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Sumba Barat",
+    "type": "Kabupaten",
+    "riskIndex": 96,
+    "riskLevel": "very_high",
+    "provinceRank": 4,
+    "totalInProvince": 22,
+    "nationalRank": 4,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5310",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Kupang",
+    "type": "Kabupaten",
+    "riskIndex": 96,
+    "riskLevel": "very_high",
+    "provinceRank": 5,
+    "totalInProvince": 22,
+    "nationalRank": 5,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5316",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Lembata",
+    "type": "Kabupaten",
+    "riskIndex": 93,
+    "riskLevel": "very_high",
+    "provinceRank": 6,
+    "totalInProvince": 22,
+    "nationalRank": 10,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5318",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Sikka",
+    "type": "Kabupaten",
+    "riskIndex": 93,
+    "riskLevel": "very_high",
+    "provinceRank": 7,
+    "totalInProvince": 22,
+    "nationalRank": 11,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5320",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Nagekeo",
+    "type": "Kabupaten",
+    "riskIndex": 92,
+    "riskLevel": "very_high",
+    "provinceRank": 8,
+    "totalInProvince": 22,
+    "nationalRank": 13,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5309",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Manggarai Barat",
+    "type": "Kabupaten",
+    "riskIndex": 89,
+    "riskLevel": "very_high",
+    "provinceRank": 9,
+    "totalInProvince": 22,
+    "nationalRank": 16,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5305",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Sumba Timur",
+    "type": "Kabupaten",
+    "riskIndex": 88,
+    "riskLevel": "very_high",
+    "provinceRank": 10,
+    "totalInProvince": 22,
+    "nationalRank": 18,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5321",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Ngada",
+    "type": "Kabupaten",
+    "riskIndex": 88,
+    "riskLevel": "very_high",
+    "provinceRank": 11,
+    "totalInProvince": 22,
+    "nationalRank": 19,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5308",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Manggarai",
+    "type": "Kabupaten",
+    "riskIndex": 87,
+    "riskLevel": "very_high",
+    "provinceRank": 12,
+    "totalInProvince": 22,
+    "nationalRank": 23,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5314",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Belu",
+    "type": "Kabupaten",
+    "riskIndex": 87,
+    "riskLevel": "very_high",
+    "provinceRank": 13,
+    "totalInProvince": 22,
+    "nationalRank": 24,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5315",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Alor",
+    "type": "Kabupaten",
+    "riskIndex": 86,
+    "riskLevel": "very_high",
+    "provinceRank": 14,
+    "totalInProvince": 22,
+    "nationalRank": 27,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5304",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Sumba Tengah",
+    "type": "Kabupaten",
+    "riskIndex": 83,
+    "riskLevel": "very_high",
+    "provinceRank": 15,
+    "totalInProvince": 22,
+    "nationalRank": 33,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5311",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Rote Ndao",
+    "type": "Kabupaten",
+    "riskIndex": 83,
+    "riskLevel": "very_high",
+    "provinceRank": 16,
+    "totalInProvince": 22,
+    "nationalRank": 34,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5307",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Manggarai Timur",
+    "type": "Kabupaten",
+    "riskIndex": 82,
+    "riskLevel": "very_high",
+    "provinceRank": 17,
+    "totalInProvince": 22,
+    "nationalRank": 39,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5312",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Sabu Raijua",
+    "type": "Kabupaten",
+    "riskIndex": 82,
+    "riskLevel": "very_high",
+    "provinceRank": 18,
+    "totalInProvince": 22,
+    "nationalRank": 40,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5319",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Ende",
+    "type": "Kabupaten",
+    "riskIndex": 81,
+    "riskLevel": "very_high",
+    "provinceRank": 19,
+    "totalInProvince": 22,
+    "nationalRank": 43,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5317",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Flores Timur",
+    "type": "Kabupaten",
+    "riskIndex": 80,
+    "riskLevel": "very_high",
+    "provinceRank": 20,
+    "totalInProvince": 22,
+    "nationalRank": 48,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5313",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kab. Malaka",
+    "type": "Kabupaten",
+    "riskIndex": 79,
+    "riskLevel": "very_high",
+    "provinceRank": 21,
+    "totalInProvince": 22,
+    "nationalRank": 51,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "5322",
+    "provinceId": "53",
+    "provinceName": "Nusa Tenggara Timur",
+    "name": "Kota Kupang",
+    "type": "Kota",
+    "riskIndex": 71,
+    "riskLevel": "high",
+    "provinceRank": 22,
+    "totalInProvince": 22,
+    "nationalRank": 102,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  }
+]

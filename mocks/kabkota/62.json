@@ -1,0 +1,240 @@
+[
+  {
+    "id": "6205",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kab. Murung Raya",
+    "type": "Kabupaten",
+    "riskIndex": 72,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 14,
+    "nationalRank": 98,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "6203",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kab. Barito Selatan",
+    "type": "Kabupaten",
+    "riskIndex": 68,
+    "riskLevel": "high",
+    "provinceRank": 2,
+    "totalInProvince": 14,
+    "nationalRank": 122,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "6206",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kab. Gunung Mas",
+    "type": "Kabupaten",
+    "riskIndex": 68,
+    "riskLevel": "high",
+    "provinceRank": 3,
+    "totalInProvince": 14,
+    "nationalRank": 123,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "6212",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kab. Sukamara",
+    "type": "Kabupaten",
+    "riskIndex": 67,
+    "riskLevel": "high",
+    "provinceRank": 4,
+    "totalInProvince": 14,
+    "nationalRank": 129,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "6208",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kab. Katingan",
+    "type": "Kabupaten",
+    "riskIndex": 63,
+    "riskLevel": "high",
+    "provinceRank": 5,
+    "totalInProvince": 14,
+    "nationalRank": 156,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6202",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kab. Barito Timur",
+    "type": "Kabupaten",
+    "riskIndex": 61,
+    "riskLevel": "high",
+    "provinceRank": 6,
+    "totalInProvince": 14,
+    "nationalRank": 175,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  },
+  {
+    "id": "6211",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kab. Kotawaringin Barat",
+    "type": "Kabupaten",
+    "riskIndex": 59,
+    "riskLevel": "high",
+    "provinceRank": 7,
+    "totalInProvince": 14,
+    "nationalRank": 200,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6204",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kab. Barito Utara",
+    "type": "Kabupaten",
+    "riskIndex": 56,
+    "riskLevel": "high",
+    "provinceRank": 8,
+    "totalInProvince": 14,
+    "nationalRank": 242,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "6210",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kab. Seruyan",
+    "type": "Kabupaten",
+    "riskIndex": 54,
+    "riskLevel": "high",
+    "provinceRank": 9,
+    "totalInProvince": 14,
+    "nationalRank": 269,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6201",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kab. Kapuas",
+    "type": "Kabupaten",
+    "riskIndex": 53,
+    "riskLevel": "high",
+    "provinceRank": 10,
+    "totalInProvince": 14,
+    "nationalRank": 283,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6209",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kab. Kotawaringin Timur",
+    "type": "Kabupaten",
+    "riskIndex": 53,
+    "riskLevel": "high",
+    "provinceRank": 11,
+    "totalInProvince": 14,
+    "nationalRank": 284,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "6213",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kab. Lamandau",
+    "type": "Kabupaten",
+    "riskIndex": 53,
+    "riskLevel": "high",
+    "provinceRank": 12,
+    "totalInProvince": 14,
+    "nationalRank": 285,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "6207",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kab. Pulang Pisau",
+    "type": "Kabupaten",
+    "riskIndex": 51,
+    "riskLevel": "high",
+    "provinceRank": 13,
+    "totalInProvince": 14,
+    "nationalRank": 302,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "6214",
+    "provinceId": "62",
+    "provinceName": "Kalimantan Tengah",
+    "name": "Kota Palangka Raya",
+    "type": "Kota",
+    "riskIndex": 49,
+    "riskLevel": "moderate",
+    "provinceRank": 14,
+    "totalInProvince": 14,
+    "nationalRank": 317,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  }
+]

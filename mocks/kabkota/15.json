@@ -1,0 +1,189 @@
+[
+  {
+    "id": "1507",
+    "provinceId": "15",
+    "provinceName": "Jambi",
+    "name": "Kab. Tebo",
+    "type": "Kabupaten",
+    "riskIndex": 52,
+    "riskLevel": "high",
+    "provinceRank": 1,
+    "totalInProvince": 11,
+    "nationalRank": 288,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1505",
+    "provinceId": "15",
+    "provinceName": "Jambi",
+    "name": "Kab. Sarolangun",
+    "type": "Kabupaten",
+    "riskIndex": 43,
+    "riskLevel": "moderate",
+    "provinceRank": 2,
+    "totalInProvince": 11,
+    "nationalRank": 381,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1503",
+    "provinceId": "15",
+    "provinceName": "Jambi",
+    "name": "Kab. Kerinci",
+    "type": "Kabupaten",
+    "riskIndex": 42,
+    "riskLevel": "moderate",
+    "provinceRank": 3,
+    "totalInProvince": 11,
+    "nationalRank": 391,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)",
+      "en": "Food Insecurity Prevalence (PoU)"
+    }
+  },
+  {
+    "id": "1509",
+    "provinceId": "15",
+    "provinceName": "Jambi",
+    "name": "Kab. Muaro Jambi",
+    "type": "Kabupaten",
+    "riskIndex": 42,
+    "riskLevel": "moderate",
+    "provinceRank": 4,
+    "totalInProvince": 11,
+    "nationalRank": 392,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Angka Perkawinan Usia Anak",
+      "en": "Child & Early Marriage Rate"
+    }
+  },
+  {
+    "id": "1502",
+    "provinceId": "15",
+    "provinceName": "Jambi",
+    "name": "Kab. Tanjung Jabung Barat",
+    "type": "Kabupaten",
+    "riskIndex": 34,
+    "riskLevel": "moderate",
+    "provinceRank": 5,
+    "totalInProvince": 11,
+    "nationalRank": 448,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1506",
+    "provinceId": "15",
+    "provinceName": "Jambi",
+    "name": "Kab. Batanghari",
+    "type": "Kabupaten",
+    "riskIndex": 34,
+    "riskLevel": "moderate",
+    "provinceRank": 6,
+    "totalInProvince": 11,
+    "nationalRank": 449,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Sanitasi Layak",
+      "en": "Improved Sanitation Access"
+    }
+  },
+  {
+    "id": "1501",
+    "provinceId": "15",
+    "provinceName": "Jambi",
+    "name": "Kab. Tanjung Jabung Timur",
+    "type": "Kabupaten",
+    "riskIndex": 31,
+    "riskLevel": "moderate",
+    "provinceRank": 7,
+    "totalInProvince": 11,
+    "nationalRank": 465,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1504",
+    "provinceId": "15",
+    "provinceName": "Jambi",
+    "name": "Kab. Merangin",
+    "type": "Kabupaten",
+    "riskIndex": 31,
+    "riskLevel": "moderate",
+    "provinceRank": 8,
+    "totalInProvince": 11,
+    "nationalRank": 466,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Imunisasi Dasar Lengkap (IDL)",
+      "en": "Complete Basic Immunization"
+    }
+  },
+  {
+    "id": "1510",
+    "provinceId": "15",
+    "provinceName": "Jambi",
+    "name": "Kota Sungai Penuh",
+    "type": "Kota",
+    "riskIndex": 30,
+    "riskLevel": "moderate",
+    "provinceRank": 9,
+    "totalInProvince": 11,
+    "nationalRank": 473,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1508",
+    "provinceId": "15",
+    "provinceName": "Jambi",
+    "name": "Kab. Bungo",
+    "type": "Kabupaten",
+    "riskIndex": 29,
+    "riskLevel": "moderate",
+    "provinceRank": 10,
+    "totalInProvince": 11,
+    "nationalRank": 479,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Akses Air Minum Layak",
+      "en": "Clean Drinking Water Access"
+    }
+  },
+  {
+    "id": "1511",
+    "provinceId": "15",
+    "provinceName": "Jambi",
+    "name": "Kota Jambi",
+    "type": "Kota",
+    "riskIndex": 20,
+    "riskLevel": "low",
+    "provinceRank": 11,
+    "totalInProvince": 11,
+    "nationalRank": 499,
+    "totalNational": 514,
+    "topDriverLabel": {
+      "id": "Tingkat Kemiskinan",
+      "en": "Poverty Rate"
+    }
+  }
+]
