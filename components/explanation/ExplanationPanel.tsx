@@ -228,9 +228,9 @@ export function ExplanationPanel({
                     {t("provRankLabel")}
                   </p>
                   <p className="font-mono text-xs font-bold text-slate-900 dark:text-white">
-                    #{data.provinceRank}{" "}
+                    {data.totalInProvince}{" "}
                     <span className="font-normal text-slate-500 dark:text-slate-400">
-                      {t("of")} {data.totalInProvince}
+                      Kab/Kota
                     </span>
                   </p>
                 </div>
@@ -240,9 +240,9 @@ export function ExplanationPanel({
                     {t("natRankLabel")}
                   </p>
                   <p className="font-mono text-xs font-bold text-slate-900 dark:text-white">
-                    #{data.nationalRank}{" "}
+                    {data.totalNational}{" "}
                     <span className="font-normal text-slate-500 dark:text-slate-400">
-                      {t("of")} {data.totalNational}
+                      Kab/Kota
                     </span>
                   </p>
                 </div>

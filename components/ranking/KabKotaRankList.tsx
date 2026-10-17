@@ -70,8 +70,8 @@ export function KabKotaRankList({
           <AlertTriangle className="h-4 w-4 shrink-0 text-amber-600 dark:text-amber-400" />
           <span>
             {locale === "id"
-              ? "⚠️ Diurutkan berdasarkan Aktual SSGI (%) tertinggi. Nilai prediksi dengan tanda ⚠️ menggunakan rata-rata Proxy Provinsi."
-              : "⚠️ Sorted by highest SSGI Actual (%). Predictions marked ⚠️ rely on Province Proxy averages."}
+              ? "⚠️ Diurutkan berdasarkan prevalensi Aktual SSGI (%) tertinggi ke terendah untuk memandu prioritas intervensi. Nilai estimasi dengan tanda ⚠️ menggunakan rata-rata Proxy Provinsi."
+              : "⚠️ Sorted by highest to lowest SSGI Actual (%) prevalence to guide intervention priority. Estimations marked ⚠️ rely on Province Proxy averages."}
           </span>
         </span>
         {proxyCount > 0 && (
@@ -103,11 +103,10 @@ export function KabKotaRankList({
           </div>
         ) : (
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {filteredItems.map((item, idx) => (
+            {filteredItems.map((item) => (
               <KabKotaRankRow
                 key={item.id}
                 item={item}
-                rankIndex={idx + 1}
                 isSelected={selectedKabKotaId === item.id}
                 isHovered={hoveredKabKotaId === item.id}
                 onSelect={onSelectKabKota}

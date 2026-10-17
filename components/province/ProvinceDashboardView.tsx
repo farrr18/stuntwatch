@@ -153,7 +153,7 @@ export function ProvinceDashboardView({
     anchorId: string;
   }> = [
     {
-      label: locale === "id" ? "Peta & Peringkat" : "Map & Rankings",
+      label: locale === "id" ? "Peta & Daftar Wilayah" : "Map & District List",
       key: "peringkat",
       anchorId: "peta-peringkat",
     },
@@ -377,7 +377,7 @@ export function ProvinceDashboardView({
         {/* 6. COLLAPSIBLE ACCORDION SECTIONS (COLLAPSED BY DEFAULT ON LOAD)       */}
         {/* ===================================================================== */}
 
-        {/* SECTION 1: Peringkat Aktual SSGI & Prediksi Risiko */}
+        {/* SECTION 1: Indeks Aktual SSGI & Estimasi Risiko Wilayah */}
         <section
           id="peta-peringkat"
           className="scroll-mt-28 rounded-2xl border border-slate-200 dark:border-[#232b3e] bg-white dark:bg-[#111622] p-5 text-slate-800 dark:text-slate-100 shadow-sm"
@@ -388,8 +388,8 @@ export function ProvinceDashboardView({
               <div className="flex flex-wrap items-center gap-2">
                 <h2 className="text-base font-bold text-slate-900 dark:text-white sm:text-lg">
                   {locale === "id"
-                    ? "Peringkat Aktual SSGI & Prediksi Risiko"
-                    : "SSGI Actual Ranking & Predicted Risk"}
+                    ? "Indeks Aktual SSGI & Estimasi Risiko Wilayah"
+                    : "SSGI Actual Index & Regional Risk Estimation"}
                 </h2>
                 <span className="inline-flex items-center rounded-full border border-amber-500/30 bg-amber-500/10 px-2.5 py-0.5 font-mono text-[11px] font-bold text-amber-800 dark:text-amber-300">
                   {proxyCount}/{totalCount} Proxy
@@ -401,8 +401,8 @@ export function ProvinceDashboardView({
               </div>
               <p className="mt-1 truncate text-xs text-slate-500 dark:text-slate-400">
                 {locale === "id"
-                  ? `Menampilkan ${totalCount} dari ${totalCount} wilayah kabupaten/kota di Provinsi ${provinceName}. Top prioritas: ${top3NamesWithActualPct}.`
-                  : `Showing ${totalCount} of ${totalCount} districts in ${provinceName} Province. Top priority: ${top3NamesWithActualPct}.`}
+                  ? `Menampilkan ${totalCount} dari ${totalCount} wilayah kabupaten/kota di Provinsi ${provinceName}. Prioritas tertinggi: ${top3NamesWithActualPct}.`
+                  : `Showing ${totalCount} of ${totalCount} districts in ${provinceName} Province. Highest priority: ${top3NamesWithActualPct}.`}
               </p>
             </div>
 
@@ -412,7 +412,7 @@ export function ProvinceDashboardView({
               aria-expanded={openSections.peringkat}
               aria-label={`${
                 openSections.peringkat ? "Sembunyikan" : "Lihat Detail"
-              } Peringkat Aktual SSGI & Prediksi Risiko`}
+              } Indeks Aktual SSGI & Estimasi Risiko Wilayah`}
               className={`inline-flex shrink-0 items-center gap-1.5 rounded-xl border px-3.5 py-2 text-xs font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 ${
                 openSections.peringkat
                   ? "border-teal-500/50 bg-teal-500/15 text-teal-800 dark:text-teal-300"

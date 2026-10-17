@@ -220,10 +220,10 @@ export function NationalSideDrawer({
             </div>
 
             <div className="flex items-center justify-between pt-0.5 text-[11px] font-semibold text-muted-foreground">
-              <span>
+              <span className="uppercase tracking-wide">
                 {locale === "id"
-                  ? "Tabel 38 Provinsi (Risiko Tertinggi)"
-                  : "38 Provinces (Sorted by Risk)"}
+                  ? "DAFTAR 38 PROVINSI — INDEKS & RISIKO STUNTING"
+                  : "38 PROVINCES — STUNTING INDEX & RISK"}
               </span>
               <span className="font-mono font-bold">
                 {filteredProvinces.length}/{provinces.length}
@@ -231,7 +231,7 @@ export function NationalSideDrawer({
             </div>
           </div>
 
-          {/* Scrollable 38-Province Ranked List */}
+          {/* Scrollable 38-Province List */}
           <div className="flex-1 space-y-1.5 overflow-y-auto px-3 py-2.5">
             {filteredProvinces.map((p) => {
               const band = getRiskBandConfig(p.riskLevel);
@@ -258,15 +258,16 @@ export function NationalSideDrawer({
                   }`}
                 >
                   <div className="min-w-0">
-                    <div className="flex items-center gap-1.5">
-                      <span className="font-mono text-[11px] font-bold text-muted-foreground">
-                        #{p.nationalRank}
-                      </span>
+                    <div className="flex items-center gap-2">
+                      <span
+                        className={`h-2.5 w-2.5 shrink-0 rounded-full ${band.dotClass}`}
+                        aria-hidden="true"
+                      />
                       <span className="truncate font-bold text-foreground">
                         {p.name}
                       </span>
                     </div>
-                    <p className="mt-0.5 truncate text-[10px] text-muted-foreground">
+                    <p className="mt-0.5 truncate pl-4 text-[10px] text-muted-foreground">
                       Act: {p.avg_actual}% · Max: {p.highest_risk_kabupaten}
                     </p>
                   </div>
@@ -287,7 +288,7 @@ export function NationalSideDrawer({
         </div>
       )}
 
-      {/* TAB 2 CONTENT: National Watchlist (Top 15 Kabupaten/Kota, n=15) */}
+      {/* TAB 2 CONTENT: National Watchlist (15 Priority Kabupaten/Kota, n=15) */}
       {activeTab === "watchlist" && (
         <div
           role="tabpanel"
@@ -304,8 +305,8 @@ export function NationalSideDrawer({
               </h2>
               <p className="text-[10px] text-muted-foreground">
                 {locale === "id"
-                  ? "Top 15 Kabupaten/Kota Risiko Tertinggi"
-                  : "Top 15 Highest-Risk Districts Nationally"}
+                  ? "15 Kabupaten/Kota Prioritas Utama (Risiko Sangat Tinggi)"
+                  : "15 Priority Districts (Very High Risk)"}
               </p>
             </div>
             <span className="rounded-full bg-rose-500/15 px-2 py-0.5 font-mono text-[10px] font-bold text-[#D9463E]">
@@ -338,15 +339,16 @@ export function NationalSideDrawer({
                     className="group flex items-center justify-between gap-2 rounded-xl border border-border/75 bg-background p-2.5 text-xs transition-all hover:border-[#D9463E] hover:bg-muted/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring dark:bg-[#1c1f2a]"
                   >
                     <div className="min-w-0">
-                      <div className="flex items-center gap-1.5">
-                        <span className="inline-flex h-5 min-w-[22px] items-center justify-center rounded bg-rose-500/15 font-mono text-[10px] font-bold text-[#D9463E]">
-                          #{item.rank}
-                        </span>
+                      <div className="flex items-center gap-2">
+                        <span
+                          className={`h-2.5 w-2.5 shrink-0 rounded-full ${band.dotClass}`}
+                          aria-hidden="true"
+                        />
                         <span className="truncate font-bold text-foreground group-hover:text-[#D9463E]">
                           {item.kabupaten_kota}
                         </span>
                       </div>
-                      <p className="mt-0.5 truncate text-[10px] text-muted-foreground">
+                      <p className="mt-0.5 truncate pl-4 text-[10px] text-muted-foreground">
                         {item.provinsi} · Act: {item.actual}%
                       </p>
                     </div>
@@ -411,8 +413,8 @@ export function NationalSideDrawer({
           id="national-desktop-drawer"
           aria-label={
             locale === "id"
-              ? "Panel Peringkat Provinsi dan National Watchlist"
-              : "Province Rankings and National Watchlist Panel"
+              ? "Panel Daftar Provinsi dan National Watchlist"
+              : "Province Directory and National Watchlist Panel"
           }
           className={`h-full overflow-hidden border-l border-border bg-card/95 backdrop-blur-md transition-[width,opacity] duration-250 ease-out dark:bg-[#171b26]/95 ${
             isOpen
@@ -430,8 +432,8 @@ export function NationalSideDrawer({
       <aside
         aria-label={
           locale === "id"
-            ? "Lembar Bawah Peringkat Provinsi dan Watchlist"
-            : "Province Rankings and Watchlist Bottom Sheet"
+            ? "Lembar Bawah Daftar Provinsi dan Watchlist"
+            : "Province Directory and Watchlist Bottom Sheet"
         }
         className={`fixed inset-x-0 bottom-0 z-[500] flex flex-col rounded-t-2xl border-t border-border bg-card/95 shadow-2xl backdrop-blur-md transition-[height] duration-250 ease-out dark:bg-[#171b26]/95 lg:hidden ${mobileHeightClass}`}
       >
