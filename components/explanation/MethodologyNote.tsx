@@ -15,7 +15,7 @@ export function MethodologyNote({ methodology }: MethodologyNoteProps) {
   const { locale } = useAppLocale();
 
   return (
-    <div className="flex h-full flex-col justify-between rounded-xl border border-border bg-muted/40 p-4 sm:p-5 shadow-sm">
+    <div className="relative flex h-auto w-full flex-col gap-4 rounded-xl border border-border bg-muted/40 p-4 sm:p-6 shadow-sm">
       <div>
         <div className="mb-3 flex items-center gap-2">
           <ShieldAlert className="h-4 w-4 text-amber-600 dark:text-amber-400" />
@@ -24,7 +24,7 @@ export function MethodologyNote({ methodology }: MethodologyNoteProps) {
           </h3>
         </div>
 
-        <dl className="space-y-2.5 text-xs">
+        <dl className="grid grid-cols-1 gap-3 text-xs sm:grid-cols-3">
           <div className="rounded-lg border border-border/70 bg-background/80 p-2.5">
             <dt className="flex items-center gap-1.5 font-semibold text-muted-foreground">
               <Calendar className="h-3.5 w-3.5" />

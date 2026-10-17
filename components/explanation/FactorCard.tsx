@@ -40,8 +40,9 @@ export function FactorCard({
               {factor.contribution.toFixed(2)}
             </span>
             <span className="font-mono text-xs font-bold text-foreground">
-              {factor.value}
-              {factor.unit}
+              {factor.value !== null && factor.value !== undefined
+                ? `${factor.value}${factor.unit}`
+                : "Proxy"}
             </span>
           </div>
           <h4 className="mt-1.5 text-sm font-bold leading-snug text-foreground">
@@ -65,7 +66,7 @@ export function FactorCard({
           </p>
           <div className="rounded-lg bg-muted/60 p-2.5">
             <p className="flex items-center gap-1 font-semibold text-foreground">
-              <Info className="h-3.5 w-3.5 text-rose-600 dark:text-rose-400" />
+              <Info className="h-3.5 w-3.5 text-[#D9463E]" />
               <span>{t("mechanismLabel")}</span>
             </p>
             <p className="mt-1 leading-relaxed text-muted-foreground">

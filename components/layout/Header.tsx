@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { Activity } from "lucide-react";
+import { BrandLogo } from "./BrandLogo";
 import { LanguageToggle } from "./LanguageToggle";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -20,15 +20,12 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 h-16 w-full border-b border-border bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Col 1: Brand */}
+        {/* Col 1: BrandLogo (variant="ribbon") linking to Landing Page (/) */}
         <Link
           href="/"
-          className="group inline-flex items-center gap-2 text-xl font-bold tracking-tight text-foreground transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-1"
+          className="group inline-flex items-center pr-3 transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md"
         >
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-rose-600 text-white shadow-sm dark:bg-rose-500">
-            <Activity className="h-4 w-4" />
-          </span>
-          <span>{t("brand")}</span>
+          <BrandLogo variant="ribbon" />
         </Link>
 
         {/* Col 2: Navigation & Controls */}
@@ -41,7 +38,7 @@ export function Header() {
               href="/maps"
               className={`relative py-1 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm ${
                 isMapsActive
-                  ? "font-semibold text-foreground after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:rounded-full after:bg-rose-600 dark:after:bg-rose-400"
+                  ? "font-semibold text-foreground after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:rounded-full after:bg-[#D9463E]"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -51,7 +48,7 @@ export function Header() {
               href="/faq"
               className={`relative py-1 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm ${
                 isFaqActive
-                  ? "font-semibold text-foreground after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:rounded-full after:bg-rose-600 dark:after:bg-rose-400"
+                  ? "font-semibold text-foreground after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:rounded-full after:bg-[#D9463E]"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -61,7 +58,7 @@ export function Header() {
               href="/contact"
               className={`relative py-1 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm ${
                 isContactActive
-                  ? "font-semibold text-foreground after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:rounded-full after:bg-rose-600 dark:after:bg-rose-400"
+                  ? "font-semibold text-foreground after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:rounded-full after:bg-[#D9463E]"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >

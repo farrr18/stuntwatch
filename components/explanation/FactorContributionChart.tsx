@@ -32,22 +32,38 @@ export function FactorContributionChart({
 
   const [viewMode, setViewMode] = useState<"chart" | "table">("chart");
 
-  const chartData = useMemo(() => {
-    return [...factors]
-      .sort((a, b) => Math.abs(b.contribution) - Math.abs(a.contribution))
-      .map((f) => ({
+  const { chartData, maxAbs } = useMemo(() => {
+    const sorted = [...factors].sort(
+      (a, b) => Math.abs(b.contribution) - Math.abs(a.contribution)
+    );
+    const highest = sorted.reduce(
+      (acc, item) => Math.max(acc, Math.abs(item.contribution)),
+      1
+    );
+    const bound = Math.ceil((highest + 0.5) * 10) / 10;
+
+    return {
+      maxAbs: bound,
+      chartData: sorted.map((f) => ({
         id: f.id,
+        rawName: f.rawName ?? f.id,
         name: f.label[locale],
         contribution: f.contribution,
-        valueText: `${f.value}${f.unit}`,
+        valueText:
+          f.value !== null && f.value !== undefined
+            ? `${f.value}${f.unit}`
+            : "Proxy / N/A",
         natAvgText: `${f.nationalAvg}${f.unit}`,
-      }));
+      })),
+    };
   }, [factors, locale]);
 
+  const chartHeight = Math.max(300, chartData.length * 42);
+
   return (
-    <div className="flex h-full flex-col justify-between rounded-xl border border-border bg-card p-4 sm:p-5 shadow-sm">
+    <div className="relative flex h-full w-full flex-col justify-between gap-4 rounded-xl border border-border bg-card p-4 sm:p-6 shadow-sm">
       {/* Header + Accessible Toggle */}
-      <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <h3 className="text-sm font-bold text-foreground sm:text-base">
             {t("shapTitle")}
@@ -94,7 +110,7 @@ export function FactorContributionChart({
       </div>
 
       {/* Legend Pills */}
-      <div className="mb-2 flex flex-wrap items-center gap-4 text-xs">
+      <div className="flex flex-wrap items-center gap-4 text-xs">
         <span className="inline-flex items-center gap-1.5 font-medium text-rose-700 dark:text-rose-300">
           <span className="h-2.5 w-2.5 rounded-sm bg-rose-600 dark:bg-rose-400" />
           {t("riskIncreasing")}
@@ -106,17 +122,17 @@ export function FactorContributionChart({
       </div>
 
       {viewMode === "chart" ? (
-        <div className="h-[380px] w-full">
-          <ResponsiveContainer width="100%" height="100%">
+        <div className="w-full">
+          <ResponsiveContainer width="100%" height={chartHeight}>
             <BarChart
               data={chartData}
               layout="vertical"
-              margin={{ top: 6, right: 20, left: 10, bottom: 6 }}
+              margin={{ top: 4, right: 24, left: 10, bottom: 4 }}
             >
               <XAxis
                 type="number"
-                domain={[-1, 1]}
-                tickCount={5}
+                domain={[-maxAbs, maxAbs]}
+                tickCount={7}
                 tick={{
                   fontSize: 11,
                   fill: isDark ? "#94a3b8" : "#475569",
@@ -125,7 +141,7 @@ export function FactorContributionChart({
               <YAxis
                 type="category"
                 dataKey="name"
-                width={155}
+                width={165}
                 tick={{
                   fontSize: 11,
                   fill: isDark ? "#e2e8f0" : "#1e293b",
@@ -144,6 +160,9 @@ export function FactorContributionChart({
                   return (
                     <div className="rounded-lg border border-border bg-popover p-2.5 text-xs text-popover-foreground shadow-md">
                       <p className="font-bold">{row.name}</p>
+                      <p className="font-mono text-[10px] text-muted-foreground">
+                        {row.rawName}
+                      </p>
                       <p className="mt-1 font-mono">
                         SHAP:{" "}
                         <span
@@ -159,7 +178,7 @@ export function FactorContributionChart({
                         </span>
                       </p>
                       <p className="mt-0.5 text-muted-foreground">
-                        Value: {row.valueText} (Nat: {row.natAvgText})
+                        Value: {row.valueText}
                       </p>
                     </div>
                   );
@@ -182,7 +201,7 @@ export function FactorContributionChart({
           </ResponsiveContainer>
         </div>
       ) : (
-        <div className="max-h-[380px] overflow-y-auto rounded-lg border border-border">
+        <div className="max-h-[360px] overflow-y-auto rounded-lg border border-border">
           <table className="w-full text-left text-xs">
             <thead className="sticky top-0 bg-muted text-muted-foreground">
               <tr>
@@ -190,14 +209,17 @@ export function FactorContributionChart({
                   {t("colIndicator")}
                 </th>
                 <th className="px-3 py-2 font-semibold">{t("colRegion")}</th>
-                <th className="px-3 py-2 font-semibold">SHAP (-1..+1)</th>
+                <th className="px-3 py-2 font-semibold">SHAP</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
               {chartData.map((row) => (
                 <tr key={row.id} className="hover:bg-muted/40">
                   <td className="px-3 py-2 font-medium text-foreground">
-                    {row.name}
+                    <div>{row.name}</div>
+                    <div className="font-mono text-[10px] text-muted-foreground">
+                      {row.rawName}
+                    </div>
                   </td>
                   <td className="px-3 py-2 font-mono">{row.valueText}</td>
                   <td className="px-3 py-2 font-mono font-bold">

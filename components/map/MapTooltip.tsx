@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useTranslations } from "next-intl";
 import type { RiskLevel } from "@/lib/types";
 import { getRiskBandConfig, getRiskLabel } from "@/lib/colorScale";
 import { useAppLocale } from "@/lib/i18n";
@@ -28,10 +29,10 @@ export function MapTooltip({ info }: { info: TooltipInfo | null }) {
     <div
       role="tooltip"
       style={{
-        left: Math.min(info.x + 14, 620),
+        left: Math.min(info.x + 14, 540),
         top: Math.max(info.y - 12, 12),
       }}
-      className="pointer-events-none absolute z-30 min-w-[210px] max-w-[260px] -translate-y-full rounded-xl border border-border bg-popover/95 p-3 text-popover-foreground shadow-xl backdrop-blur-md transition-opacity duration-100"
+      className="pointer-events-none absolute z-30 min-w-[215px] max-w-[270px] -translate-y-full rounded-xl border border-border bg-popover/95 p-3 text-popover-foreground shadow-xl backdrop-blur-md transition-opacity duration-100"
     >
       <div className="flex items-start justify-between gap-2">
         <div>
@@ -45,9 +46,9 @@ export function MapTooltip({ info }: { info: TooltipInfo | null }) {
           )}
         </div>
         <span
-          className={`inline-flex shrink-0 items-center rounded-md border px-2 py-0.5 text-xs font-bold ${band.badgeClass}`}
+          className={`inline-flex shrink-0 items-center rounded-md border px-2 py-0.5 font-mono text-xs font-bold ${band.badgeClass}`}
         >
-          {info.riskIndex}/100
+          {info.riskIndex}%
         </span>
       </div>
 
@@ -64,9 +65,11 @@ export function MapTooltip({ info }: { info: TooltipInfo | null }) {
       </div>
 
       {info.extraLabel && info.extraValue && (
-        <div className="mt-1.5 flex items-center justify-between text-[11px] text-muted-foreground">
-          <span>{info.extraLabel}:</span>
-          <span className="font-medium text-foreground">{info.extraValue}</span>
+        <div className="mt-1.5 flex items-center justify-between gap-2 text-[11px] text-muted-foreground">
+          <span className="shrink-0">{info.extraLabel}:</span>
+          <span className="truncate font-medium text-foreground">
+            {info.extraValue}
+          </span>
         </div>
       )}
     </div>

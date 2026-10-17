@@ -25,7 +25,7 @@ export const RISK_BANDS: Record<RiskLevel, RiskBandConfig> = {
   low: {
     level: "low",
     min: 0,
-    max: 24,
+    max: 19.9,
     label: {
       id: "Rendah",
       en: "Low",
@@ -41,8 +41,8 @@ export const RISK_BANDS: Record<RiskLevel, RiskBandConfig> = {
   },
   moderate: {
     level: "moderate",
-    min: 25,
-    max: 49,
+    min: 20,
+    max: 29.9,
     label: {
       id: "Sedang",
       en: "Moderate",
@@ -58,8 +58,8 @@ export const RISK_BANDS: Record<RiskLevel, RiskBandConfig> = {
   },
   high: {
     level: "high",
-    min: 50,
-    max: 74,
+    min: 30,
+    max: 39.9,
     label: {
       id: "Tinggi",
       en: "High",
@@ -75,7 +75,7 @@ export const RISK_BANDS: Record<RiskLevel, RiskBandConfig> = {
   },
   very_high: {
     level: "very_high",
-    min: 75,
+    min: 40,
     max: 100,
     label: {
       id: "Sangat Tinggi",
@@ -100,26 +100,52 @@ export const RISK_LEVEL_ORDER: RiskLevel[] = [
 ];
 
 /**
- * Maps a numeric score (0-100) to a discrete RiskLevel band.
+ * Maps an API tier label ("Rendah", "Sedang", "Tinggi", "Sangat Tinggi") to RiskLevel.
  */
-export function getRiskLevelFromScore(score: number): RiskLevel {
-  const clamped = Math.max(0, Math.min(100, Math.round(score)));
-  if (clamped <= 24) return "low";
-  if (clamped <= 49) return "moderate";
-  if (clamped <= 74) return "high";
+export function getRiskLevelFromTier(tier?: string): RiskLevel | null {
+  if (!tier) return null;
+  const normalized = tier.trim().toLowerCase();
+  if (normalized === "sangat tinggi" || normalized === "very_high") {
+    return "very_high";
+  }
+  if (normalized === "tinggi" || normalized === "high") {
+    return "high";
+  }
+  if (normalized === "sedang" || normalized === "moderate") {
+    return "moderate";
+  }
+  if (normalized === "rendah" || normalized === "low") {
+    return "low";
+  }
+  return null;
+}
+
+/**
+ * Maps a numeric prevalence/risk score to a discrete RiskLevel band.
+ * Supports both WHO/SSGI Stunting Prevalence % (<20 Rendah, 20-29.9 Sedang, 30-39.9 Tinggi, >=40 Sangat Tinggi)
+ * and 0-100 index scores.
+ */
+export function getRiskLevelFromScore(score: number, tier?: string): RiskLevel {
+  const fromTier = getRiskLevelFromTier(tier);
+  if (fromTier) return fromTier;
+
+  if (score < 20) return "low";
+  if (score < 30) return "moderate";
+  if (score < 40) return "high";
   return "very_high";
 }
 
 /**
- * Continuous D3 color scale for map polygon fills (0 = Low Risk Green, 100 = Very High Risk Crimson).
- * Uses d3.interpolateRdYlGn(1 - t) as specified in design.md.
+ * Continuous D3 color scale for map polygon fills.
+ * Maps stunting prevalence / predicted risk (10% = Low Risk Emerald Green, 44% = Very High Risk Crimson)
+ * using d3.interpolateRdYlGn(1 - t).
  */
 const continuousScale = scaleSequential((t: number) =>
-  interpolateRdYlGn(1 - Math.max(0.04, Math.min(0.96, t)))
-).domain([0, 100]);
+  interpolateRdYlGn(1 - Math.max(0.05, Math.min(0.96, t)))
+).domain([12, 42]);
 
 export function getMapFillColor(score: number): string {
-  const clamped = Math.max(0, Math.min(100, score));
+  const clamped = Math.max(12, Math.min(42, score));
   return continuousScale(clamped);
 }
 
@@ -138,17 +164,15 @@ export function getRiskLabel(level: RiskLevel, locale: Locale = "id"): string {
 }
 
 /**
- * Returns semantic colors for SHAP factor contribution bars (-1 to +1)
+ * Returns semantic colors for SHAP factor contribution bars
  */
 export function getContributionColor(
   contribution: number,
   isDark: boolean = false
 ): string {
   if (contribution > 0) {
-    // Risk-increasing driver (Crimson/Coral)
     return isDark ? "#fb7185" : "#e11d48";
   }
-  // Protective factor (Emerald)
   return isDark ? "#34d399" : "#10b981";
 }
 
@@ -166,8 +190,8 @@ export function getComparisonStatusStyle(
       badgeClass:
         "bg-rose-100 text-rose-900 border-rose-300 dark:bg-rose-950/80 dark:text-rose-200 dark:border-rose-700/70",
       label: {
-        id: "Lebih Buruk",
-        en: "Worse than avg",
+        id: "Mendorong Risiko (+)",
+        en: "Increases Risk (+)",
       },
     };
   }
@@ -176,8 +200,8 @@ export function getComparisonStatusStyle(
       badgeClass:
         "bg-emerald-100 text-emerald-900 border-emerald-300 dark:bg-emerald-950/80 dark:text-emerald-200 dark:border-emerald-700/70",
       label: {
-        id: "Lebih Baik",
-        en: "Better than avg",
+        id: "Faktor Pelindung (-)",
+        en: "Protective (-)",
       },
     };
   }
@@ -185,19 +209,20 @@ export function getComparisonStatusStyle(
     badgeClass:
       "bg-slate-100 text-slate-800 border-slate-300 dark:bg-slate-800 dark:text-slate-200 dark:border-slate-700",
     label: {
-      id: "Setara Rata-rata",
-      en: "Near avg",
+      id: "Netral",
+      en: "Neutral",
     },
   };
 }
 
 /**
- * CSS linear-gradient string for the continuous MapLegend (0 to 100)
+ * CSS linear-gradient string for the continuous MapLegend
  */
 export function getLegendGradientCSS(): string {
   const stops: string[] = [];
   for (let i = 0; i <= 100; i += 10) {
-    stops.push(`${getMapFillColor(i)} ${i}%`);
+    const val = 12 + (i / 100) * 30;
+    stops.push(`${getMapFillColor(val)} ${i}%`);
   }
   return `linear-gradient(to right, ${stops.join(", ")})`;
 }

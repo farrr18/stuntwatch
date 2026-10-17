@@ -16,8 +16,8 @@ export function ComparisonTable({ factors }: ComparisonTableProps) {
   const { locale } = useAppLocale();
 
   return (
-    <div className="flex h-full flex-col justify-between rounded-xl border border-border bg-card p-4 sm:p-5 shadow-sm">
-      <div className="mb-3">
+    <div className="relative flex h-auto w-full flex-col gap-4 overflow-x-auto rounded-xl border border-border bg-card p-4 sm:p-6 shadow-sm">
+      <div>
         <h3 className="text-sm font-bold text-foreground sm:text-base">
           {t("comparisonTitle")}
         </h3>
@@ -26,16 +26,16 @@ export function ComparisonTable({ factors }: ComparisonTableProps) {
         </p>
       </div>
 
-      <div className="max-h-[415px] overflow-x-auto overflow-y-auto rounded-lg border border-border">
-        <table className="w-full min-w-[480px] text-left text-xs">
-          <thead className="sticky top-0 z-10 border-b border-border bg-muted/95 text-muted-foreground backdrop-blur-sm">
+      <div className="w-full overflow-x-auto rounded-lg border border-border">
+        <table className="w-full min-w-[600px] text-left text-xs">
+          <thead className="border-b border-border bg-muted/95 text-muted-foreground">
             <tr>
               <th className="px-3 py-2.5 font-semibold">{t("colIndicator")}</th>
               <th className="px-2.5 py-2.5 text-right font-semibold">
                 {t("colRegion")}
               </th>
               <th className="px-2.5 py-2.5 text-right font-semibold">
-                {t("colProvAvg")}
+                SHAP Impact
               </th>
               <th className="px-2.5 py-2.5 text-right font-semibold">
                 {t("colNatAvg")}
@@ -48,21 +48,29 @@ export function ComparisonTable({ factors }: ComparisonTableProps) {
           <tbody className="divide-y divide-border">
             {factors.map((f) => {
               const statusStyle = getComparisonStatusStyle(f.status);
+              const sign = f.contribution > 0 ? "+" : "";
               return (
-                <tr
-                  key={f.id}
-                  className="transition-colors hover:bg-muted/40"
-                >
+                <tr key={f.id} className="transition-colors hover:bg-muted/40">
                   <td className="px-3 py-2.5 font-medium text-foreground">
-                    {f.label[locale]}
+                    <div>{f.label[locale]}</div>
+                    <div className="font-mono text-[10px] text-muted-foreground">
+                      {f.rawName ?? f.id}
+                    </div>
                   </td>
                   <td className="px-2.5 py-2.5 text-right font-mono font-bold text-foreground">
-                    {f.value}
-                    {f.unit}
+                    {f.value !== null && f.value !== undefined
+                      ? `${f.value}${f.unit}`
+                      : "Proxy / N/A"}
                   </td>
-                  <td className="px-2.5 py-2.5 text-right font-mono text-muted-foreground">
-                    {f.provinceAvg}
-                    {f.unit}
+                  <td
+                    className={`px-2.5 py-2.5 text-right font-mono font-bold ${
+                      f.contribution > 0
+                        ? "text-rose-600 dark:text-rose-400"
+                        : "text-emerald-600 dark:text-emerald-400"
+                    }`}
+                  >
+                    {sign}
+                    {f.contribution.toFixed(2)}
                   </td>
                   <td className="px-2.5 py-2.5 text-right font-mono text-muted-foreground">
                     {f.nationalAvg}

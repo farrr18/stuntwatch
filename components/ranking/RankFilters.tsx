@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useTranslations } from "next-intl";
-import { Search, ArrowDownWideNarrow, ArrowUpNarrowWide, X } from "lucide-react";
+import { Search, ArrowDownWideNarrow, X } from "lucide-react";
 import type { RiskLevel } from "@/lib/types";
 import {
   RISK_LEVEL_ORDER,
@@ -11,13 +11,15 @@ import {
 } from "@/lib/colorScale";
 import { useAppLocale } from "@/lib/i18n";
 
+export type ProvinceSortKey = "actual" | "top_feature_shap";
+
 interface RankFiltersProps {
   searchQuery: string;
   onSearchChange: (q: string) => void;
   selectedBand: RiskLevel | "all";
   onBandChange: (band: RiskLevel | "all") => void;
-  sortOrder: "desc" | "asc";
-  onSortOrderChange: (order: "desc" | "asc") => void;
+  sortBy: ProvinceSortKey;
+  onSortByChange: (key: ProvinceSortKey) => void;
 }
 
 export function RankFilters({
@@ -25,16 +27,16 @@ export function RankFilters({
   onSearchChange,
   selectedBand,
   onBandChange,
-  sortOrder,
-  onSortOrderChange,
+  sortBy,
+  onSortByChange,
 }: RankFiltersProps) {
   const t = useTranslations("province");
   const { locale } = useAppLocale();
 
   return (
     <div className="flex flex-col gap-2.5 border-b border-border pb-3">
-      {/* Row 1: Search Input + Sort Toggle */}
-      <div className="flex items-center gap-2">
+      {/* Row 1: Search Input + Sort By (Actual vs Top Feature SHAP — NEVER by predicted) */}
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
         <div className="relative flex-1">
           <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <input
@@ -57,26 +59,41 @@ export function RankFilters({
           )}
         </div>
 
-        <button
-          type="button"
-          onClick={() =>
-            onSortOrderChange(sortOrder === "desc" ? "asc" : "desc")
-          }
-          aria-label="Toggle sort order"
-          className="inline-flex h-9 shrink-0 items-center gap-1.5 rounded-lg border border-border bg-muted/60 px-2.5 text-xs font-semibold text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        {/* Sort selector: Actual (Desc) or Top Feature SHAP (Desc) */}
+        <div
+          role="group"
+          aria-label="Sort districts by Actual or Top Feature SHAP"
+          className="inline-flex h-9 shrink-0 items-center rounded-lg border border-border bg-muted/60 p-0.5 text-[11px] font-semibold"
         >
-          {sortOrder === "desc" ? (
-            <>
-              <ArrowDownWideNarrow className="h-3.5 w-3.5 text-rose-600 dark:text-rose-400" />
-              <span className="hidden sm:inline">{t("sortHighToLow")}</span>
-            </>
-          ) : (
-            <>
-              <ArrowUpNarrowWide className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
-              <span className="hidden sm:inline">{t("sortLowToHigh")}</span>
-            </>
-          )}
-        </button>
+          <span className="px-2 text-muted-foreground inline-flex items-center gap-1">
+            <ArrowDownWideNarrow className="h-3.5 w-3.5 text-[#D9463E]" />
+            <span className="hidden xl:inline">Sort:</span>
+          </span>
+          <button
+            type="button"
+            onClick={() => onSortByChange("actual")}
+            aria-pressed={sortBy === "actual"}
+            className={`rounded-md px-2.5 py-1 transition-colors ${
+              sortBy === "actual"
+                ? "bg-background text-foreground shadow-sm"
+                : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            {locale === "id" ? "Aktual (%)" : "Actual (%)"}
+          </button>
+          <button
+            type="button"
+            onClick={() => onSortByChange("top_feature_shap")}
+            aria-pressed={sortBy === "top_feature_shap"}
+            className={`rounded-md px-2.5 py-1 transition-colors ${
+              sortBy === "top_feature_shap"
+                ? "bg-background text-foreground shadow-sm"
+                : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            Top SHAP
+          </button>
+        </div>
       </div>
 
       {/* Row 2: Discrete RiskLevel Filter Pills */}

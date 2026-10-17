@@ -3,7 +3,7 @@
 import React, { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import type { KabKota, RiskLevel } from "@/lib/types";
-import { RankFilters } from "./RankFilters";
+import { RankFilters, type ProvinceSortKey } from "./RankFilters";
 import { KabKotaRankRow } from "./KabKotaRankRow";
 
 interface KabKotaRankListProps {
@@ -25,27 +25,32 @@ export function KabKotaRankList({
 
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedBand, setSelectedBand] = useState<RiskLevel | "all">("all");
-  const [sortOrder, setSortOrder] = useState<"desc" | "asc">("desc");
+  // STRICT UI RULE: Sort by `actual` or `top_feature_shap` descending by default. Never by `predicted`.
+  const [sortBy, setSortBy] = useState<ProvinceSortKey>("actual");
 
   const filteredItems = useMemo(() => {
     const q = searchQuery.trim().toLowerCase();
     const list = items.filter((item) => {
-      const matchesName = !q || item.name.toLowerCase().includes(q);
+      const matchesName =
+        !q ||
+        item.name.toLowerCase().includes(q) ||
+        String(item.domain_id).includes(q);
       const matchesBand =
         selectedBand === "all" || item.riskLevel === selectedBand;
       return matchesName && matchesBand;
     });
 
-    list.sort((a, b) =>
-      sortOrder === "desc"
-        ? b.riskIndex - a.riskIndex || a.provinceRank - b.provinceRank
-        : a.riskIndex - b.riskIndex || b.provinceRank - a.provinceRank
-    );
+    list.sort((a, b) => {
+      if (sortBy === "top_feature_shap") {
+        return b.top_feature_shap - a.top_feature_shap || b.actual - a.actual;
+      }
+      return b.actual - a.actual || b.top_feature_shap - a.top_feature_shap;
+    });
     return list;
-  }, [items, searchQuery, selectedBand, sortOrder]);
+  }, [items, searchQuery, selectedBand, sortBy]);
 
   return (
-    <div className="flex h-full max-h-[590px] flex-col rounded-2xl border border-border bg-card p-4 shadow-sm">
+    <div className="flex h-full max-h-[610px] flex-col rounded-2xl border border-border bg-card p-4 shadow-sm">
       {/* Header */}
       <div className="mb-3 flex items-baseline justify-between gap-2">
         <h2 className="text-base font-bold text-foreground sm:text-lg">
@@ -65,8 +70,8 @@ export function KabKotaRankList({
         onSearchChange={setSearchQuery}
         selectedBand={selectedBand}
         onBandChange={setSelectedBand}
-        sortOrder={sortOrder}
-        onSortOrderChange={setSortOrder}
+        sortBy={sortBy}
+        onSortByChange={setSortBy}
       />
 
       {/* Scrollable List */}
@@ -80,10 +85,11 @@ export function KabKotaRankList({
             {t("noResults")}
           </div>
         ) : (
-          filteredItems.map((item) => (
+          filteredItems.map((item, idx) => (
             <KabKotaRankRow
               key={item.id}
               item={item}
+              rankIndex={idx + 1}
               isSelected={selectedKabKotaId === item.id}
               isHovered={hoveredKabKotaId === item.id}
               onSelect={onSelectKabKota}

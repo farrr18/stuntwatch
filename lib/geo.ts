@@ -6,9 +6,13 @@ import type { FeatureCollection, Geometry } from "geojson";
 export interface GeoFeatureProperties {
   id: string;
   name: string;
+  slug?: string;
+  bpsId?: string;
   islandGroup?: string;
   provinceId?: string;
+  provinceSlug?: string;
   type?: string;
+  [key: string]: unknown;
 }
 
 export type MapFeatureCollection = FeatureCollection<
