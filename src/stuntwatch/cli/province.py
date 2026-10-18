@@ -8,12 +8,8 @@ Usage:
     python province.py aceh --csv       # dump to CSV file
 """
 import sys, argparse
-from pathlib import Path
 import pandas as pd
-
-ROOT = Path(__file__).resolve().parent
-MERGED = ROOT / 'data' / 'processed' / 'stuntwatch_merged_v3.csv'
-PREDS  = ROOT / 'models' / 'artifacts' / 'stuntwatch_predictions_v3.json'
+from stuntwatch.utils.config import MERGED_V3 as MERGED, PREDICTIONS_JSON as PREDS
 
 # --- feature groups for display ---
 FEATURE_GROUPS = {

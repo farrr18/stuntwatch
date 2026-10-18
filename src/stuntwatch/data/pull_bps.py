@@ -1,14 +1,17 @@
-import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _paths import *
-
 """
 StuntWatch — BPS WebAPI Data Puller v2
 Pull proxy variables per kabupaten/kota → export CSV
 """
-import os, csv, time, argparse, requests
+import argparse
+import csv
+import os
+import time
+from pathlib import Path
+
+import requests
 from dotenv import load_dotenv
+
+from ..utils.config import BPS_CSV
 
 load_dotenv()
 API_KEY = os.getenv("BPS_API_KEY")
@@ -27,14 +30,17 @@ VARS = {
 YEAR_MAP = {2024: 124, 2023: 123, 2022: 122, 2021: 121, 2020: 120}
 
 def get(endpoint):
+    if not API_KEY:
+        raise RuntimeError("BPS_API_KEY is required to download BPS data.")
     url = f"{BASE}/{endpoint}/key/{API_KEY}"
     for attempt in range(3):
         try:
             r = requests.get(url, headers=HEADERS, timeout=20)
             r.raise_for_status()
             return r.json()
-        except:
-            if attempt == 2: raise
+        except requests.RequestException:
+            if attempt == 2:
+                raise
             time.sleep(2)
 
 def get_all_domains():
@@ -67,7 +73,9 @@ def fetch_var(var_id, th_id):
 def run(year, outfile):
     th_id = YEAR_MAP.get(year)
     if not th_id:
-        print(f"Year {year} not supported."); return
+        raise ValueError(f"Year {year} is not supported. Choose one of {sorted(YEAR_MAP)}.")
+    outfile = Path(outfile)
+    outfile.parent.mkdir(parents=True, exist_ok=True)
     print("Fetching all kabupaten/kota domains...")
     domains = get_all_domains()
     print(f"  {len(domains)} kabupaten/kota found")
@@ -96,6 +104,6 @@ def run(year, outfile):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--year", type=int, default=2024)
-    parser.add_argument("--out",  default="stuntwatch_bps_kab.csv")
+    parser.add_argument("--out", type=Path, default=BPS_CSV)
     args = parser.parse_args()
     run(args.year, args.out)

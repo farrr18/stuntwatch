@@ -1,12 +1,9 @@
-import json, sys
-from pathlib import Path
+import json
 from typing import Optional
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT))
-from stuntwatch.utils.config import PREDICTIONS_JSON as PREDICTIONS
+from ..utils.config import PREDICTIONS_JSON as PREDICTIONS
 
 app = FastAPI(title="StuntWatch API", version="1.0")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
@@ -152,7 +149,7 @@ def narrative(domain_id: int):
     k = BY_DOMAIN.get(domain_id)
     if not k: raise HTTPException(404)
     try:
-        from llm_reasoner import generate_narrative
+        from ..llm.reasoner import generate_narrative
         return {"domain_id": domain_id, "narrative": generate_narrative(k)}
     except Exception as e:
         raise HTTPException(500, f"LLM error: {e}")

@@ -1,7 +1,8 @@
 import fs from "fs";
 import path from "path";
 
-const API_BASE = "https://based-concluded-sitemap-separately.trycloudflare.com";
+const API_BASE =
+  process.env.STUNTWATCH_API_BASE_URL ?? "https://stuntwatch.stuntwatch.workers.dev";
 const GADM_ADM2_URL =
   "https://geodata.ucdavis.edu/gadm/gadm4.1/json/gadm41_IDN_2.json";
 const GEOBOUNDARIES_ADM2_URL =

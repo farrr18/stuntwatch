@@ -1,57 +1,96 @@
-# StuntWatch 🇮🇩
-**AI-Based Early Warning System for Stunting Risk in 514 Indonesian Districts**
+# StuntWatch
 
-StuntWatch is an end-to-end machine learning pipeline and decision-support system designed to predict stunting risk at the district (kabupaten/kota) level. It uses publicly available socioeconomic data to forecast risk before official surveys are published, explains the root causes using SHAP, and generates localized policy briefs using an LLM.
+**An early-warning and decision-support system for district-level stunting risk in Indonesia.**
 
-## 📖 The Problem
-Indonesia's official stunting survey (SSGI) takes **~17 months** from preparation to publication. By the time the data reaches local governments, the children measured are already toddlers. Stunting is irreversible after the first 1,000 days of life. Local governments are left allocating billions of Rupiah in intervention budgets blindly.
+StuntWatch combines socioeconomic and public-health data, an XGBoost model, SHAP explanations, and an optional Together AI narrative endpoint. The web dashboard is a Next.js application deployed to Cloudflare Workers. A FastAPI backend is also available for local development.
 
-## 💡 The Solution
-StuntWatch provides an **11-month head start** by using BPS socioeconomic data (which publishes much faster) to predict the upcoming survey results.
+## Repository layout
 
-1. **Predict:** XGBoost regression model forecasts stunting prevalence for all 514 districts.
-2. **Explain:** SHAP identifies exactly *why* a district is at risk (e.g., water access vs. maternal education).
-3. **Act:** An LLM (Llama 3.3 70B) translates the SHAP values into a localized, plain-Indonesian policy brief for local health officials.
+- `app/`, `components/`, `lib/`, `messages/`, and `public/` — Next.js dashboard, API routes, translations, and map assets.
+- `src/stuntwatch/` — installable Python package, FastAPI service, data pipeline, and model training code.
+- `data/raw/` — local source datasets; see [`data/raw/README.md`](./data/raw/README.md).
+- `data/processed/` — generated merged datasets (not committed).
+- `models/artifacts/` — the prediction JSON used by the web API and model-training outputs.
+- `mocks/` — offline fallback snapshots imported by the web API adapter.
+- `scripts/` — build-time utilities; `npm run generate-mocks` optionally refreshes the map boundaries and live-data fallbacks.
+- `research/` — archived training/analysis scripts and their outputs; not used to serve the website.
+- `tests/` — Python unit tests.
+- `docs/` — [product requirements](./docs/prd.md), [system design](./docs/design.md), deployment guides, data references, and the generated stakeholder workbook.
 
-## 🏗️ Architecture & Tech Stack
-*   **Data Pipeline:** Python, Pandas (Entity resolution, BPS WebAPI, HDX spatial merging).
-*   **Machine Learning:** XGBoost (20 features).
-*   **Explainability:** SHAP (TreeExplainer).
-*   **LLM Reasoning:** Together AI (Llama 3.3 70B Instruct).
-*   **Backend API:** Cloudflare Worker routes served by Next.js; the FastAPI server remains available for local development.
-*   **Frontend:** Next.js, React, and Leaflet.
-*   **Deployment:** Cloudflare Workers via OpenNext.
+## Requirements
 
-## 🚀 Quick Start
-### 1. Installation
-git clone https://github.com/your-username/stuntwatch.git
-cd stuntwatch
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+- Node.js and npm (use the version specified by the repository's package files).
+- Python 3.10 or newer.
+- GNU Make is optional; all Python and npm commands below can also be run directly in PowerShell.
 
-### 2. Environment Variables
-Create a `.env` file:
-TOGETHER_API_KEY="your_together_api_key_here"
+## Local setup
 
-### 3. Run the Pipeline & Train the Model
-make pipeline
-make train
+From PowerShell at the repository root:
 
-### 4. Start the API
-make serve
-API available at `http://localhost:8000`.
+```powershell
+py -3 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -e .
+Copy-Item .env.example .env
+npm ci
+```
 
-### Deploy the web application to Cloudflare
+If PowerShell blocks virtual-environment activation, run `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` for the current terminal, or call `.\.venv\Scripts\python.exe` directly.
 
-The Cloudflare Worker serves both the frontend and dashboard API from the checked-in prediction artifact. Run the Python pipeline separately to refresh predictions before deployment. See [docs/CLOUDFLARE_DEPLOY.md](./docs/CLOUDFLARE_DEPLOY.md) for preview, deployment, and Together AI secret setup.
+On macOS/Linux, create and activate the environment with `python3 -m venv .venv` and `source .venv/bin/activate`, then run the same pip and npm install commands.
 
-## 📊 Model Performance & Limitations
-*   **Error Reduction:** Reduces MAE by **24.8%** vs a national-mean baseline (6.33 pp -> 4.76 pp).
-*   **Tier Agreement:** Correctly flags **12 out of 15** of Indonesia's worst-stunting districts.
-*   **Honest Limitation:** Cannot reliably rank districts *within* a single province due to missing WASH data (Spearman ~0.11). Functions as a province-level priority signal.
+Set `BPS_API_KEY` in `.env` to download the BPS data. Set `TOGETHER_API_KEY` only if you want to use AI-generated narratives. Do not commit `.env` or real credentials.
 
-## 🛡️ License & Acknowledgements
-*   Data sourced from BPS, Kemenkes, and HeiGIT HDX.
-*   Built for the INFEST XII 2026 Hackathon.
-*   Team: Tim Siapa Sangka (Universitas Syiah Kuala).
+## Data pipeline and model
+
+The pipeline downloads BPS indicators, joins the target dataset, adds WASH indicators, and merges the included HDX tables:
+
+```powershell
+python -m stuntwatch.data.pipeline
+python -m stuntwatch.ml.train
+```
+
+The BPS API key and local source datasets are prerequisites. `data/raw/README.md` documents the exact input filenames. The target stunting dataset and WASH long-form dataset are not distributed in this repository; obtain them from their documented sources and keep them local. The pipeline checks these prerequisites before making a network request and reports missing files explicitly.
+
+Training is computationally intensive. It performs grouped and random cross-validation plus SHAP analysis, and requires `data/processed/stuntwatch_merged_v3.csv` from the pipeline. It updates the prediction/model artifacts used by the dashboard.
+
+## Run the local FastAPI backend
+
+```powershell
+python -m uvicorn stuntwatch.api.main:app --host 127.0.0.1 --port 8000 --reload
+```
+
+The API is available at `http://127.0.0.1:8000/api/health`. If port 8000 is already in use, stop the process using it or choose another port with `--port`.
+
+To use the interactive command-line dashboard in a second terminal:
+
+```powershell
+stuntwatch
+```
+
+## Run the web dashboard
+
+```powershell
+npm run dev
+```
+
+The dashboard is available at `http://localhost:3000`. To build and deploy it to Cloudflare Workers, follow [`docs/CLOUDFLARE_DEPLOY.md`](./docs/CLOUDFLARE_DEPLOY.md). The web application uses its own Next.js API routes; the local FastAPI server is a separate development interface.
+
+The generated stakeholder workbook is saved as [`docs/StuntWatch_Dataset.xlsx`](./docs/StuntWatch_Dataset.xlsx). BPS source documentation is in [`docs/data-sources.md`](./docs/data-sources.md).
+
+## Checks
+
+```powershell
+python -m unittest discover -s tests -v
+npm run typecheck
+npm run cf:build
+```
+
+With GNU Make installed, equivalent targets are available via `make help` (for example, `make test`, `make pipeline`, and `make serve`).
+
+## Model limitations and provenance
+
+- Reported model metrics and limitations are documented in the project materials; predictions are prioritization signals, not diagnoses or substitutes for official surveys.
+- Data sources include BPS and HeiGIT HDX. Respect source licensing and usage conditions for any locally supplied datasets.
+- Built for the INFEST XII 2026 Hackathon by Tim Siapa Sangka, Universitas Syiah Kuala.

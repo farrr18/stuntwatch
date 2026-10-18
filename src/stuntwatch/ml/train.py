@@ -1,14 +1,10 @@
-import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / 'pipeline'))
-from _paths import MERGED_V3, PREDICTIONS
-
 import pandas as pd, numpy as np, json
 import xgboost as xgb
 import shap
 from sklearn.model_selection import GroupKFold, LeaveOneGroupOut, KFold
 from sklearn.metrics import mean_absolute_error, r2_score, accuracy_score, f1_score
 from sklearn.preprocessing import LabelEncoder
+from stuntwatch.utils.config import MERGED_V3, PREDICTIONS_JSON
 
 df = pd.read_csv(MERGED_V3)
 
@@ -148,7 +144,8 @@ for i, row in df.iterrows():
                           'shap': float(sv[j])} for j in order],
     })
 
-with open(PREDICTIONS,'w') as f:
+PREDICTIONS_JSON.parent.mkdir(parents=True, exist_ok=True)
+with open(PREDICTIONS_JSON, 'w') as f:
     json.dump(payload, f, indent=2)
 print('\nsaved stuntwatch_predictions_v3.json —', len(payload['kabupaten']), 'kabupaten')
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys, json, requests
-from pathlib import Path
 import pandas as pd
+from stuntwatch.utils.config import MERGED_V3
 
 # ANSI Colors
 C_RESET = '\033[0m'
@@ -13,7 +13,7 @@ C_BLUE = '\033[94m'
 C_CYAN = '\033[96m'
 
 API_URL = "http://localhost:8000/api"
-MERGED = Path(__file__).parent.parent.parent.parent / 'data' / 'processed' / 'stuntwatch_merged_v3.csv'
+MERGED = MERGED_V3
 
 def get_tier_color(pct):
     if pct < 20: return C_GREEN
@@ -26,7 +26,7 @@ def check_api():
         r = requests.get(f"{API_URL}/health", timeout=2)
         return r.status_code == 200
     except:
-        print(f"{C_RED}Error: FastAPI server is not running. Start it with: uvicorn backend.main:app --reload{C_RESET}")
+        print(f"{C_RED}Error: FastAPI server is not running. Start it with: uvicorn stuntwatch.api.main:app --reload{C_RESET}")
         sys.exit(1)
 
 def load_provinces():
@@ -73,7 +73,7 @@ def main():
         print(f"{C_BOLD}  {prov_name.upper()} — {selected['n_kabupaten']} Districts{C_RESET}")
         print(f"{C_CYAN}══════════════════════════════════════════════════════════════════════════{C_RESET}")
         
-        print(f"  {C_BOLD}Data Confidence:{C_RESET} {selected.get("data_confidence", "mixed")} | {C_BOLD}Province Risk:{C_RESET} {selected['avg_predicted']:.1f}% (Avg) | {selected['max_predicted']:.1f}% (Max)")
+        print(f"  {C_BOLD}Data Confidence:{C_RESET} {selected.get('data_confidence', 'mixed')} | {C_BOLD}Province Risk:{C_RESET} {selected['avg_predicted']:.1f}% (Avg) | {selected['max_predicted']:.1f}% (Max)")
         print(f"  {C_BOLD}Primary Driver (SHAP):{C_RESET} {selected['highest_risk_kabupaten']} is flagged as highest risk.\n")
 
         # Show districts sorted by POVERTY (actionable raw data), not model prediction

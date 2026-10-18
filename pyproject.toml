@@ -6,8 +6,9 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "pandas",
-    "numpy",
+    "numpy>=1.26,<2",
     "scikit-learn",
+    "scipy",
     "xgboost",
     "shap",
     "fastapi",
@@ -15,10 +16,12 @@ dependencies = [
     "together",
     "requests",
     "xlsxwriter",
+    "python-dotenv",
 ]
 
 [project.scripts]
 stuntwatch = "stuntwatch.cli.main:main"
+stuntwatch-pipeline = "stuntwatch.data.pipeline:main"
 
 [build-system]
 requires = ["setuptools>=61.0"]

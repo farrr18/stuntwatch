@@ -1,7 +1,11 @@
 # Python
+.venv/
 venv/
 __pycache__/
 *.pyc
+*.pyo
+*.egg-info/
+*.tsbuildinfo
 .env
 data/raw/*.csv
 data/processed/*.csv
@@ -21,3 +25,8 @@ build/
 # Local env
 .env*.local
 .dev.vars
+
+# Test and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

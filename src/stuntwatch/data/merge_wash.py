@@ -1,14 +1,8 @@
-import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _paths import *
+import re
 
-import re, sys
 import pandas as pd
 
-LONG = WASH_LONG
-MERGED = MERGED_V1
-OUT = MERGED_V2
+from ..utils.config import DATA_PROC, MERGED_V1, MERGED_V2, WASH_LONG
 
 COLS = {
     "air_minum_layak": "air_minum_layak_kab",
@@ -18,108 +12,169 @@ COLS = {
     "uhh": "uhh_kab",
     "pengeluaran": "pengeluaran_kab",
 }
-
-# extra title filters so we don't pick an index / wrong measure by accident
 TITLE_OK = {
-    "rls": lambda t: "indeks" not in t.lower(),
-    "hls": lambda t: "indeks" not in t.lower(),
-    "uhh": lambda t: "indeks" not in t.lower(),
-    "pengeluaran": lambda t: "disesuaikan" in t.lower(),
+    "rls": lambda title: "indeks" not in title.lower(),
+    "hls": lambda title: "indeks" not in title.lower(),
+    "uhh": lambda title: "indeks" not in title.lower(),
+    "pengeluaran": lambda title: "disesuaikan" in title.lower(),
 }
 TOTAL_RE = re.compile(r"total|jumlah|perkotaan\s*\+|kota\s*\+|^\s*$", re.I)
-YEARS = ("2024", "2023")  # nothing older: stale WASH is a different feature
+YEARS = ("2024", "2023")
 
-m = pd.read_csv(MERGED_V1)
-if "domain_id" not in m.columns:
-    print("No 'domain_id' column in", MERGED, "- columns are:")
-    print(list(m.columns))
-    sys.exit(1)
-m["domain_id"] = pd.to_numeric(m["domain_id"], errors="coerce").astype("Int64")
-valid = set(m["domain_id"].dropna().astype(int))
-kab_count = m.dropna(subset=["domain_id"]).groupby((m["domain_id"] // 100) * 100).size().to_dict()
 
-L = pd.read_csv(LONG, dtype={"domain": str})
-L["kode_i"] = pd.to_numeric(L["kode"], errors="coerce")
+def _norm(value: object) -> str:
+    name = str(value).lower()
+    name = re.sub(r"\b(kabupaten|kab|kota|adm)\b\.?", "", name)
+    return re.sub(r"[^a-z]", "", name)
 
-import re as _re
-def _norm(x):
-    x = str(x).lower()
-    x = _re.sub(r"\b(kabupaten|kab|kota|adm)\b\.?", "", x)
-    return _re.sub(r"[^a-z]", "", x)
 
-name_col = "kabupaten_kota_bps" if "kabupaten_kota_bps" in m.columns else "kabupaten_kota_st"
-lookup = {}
-for did, nm in zip(m["domain_id"].dropna().astype(int), m[name_col]):
-    lookup.setdefault((did // 100 * 100, _norm(nm)), did)
+def run() -> pd.DataFrame:
+    merged = pd.read_csv(MERGED_V1)
+    if "domain_id" not in merged.columns:
+        raise ValueError(
+            f"No 'domain_id' column in {MERGED_V1}; "
+            f"available columns: {list(merged.columns)}"
+        )
+    merged["domain_id"] = pd.to_numeric(
+        merged["domain_id"], errors="coerce"
+    ).astype("Int64")
+    valid_rows = merged.dropna(subset=["domain_id"])
+    district_ids = valid_rows["domain_id"].astype(int)
+    valid = set(district_ids)
+    district_counts = district_ids.groupby((district_ids // 100) * 100).size().to_dict()
 
-L["dom_i"] = pd.to_numeric(L["domain"], errors="coerce")
-L["kode_i"] = L["kode_i"].astype("float64")
-bad = ~L["kode_i"].isin(valid)
-L.loc[bad, "kode_i"] = [lookup.get((int(d), _norm(l)), float("nan"))
-                        for d, l in zip(L.loc[bad, "dom_i"], L.loc[bad, "label"])]
-print("recovered by name:", int(bad.sum() - L.loc[bad, "kode_i"].isna().sum()), "of", int(bad.sum()))
-L["value_f"] = pd.to_numeric(L["value"].astype(str).str.replace(",", ".", regex=False), errors="coerce")
-L["year"] = L["year"].astype(str).str.extract(r"(\d{4})")[0]
-L["turvar"] = L["turvar"].fillna("").astype(str)
+    wash = pd.read_csv(WASH_LONG, dtype={"domain": str})
+    wash["kode_i"] = pd.to_numeric(wash["kode"], errors="coerce")
+    wash["dom_i"] = pd.to_numeric(wash["domain"], errors="coerce")
+    name_col = (
+        "kabupaten_kota_bps"
+        if "kabupaten_kota_bps" in merged.columns
+        else "kabupaten_kota_st"
+    )
+    name_lookup = {}
+    for domain_id, name in zip(district_ids, valid_rows[name_col]):
+        name_lookup.setdefault((domain_id // 100 * 100, _norm(name)), domain_id)
 
-# how well do BPS codes line up with domain_id?
-recent = L[L["year"].isin(YEARS) & L["value_f"].notna()]
-print(f"rows with 2023/2024 values: {len(recent)}; kode found in merged domain_id: "
-      f"{recent['kode_i'].isin(valid).mean():.0%}")
-L = L[L["kode_i"].isin(valid) & L["value_f"].notna()].copy()
-L["kode_i"] = L["kode_i"].astype(int)
+    wash["kode_i"] = wash["kode_i"].astype("float64")
+    invalid_codes = ~wash["kode_i"].isin(valid)
+    recovered = [
+        name_lookup.get((int(domain), _norm(label)), float("nan"))
+        if pd.notna(domain)
+        else float("nan")
+        for domain, label in zip(
+            wash.loc[invalid_codes, "dom_i"],
+            wash.loc[invalid_codes, "label"],
+        )
+    ]
+    wash.loc[invalid_codes, "kode_i"] = recovered
+    recovered_count = int(
+        invalid_codes.sum() - wash.loc[invalid_codes, "kode_i"].isna().sum()
+    )
+    print(
+        "recovered by name:",
+        recovered_count,
+        "of",
+        int(invalid_codes.sum()),
+    )
+    wash["value_f"] = pd.to_numeric(
+        wash["value"].astype(str).str.replace(",", ".", regex=False),
+        errors="coerce",
+    )
+    wash["year"] = wash["year"].astype(str).str.extract(r"(\d{4})")[0]
+    wash["turvar"] = wash["turvar"].fillna("").astype(str)
 
-picked = {c: {} for c in COLS}      # concept -> {domain_id: value}
-picked_year = {c: {} for c in COLS}
-warn_turvar = 0
+    recent = wash[wash["year"].isin(YEARS) & wash["value_f"].notna()]
+    coverage = recent["kode_i"].isin(valid).mean() if len(recent) else 0
+    print(
+        f"rows with 2023/2024 values: {len(recent)}; "
+        f"kode found in merged domain_id: {coverage:.0%}"
+    )
+    wash = wash[wash["kode_i"].isin(valid) & wash["value_f"].notna()].copy()
+    wash["kode_i"] = wash["kode_i"].astype(int)
 
-for (dom, concept), g in L.groupby(["domain", "concept"]):
-    ok = TITLE_OK.get(concept)
-    if ok is not None:
-        g = g[g["title"].apply(ok)]
-    need = 0.5 * kab_count.get(int(dom), 0)
-    chosen = None
-    for yr in YEARS:
-        sub = g[g["year"] == yr]
-        if sub.empty:
+    picked = {concept: {} for concept in COLS}
+    picked_year = {concept: {} for concept in COLS}
+    ambiguous_total = 0
+    for (domain, concept), group in wash.groupby(["dom_i", "concept"]):
+        if concept not in COLS:
             continue
-        pairs = []
-        for (vid, tv), s in sub.groupby(["var_id", "turvar"]):
-            n = s["kode_i"].nunique()
-            pairs.append((bool(TOTAL_RE.search(tv)), n, vid, tv, s))
-        pairs = [p for p in pairs if p[1] >= max(3, need)] or []
-        if not pairs:
-            continue
-        pairs.sort(key=lambda p: (p[0], p[1]), reverse=True)
-        best = pairs[0]
-        if not best[0] and len({p[3] for p in pairs}) > 1:
-            warn_turvar += 1
-        chosen = (yr, best[4])
-        break
-    if chosen:
-        yr, s = chosen
-        s = s.drop_duplicates("kode_i")
-        for k, v in zip(s["kode_i"], s["value_f"]):
-            picked[concept][k] = v
-            picked_year[concept][k] = yr
+        title_filter = TITLE_OK.get(concept)
+        if title_filter is not None:
+            group = group[group["title"].apply(title_filter)]
+        needed = 0.5 * district_counts.get(int(domain), 0)
+        chosen = None
+        for year in YEARS:
+            rows = group[group["year"] == year]
+            if rows.empty:
+                continue
+            candidates = []
+            for (var_id, turvar), subset in rows.groupby(["var_id", "turvar"]):
+                count = subset["kode_i"].nunique()
+                candidates.append(
+                    (
+                        bool(TOTAL_RE.search(turvar)),
+                        count,
+                        var_id,
+                        turvar,
+                        subset,
+                    )
+                )
+            candidates = [
+                candidate
+                for candidate in candidates
+                if candidate[1] >= max(3, needed)
+            ]
+            if not candidates:
+                continue
+            candidates.sort(key=lambda candidate: (candidate[0], candidate[1]), reverse=True)
+            best = candidates[0]
+            if not best[0] and len({candidate[3] for candidate in candidates}) > 1:
+                ambiguous_total += 1
+            chosen = (year, best[4])
+            break
+        if chosen:
+            year, rows = chosen
+            rows = rows.drop_duplicates("kode_i")
+            for domain_id, value in zip(rows["kode_i"], rows["value_f"]):
+                picked[concept][domain_id] = value
+                picked_year[concept][domain_id] = year
 
-for concept, col in COLS.items():
-    m[col] = m["domain_id"].map(picked[concept])
-    m[col + "_year"] = m["domain_id"].map(picked_year[concept])
+    for concept, column in COLS.items():
+        merged[column] = merged["domain_id"].map(picked[concept])
+        merged[column + "_year"] = merged["domain_id"].map(picked_year[concept])
 
-m.to_csv(OUT, index=False)
+    DATA_PROC.mkdir(parents=True, exist_ok=True)
+    merged.to_csv(MERGED_V2, index=False)
+    print(f"\nsaved {MERGED_V2} ({len(merged)} rows)")
+    print(
+        f"(turvar picked without a clear 'total' label in "
+        f"{ambiguous_total} province/concept cases)\n"
+    )
+    print(f"{'feature':<24}{'filled':>8}{'2024':>7}{'2023':>7}")
+    for concept, column in COLS.items():
+        years = merged[column + "_year"].value_counts()
+        print(
+            f"{column:<24}{merged[column].notna().sum():>8}"
+            f"{years.get('2024', 0):>7}{years.get('2023', 0):>7}"
+        )
 
-print(f"\nsaved {OUT}  ({len(m)} rows)")
-print(f"(turvar picked without a clear 'total' label in {warn_turvar} province/concept cases)\n")
-print(f"{'feature':<24}{'filled':>8}{'2024':>7}{'2023':>7}")
-for concept, col in COLS.items():
-    yrs = m[col + "_year"].value_counts()
-    print(f"{col:<24}{m[col].notna().sum():>8}{yrs.get('2024', 0):>7}{yrs.get('2023', 0):>7}")
+    if "stunting_pct" in merged.columns:
+        print("\ncorrelation with stunting_pct (filled rows only):")
+        check = list(COLS.values()) + [
+            column
+            for column in ("ipm_kab", "akses_air_minum_layak_prov_pct")
+            if column in merged.columns
+        ]
+        for column in check:
+            sample = merged[[column, "stunting_pct"]].dropna()
+            if len(sample) > 10:
+                print(
+                    f"  {column:<34} r = "
+                    f"{sample[column].corr(sample['stunting_pct']):+.3f} "
+                    f"  (n={len(sample)})"
+                )
+    return merged
 
-if "stunting_pct" in m.columns:
-    print("\ncorrelation with stunting_pct (filled rows only):")
-    check = list(COLS.values()) + [c for c in ("ipm_kab", "akses_air_minum_layak_prov_pct") if c in m.columns]
-    for c in check:
-        s = m[[c, "stunting_pct"]].dropna()
-        if len(s) > 10:
-            print(f"  {c:<34} r = {s[c].corr(s['stunting_pct']):+.3f}   (n={len(s)})")
+
+if __name__ == "__main__":
+    run()

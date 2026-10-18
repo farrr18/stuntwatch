@@ -1,2 +1,0 @@
-[console_scripts]
-stuntwatch = stuntwatch.cli.main:main

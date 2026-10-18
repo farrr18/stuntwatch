@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 """StuntWatch — build a structured Excel workbook for stakeholder review."""
 import json
-from pathlib import Path
 import pandas as pd
+from .config import DATASET_XLSX, MERGED_V3, PREDICTIONS_JSON
 
-ROOT = Path(__file__).resolve().parent
-MERGED = ROOT / 'data' / 'processed' / 'stuntwatch_merged_v3.csv'
-PREDS  = ROOT / 'models' / 'artifacts' / 'stuntwatch_predictions_v3.json'
-OUT    = ROOT / 'StuntWatch_Dataset.xlsx'
+MERGED = MERGED_V3
+PREDS  = PREDICTIONS_JSON
+OUT    = DATASET_XLSX
 
 # ─────────────────────────────────────────────────────────
 # Load

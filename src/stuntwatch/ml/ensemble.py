@@ -1,11 +1,8 @@
-import pandas as pd, numpy as np, json, sys
-from pathlib import Path
+import pandas as pd, numpy as np, json
 import xgboost as xgb
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_absolute_error, r2_score
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / 'pipeline'))
-from _paths import MERGED_V3
+from stuntwatch.utils.config import DATA_PROC, MERGED_V3
 
 df = pd.read_csv(MERGED_V3)
 
@@ -69,5 +66,5 @@ for i in top15_pred[:15]:
 # Save ensemble predictions
 df['ens_pred'] = y_ens
 df[['domain_id','kabupaten_kota_st','provinsi','stunting_pct','ens_pred']].to_csv(
-    'data/processed/ensemble_predictions.csv', index=False)
-print('\n✓ saved data/processed/ensemble_predictions.csv')
+    DATA_PROC / 'ensemble_predictions.csv', index=False)
+print(f'\n✓ saved {DATA_PROC / "ensemble_predictions.csv"}')
