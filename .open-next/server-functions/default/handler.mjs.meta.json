@@ -3728,6 +3728,11 @@
       "imports": [],
       "format": "cjs"
     },
+    ".open-next/server-functions/default/.next/server/chunks/474.js": {
+      "bytes": 352005,
+      "imports": [],
+      "format": "cjs"
+    },
     ".open-next/server-functions/default/.next/server/chunks/611.js": {
       "bytes": 69429,
       "imports": [
@@ -3740,7 +3745,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/chunks/651.js": {
-      "bytes": 63475,
+      "bytes": 62372,
       "imports": [],
       "format": "cjs"
     },
@@ -3764,18 +3769,18 @@
       "imports": [],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/chunks/92.js": {
-      "bytes": 352166,
-      "imports": [],
-      "format": "cjs"
-    },
     ".open-next/server-functions/default/.next/server/webpack-runtime.js": {
-      "bytes": 2068,
+      "bytes": 2070,
       "imports": [
         {
           "path": ".open-next/server-functions/default/.next/server/chunks/19.js",
           "kind": "require-call",
           "original": "./chunks/19.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/chunks/474.js",
+          "kind": "require-call",
+          "original": "./chunks/474.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/chunks/611.js",
@@ -3806,17 +3811,12 @@
           "path": ".open-next/server-functions/default/.next/server/chunks/897.js",
           "kind": "require-call",
           "original": "./chunks/897.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/chunks/92.js",
-          "kind": "require-call",
-          "original": "./chunks/92.js"
         }
       ],
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/provinsi/[provinceId]/[kabKotaId]/page.js": {
-      "bytes": 15802,
+      "bytes": 15803,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -3887,7 +3887,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/provinsi/[provinceId]/page.js": {
-      "bytes": 15676,
+      "bytes": 15677,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -7161,11 +7161,14 @@
         ".open-next/server-functions/default/.next/server/chunks/19.js": {
           "bytesInOutput": 394535
         },
+        ".open-next/server-functions/default/.next/server/chunks/474.js": {
+          "bytesInOutput": 382469
+        },
         ".open-next/server-functions/default/.next/server/chunks/611.js": {
           "bytesInOutput": 72261
         },
         ".open-next/server-functions/default/.next/server/chunks/651.js": {
-          "bytesInOutput": 64510
+          "bytesInOutput": 63392
         },
         ".open-next/server-functions/default/.next/server/chunks/675.js": {
           "bytesInOutput": 40678
@@ -7179,17 +7182,14 @@
         ".open-next/server-functions/default/.next/server/chunks/897.js": {
           "bytesInOutput": 147517
         },
-        ".open-next/server-functions/default/.next/server/chunks/92.js": {
-          "bytesInOutput": 382629
-        },
         ".open-next/server-functions/default/.next/server/webpack-runtime.js": {
-          "bytesInOutput": 2038
+          "bytesInOutput": 2039
         },
         ".open-next/server-functions/default/.next/server/app/provinsi/[provinceId]/[kabKotaId]/page.js": {
-          "bytesInOutput": 15953
+          "bytesInOutput": 15954
         },
         ".open-next/server-functions/default/.next/server/app/provinsi/[provinceId]/page.js": {
-          "bytesInOutput": 15817
+          "bytesInOutput": 15818
         },
         ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js": {
           "bytesInOutput": 176842
@@ -7372,7 +7372,7 @@
           "bytesInOutput": 62405
         }
       },
-      "bytes": 3891234
+      "bytes": 3889959
     }
   }
 }

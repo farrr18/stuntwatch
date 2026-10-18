@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { useTranslations } from "next-intl";
-import { TrendingUp, TrendingDown, Minus, ChevronDown, ChevronUp } from "lucide-react";
+import { TrendingUp, TrendingDown, Minus } from "lucide-react";
 import type { RiskFactor } from "@/lib/types";
 import { getComparisonStatusStyle } from "@/lib/colorScale";
 import { useAppLocale } from "@/lib/i18n";
@@ -14,9 +14,6 @@ interface ComparisonTableProps {
 export function ComparisonTable({ factors }: ComparisonTableProps) {
   const t = useTranslations("explanation");
   const { locale } = useAppLocale();
-  const [showAll, setShowAll] = useState(true);
-
-  const visibleFactors = showAll ? factors : factors.slice(0, 6);
 
   return (
     <div className="flex w-full flex-col gap-3">
@@ -40,7 +37,7 @@ export function ComparisonTable({ factors }: ComparisonTableProps) {
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-200 dark:divide-[#232b3e] bg-white dark:bg-[#0d121d]">
-            {visibleFactors.map((f) => {
+            {factors.map((f) => {
               const statusStyle = getComparisonStatusStyle(f.status);
               const sign = f.contribution > 0 ? "+" : "";
               return (
@@ -93,31 +90,6 @@ export function ComparisonTable({ factors }: ComparisonTableProps) {
           </tbody>
         </table>
       </div>
-
-      {factors.length > 6 && (
-        <div className="flex justify-center">
-          <button
-            type="button"
-            onClick={() => setShowAll((prev) => !prev)}
-            className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 dark:border-[#232b3e] bg-slate-50 dark:bg-[#182030] px-4 py-1.5 text-xs font-semibold text-slate-700 dark:text-slate-200 transition-colors hover:bg-slate-100 dark:hover:bg-slate-800"
-          >
-            <span>
-              {showAll
-                ? locale === "id"
-                  ? "Ringkas Tabel Indikator"
-                  : "Show Fewer Indicators"
-                : locale === "id"
-                ? "Tampilkan Semua Indikator Lengkap"
-                : "Show All Complete Indicators"}
-            </span>
-            {showAll ? (
-              <ChevronUp className="h-3.5 w-3.5" />
-            ) : (
-              <ChevronDown className="h-3.5 w-3.5" />
-            )}
-          </button>
-        </div>
-      )}
     </div>
   );
 }

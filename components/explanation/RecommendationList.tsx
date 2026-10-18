@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useTranslations } from "next-intl";
-import { Building2, Loader2, ArrowRight } from "lucide-react";
+import { Building2, Loader2 } from "lucide-react";
 import type { RecommendationItem } from "@/lib/types";
 import { useAppLocale } from "@/lib/i18n";
 
@@ -38,34 +38,25 @@ export function RecommendationList({
       {recommendations.map((rec) => (
         <div
           key={rec.id}
-          className="flex h-full flex-col justify-between gap-3.5 rounded-xl border border-slate-200 dark:border-[#232b3e] bg-slate-50/60 dark:bg-[#0d121d] p-4 transition-colors hover:border-teal-500/50"
+          className="flex h-full flex-col gap-2.5 rounded-xl border border-slate-200 dark:border-[#232b3e] bg-slate-50/60 dark:bg-[#0d121d] p-4 transition-colors hover:border-teal-500/50"
         >
-          <div className="flex flex-col gap-2.5">
-            <div className="flex flex-wrap items-center justify-between gap-1.5">
-              <span className="inline-flex items-center rounded-md bg-[#D9463E] px-2.5 py-0.5 text-[11px] font-bold text-white shadow-sm">
-                {t("priorityBadge", { priority: rec.priority })}
-              </span>
-              <span className="inline-flex items-center gap-1 rounded-md border border-slate-200 dark:border-[#232b3e] bg-white dark:bg-[#182030] px-2 py-0.5 text-[10px] font-medium text-slate-600 dark:text-slate-300">
-                <Building2 className="h-3 w-3 shrink-0 text-teal-600 dark:text-teal-400" />
-                <span className="line-clamp-1">{rec.sector[locale]}</span>
-              </span>
-            </div>
-
-            <h4 className="text-sm font-bold leading-snug text-slate-900 dark:text-white">
-              {rec.title[locale]}
-            </h4>
-
-            <p className="text-xs leading-relaxed text-slate-600 dark:text-slate-400">
-              {rec.action[locale]}
-            </p>
-          </div>
-
-          <div className="flex items-center justify-between border-t border-slate-200/80 dark:border-[#232b3e] pt-2.5 text-[11px] font-semibold text-teal-700 dark:text-teal-400">
-            <span>
-              {locale === "id" ? "Rincian Program" : "Program Details"}
+          <div className="flex flex-wrap items-center justify-between gap-1.5">
+            <span className="inline-flex items-center rounded-md bg-[#D9463E] px-2.5 py-0.5 text-[11px] font-bold text-white shadow-sm">
+              {t("priorityBadge", { priority: rec.priority })}
             </span>
-            <ArrowRight className="h-3.5 w-3.5" />
+            <span className="inline-flex items-center gap-1 rounded-md border border-slate-200 dark:border-[#232b3e] bg-white dark:bg-[#182030] px-2 py-0.5 text-[10px] font-medium text-slate-600 dark:text-slate-300">
+              <Building2 className="h-3 w-3 shrink-0 text-teal-600 dark:text-teal-400" />
+              <span className="line-clamp-1">{rec.sector[locale]}</span>
+            </span>
           </div>
+
+          <h4 className="text-sm font-bold leading-snug text-slate-900 dark:text-white">
+            {rec.title[locale]}
+          </h4>
+
+          <p className="text-xs leading-relaxed text-slate-600 dark:text-slate-400">
+            {rec.action[locale]}
+          </p>
         </div>
       ))}
     </div>
