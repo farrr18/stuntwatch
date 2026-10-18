@@ -3251,8 +3251,13 @@
       "imports": [],
       "format": "cjs"
     },
+    ".open-next/server-functions/default/.next/server/app/api/[...path]/route_client-reference-manifest.js": {
+      "bytes": 8162,
+      "imports": [],
+      "format": "cjs"
+    },
     ".open-next/server-functions/default/node_modules/next/dist/server/load-manifest.external.js": {
-      "bytes": 62530,
+      "bytes": 63525,
       "imports": [
         {
           "path": "path",
@@ -3273,6 +3278,11 @@
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/deep-freeze.js",
           "kind": "require-call",
           "original": "../shared/lib/deep-freeze"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/api/[...path]/route_client-reference-manifest.js",
+          "kind": "require-call",
+          "original": "C:\\Users\\ACER\\.gemini\\antigravity\\scratch\\stuntwatch\\.open-next\\server-functions\\default\\.next\\server\\app\\api\\[...path]\\route_client-reference-manifest.js"
         }
       ],
       "format": "cjs"
@@ -3713,8 +3723,8 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/chunks/298.js": {
-      "bytes": 520625,
+    ".open-next/server-functions/default/.next/server/chunks/19.js": {
+      "bytes": 378390,
       "imports": [],
       "format": "cjs"
     },
@@ -3730,7 +3740,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/chunks/651.js": {
-      "bytes": 63144,
+      "bytes": 63475,
       "imports": [],
       "format": "cjs"
     },
@@ -3740,12 +3750,17 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/chunks/701.js": {
-      "bytes": 124856,
+      "bytes": 124867,
       "imports": [],
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/chunks/793.js": {
       "bytes": 18176,
+      "imports": [],
+      "format": "cjs"
+    },
+    ".open-next/server-functions/default/.next/server/chunks/897.js": {
+      "bytes": 142284,
       "imports": [],
       "format": "cjs"
     },
@@ -3755,12 +3770,12 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/webpack-runtime.js": {
-      "bytes": 2005,
+      "bytes": 2068,
       "imports": [
         {
-          "path": ".open-next/server-functions/default/.next/server/chunks/298.js",
+          "path": ".open-next/server-functions/default/.next/server/chunks/19.js",
           "kind": "require-call",
-          "original": "./chunks/298.js"
+          "original": "./chunks/19.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/chunks/611.js",
@@ -3788,6 +3803,11 @@
           "original": "./chunks/793.js"
         },
         {
+          "path": ".open-next/server-functions/default/.next/server/chunks/897.js",
+          "kind": "require-call",
+          "original": "./chunks/897.js"
+        },
+        {
           "path": ".open-next/server-functions/default/.next/server/chunks/92.js",
           "kind": "require-call",
           "original": "./chunks/92.js"
@@ -3796,7 +3816,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/provinsi/[provinceId]/[kabKotaId]/page.js": {
-      "bytes": 15799,
+      "bytes": 15802,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -3867,7 +3887,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/provinsi/[provinceId]/page.js": {
-      "bytes": 15673,
+      "bytes": 15676,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -3937,8 +3957,190 @@
       ],
       "format": "cjs"
     },
+    ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js": {
+      "bytes": 166579,
+      "imports": [
+        {
+          "path": "url",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:crypto",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/action-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/action-async-storage.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/lib/router-utils/instrumentation-globals.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/lib/router-utils/instrumentation-globals.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/lib/trace/tracer.js",
+          "kind": "require-call",
+          "original": "next/dist/server/lib/trace/tracer"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/load-manifest.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/load-manifest.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/jsonwebtoken/index.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/jsonwebtoken"
+        },
+        {
+          "path": "crypto",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/lib/incremental-cache/tags-manifest.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/lib/incremental-cache/tags-manifest.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/lib/incremental-cache/memory-cache.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/lib/incremental-cache/memory-cache.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/lib/incremental-cache/shared-cache-controls.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/lib/incremental-cache/shared-cache-controls.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/work-unit-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/work-unit-async-storage.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/work-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/work-async-storage.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/lib/cache-handlers/default.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/lib/cache-handlers/default.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/composable-cache.cjs",
+          "kind": "require-call",
+          "original": "C:/Users/ACER/.gemini/antigravity/scratch/stuntwatch/.open-next/server-functions/default/composable-cache.cjs"
+        },
+        {
+          "path": ".open-next/server-functions/default/composable-cache.cjs",
+          "kind": "require-call",
+          "original": "C:/Users/ACER/.gemini/antigravity/scratch/stuntwatch/.open-next/server-functions/default/composable-cache.cjs"
+        },
+        {
+          "path": ".open-next/server-functions/default/cache.cjs",
+          "kind": "require-call",
+          "original": "C:/Users/ACER/.gemini/antigravity/scratch/stuntwatch/.open-next/server-functions/default/cache.cjs"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/after-task-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/after-task-async-storage.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/dynamic-access-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/dynamic-access-async-storage.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/module-loading/track-module-loading.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/module-loading/track-module-loading.external.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    ".open-next/server-functions/default/.next/server/app/api/[...path]/route.js": {
+      "bytes": 454226,
+      "imports": [
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
+          "kind": "require-call",
+          "original": "next/dist/shared/lib/router/utils/app-paths"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/after-task-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/after-task-async-storage.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/action-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/action-async-storage.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/work-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/work-async-storage.external.js"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/next-server/app-route.runtime.prod.js"
+        },
+        {
+          "path": "crypto",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/work-unit-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/work-unit-async-storage.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/no-fallback-error.external.js",
+          "kind": "require-call",
+          "original": "next/dist/shared/lib/no-fallback-error.external"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
+          "kind": "require-call",
+          "original": "../../../webpack-runtime.js"
+        }
+      ],
+      "format": "cjs"
+    },
     ".open-next/server-functions/default/.next/server/app/_not-found/page.js": {
-      "bytes": 15142,
+      "bytes": 15145,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4009,7 +4211,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/contact/page.js": {
-      "bytes": 27491,
+      "bytes": 27494,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4351,7 +4553,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/maps/page.js": {
-      "bytes": 43654,
+      "bytes": 43657,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4463,7 +4665,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/faq/page.js": {
-      "bytes": 44052,
+      "bytes": 44055,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4555,7 +4757,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/page.js": {
-      "bytes": 29415,
+      "bytes": 29418,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4626,7 +4828,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/next/dist/server/require.js": {
-      "bytes": 21103,
+      "bytes": 21360,
       "imports": [
         {
           "path": "path",
@@ -4682,6 +4884,11 @@
           "path": ".open-next/server-functions/default/.next/server/app/provinsi/[provinceId]/page.js",
           "kind": "require-call",
           "original": "C:\\Users\\ACER\\.gemini\\antigravity\\scratch\\stuntwatch\\.open-next\\server-functions\\default\\.next\\server\\app\\provinsi\\[provinceId]\\page.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/api/[...path]/route.js",
+          "kind": "require-call",
+          "original": "C:\\Users\\ACER\\.gemini\\antigravity\\scratch\\stuntwatch\\.open-next\\server-functions\\default\\.next\\server\\app\\api\\[...path]\\route.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/_not-found/page.js",
@@ -5658,7 +5865,7 @@
       "format": "esm"
     },
     ".open-next/server-functions/default/index.mjs": {
-      "bytes": 91603,
+      "bytes": 91848,
       "imports": [
         {
           "path": "node:module",
@@ -5924,6 +6131,46 @@
         },
         {
           "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "crypto",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "url",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:crypto",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "crypto",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
           "kind": "require-call",
           "external": true
         },
@@ -6842,8 +7089,11 @@
         ".open-next/server-functions/default/node_modules/next/dist/shared/lib/deep-freeze.js": {
           "bytesInOutput": 586
         },
+        ".open-next/server-functions/default/.next/server/app/api/[...path]/route_client-reference-manifest.js": {
+          "bytesInOutput": 7601
+        },
         ".open-next/server-functions/default/node_modules/next/dist/server/load-manifest.external.js": {
-          "bytesInOutput": 52266
+          "bytesInOutput": 52965
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/app-render/action-async-storage-instance.js": {
           "bytesInOutput": 501
@@ -6908,41 +7158,50 @@
         ".open-next/server-functions/default/node_modules/next/dist/server/app-render/dynamic-access-async-storage.external.js": {
           "bytesInOutput": 516
         },
-        ".open-next/server-functions/default/.next/server/chunks/298.js": {
-          "bytesInOutput": 541887
+        ".open-next/server-functions/default/.next/server/chunks/19.js": {
+          "bytesInOutput": 394535
         },
         ".open-next/server-functions/default/.next/server/chunks/611.js": {
           "bytesInOutput": 72261
         },
         ".open-next/server-functions/default/.next/server/chunks/651.js": {
-          "bytesInOutput": 64163
+          "bytesInOutput": 64510
         },
         ".open-next/server-functions/default/.next/server/chunks/675.js": {
           "bytesInOutput": 40678
         },
         ".open-next/server-functions/default/.next/server/chunks/701.js": {
-          "bytesInOutput": 125550
+          "bytesInOutput": 125561
         },
         ".open-next/server-functions/default/.next/server/chunks/793.js": {
           "bytesInOutput": 18405
+        },
+        ".open-next/server-functions/default/.next/server/chunks/897.js": {
+          "bytesInOutput": 147517
         },
         ".open-next/server-functions/default/.next/server/chunks/92.js": {
           "bytesInOutput": 382629
         },
         ".open-next/server-functions/default/.next/server/webpack-runtime.js": {
-          "bytesInOutput": 1997
+          "bytesInOutput": 2038
         },
         ".open-next/server-functions/default/.next/server/app/provinsi/[provinceId]/[kabKotaId]/page.js": {
-          "bytesInOutput": 15950
+          "bytesInOutput": 15953
         },
         ".open-next/server-functions/default/.next/server/app/provinsi/[provinceId]/page.js": {
-          "bytesInOutput": 15814
+          "bytesInOutput": 15817
+        },
+        ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js": {
+          "bytesInOutput": 176842
+        },
+        ".open-next/server-functions/default/.next/server/app/api/[...path]/route.js": {
+          "bytesInOutput": 455345
         },
         ".open-next/server-functions/default/.next/server/app/_not-found/page.js": {
-          "bytesInOutput": 15259
+          "bytesInOutput": 15262
         },
         ".open-next/server-functions/default/.next/server/app/contact/page.js": {
-          "bytesInOutput": 27709
+          "bytesInOutput": 27712
         },
         ".open-next/server-functions/default/node_modules/react/cjs/react-jsx-runtime.production.min.js": {
           "bytesInOutput": 773
@@ -6984,22 +7243,22 @@
           "bytesInOutput": 455
         },
         ".open-next/server-functions/default/.next/server/app/maps/page.js": {
-          "bytesInOutput": 44255
+          "bytesInOutput": 44258
         },
         ".open-next/server-functions/default/.next/server/pages/_error.js": {
           "bytesInOutput": 86425
         },
         ".open-next/server-functions/default/.next/server/app/faq/page.js": {
-          "bytesInOutput": 44488
+          "bytesInOutput": 44491
         },
         ".open-next/server-functions/default/.next/server/pages/_app.js": {
           "bytesInOutput": 3583
         },
         ".open-next/server-functions/default/.next/server/app/page.js": {
-          "bytesInOutput": 29664
+          "bytesInOutput": 29667
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/require.js": {
-          "bytesInOutput": 17516
+          "bytesInOutput": 17611
         },
         ".open-next/server-functions/default/node_modules/next/dist/lib/wait.js": {
           "bytesInOutput": 341
@@ -7110,10 +7369,10 @@
           "bytesInOutput": 5072
         },
         ".open-next/server-functions/default/index.mjs": {
-          "bytesInOutput": 62187
+          "bytesInOutput": 62405
         }
       },
-      "bytes": 3249849
+      "bytes": 3891234
     }
   }
 }

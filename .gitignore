@@ -11,6 +11,8 @@ models/artifacts/*.joblib
 # Node / Next.js
 node_modules/
 .next/
+.open-next/
+.wrangler/
 out/
 build/
 .DS_Store
@@ -18,3 +20,4 @@ build/
 
 # Local env
 .env*.local
+.dev.vars

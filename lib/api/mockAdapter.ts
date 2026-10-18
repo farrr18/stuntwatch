@@ -16,9 +16,12 @@ import { getRiskLevelFromScore } from "../colorScale";
 import liveProvincesFallback from "../../mocks/live-provinces.json";
 import liveKabupatenFallback from "../../mocks/live-kabupaten.json";
 
-export const API_BASE_URL =
+export const API_BASE_URL = (
   process.env.NEXT_PUBLIC_API_BASE_URL ||
-  "https://based-concluded-sitemap-separately.trycloudflare.com";
+  ""
+)
+  .replace(/\/api\/?$/, "")
+  .replace(/\/+$/, "");
 
 // Mapping between 2-digit BPS Province ID, Live API Slug, Island Group, and Centroid
 const PROVINCE_META_BY_SLUG: Record<

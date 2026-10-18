@@ -69,10 +69,32 @@ export function SummaryCard({
             </span>
           </div>
         ) : (
-          <div className="rounded-xl bg-muted/40 p-4 border border-border/60">
-            <p className="text-sm sm:text-[15px] leading-relaxed text-foreground">
-              {summary[locale]}
-            </p>
+          <div className="space-y-2.5 rounded-xl bg-muted/40 p-4 border border-border/60">
+            {summary[locale]
+              .split(/\n\s*\n/)
+              .filter((para) => para.trim().length > 0)
+              .map((para, pIdx) => {
+                const segments = para.split(/(\*\*[^*]+\*\*)/g);
+                return (
+                  <p
+                    key={pIdx}
+                    className="text-sm sm:text-[15px] leading-relaxed text-foreground"
+                  >
+                    {segments.map((seg, sIdx) =>
+                      seg.startsWith("**") && seg.endsWith("**") ? (
+                        <strong
+                          key={sIdx}
+                          className="font-bold text-slate-900 dark:text-white"
+                        >
+                          {seg.slice(2, -2)}
+                        </strong>
+                      ) : (
+                        <React.Fragment key={sIdx}>{seg}</React.Fragment>
+                      )
+                    )}
+                  </p>
+                );
+              })}
           </div>
         )}
       </div>
@@ -104,8 +126,8 @@ export function SummaryCard({
                   <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase text-rose-600 dark:text-rose-400">
                     <ArrowUpRight className="h-3 w-3" />
                     {locale === "id"
-                      ? `Pendorong Risiko #${idx + 1}`
-                      : `Risk Driver #${idx + 1}`}
+                      ? `Pendorong Risiko Utama (${idx + 1})`
+                      : `Primary Risk Driver (${idx + 1})`}
                   </span>
                   <span className="font-mono text-xs font-extrabold text-rose-600 dark:text-rose-400">
                     +{driver.contribution.toFixed(2)} pts

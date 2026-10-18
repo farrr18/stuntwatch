@@ -18,8 +18,9 @@ StuntWatch provides an **11-month head start** by using BPS socioeconomic data (
 *   **Machine Learning:** XGBoost (20 features).
 *   **Explainability:** SHAP (TreeExplainer).
 *   **LLM Reasoning:** Together AI (Llama 3.3 70B Instruct).
-*   **Backend API:** FastAPI, Uvicorn, Pydantic.
-*   **Frontend:** React / Leaflet.
+*   **Backend API:** Cloudflare Worker routes served by Next.js; the FastAPI server remains available for local development.
+*   **Frontend:** Next.js, React, and Leaflet.
+*   **Deployment:** Cloudflare Workers via OpenNext.
 
 ## 🚀 Quick Start
 ### 1. Installation
@@ -40,6 +41,10 @@ make train
 ### 4. Start the API
 make serve
 API available at `http://localhost:8000`.
+
+### Deploy the web application to Cloudflare
+
+The Cloudflare Worker serves both the frontend and dashboard API from the checked-in prediction artifact. Run the Python pipeline separately to refresh predictions before deployment. See [docs/CLOUDFLARE_DEPLOY.md](./docs/CLOUDFLARE_DEPLOY.md) for preview, deployment, and Together AI secret setup.
 
 ## 📊 Model Performance & Limitations
 *   **Error Reduction:** Reduces MAE by **24.8%** vs a national-mean baseline (6.33 pp -> 4.76 pp).
