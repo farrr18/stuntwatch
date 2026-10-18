@@ -15,7 +15,7 @@ import {
 } from "recharts";
 import { BarChart3, Table2 } from "lucide-react";
 import type { RiskFactor } from "@/lib/types";
-import { getContributionColor } from "@/lib/colorScale";
+import { getContributionColor, formatIndicatorValue } from "@/lib/colorScale";
 import { useAppLocale } from "@/lib/i18n";
 
 interface FactorContributionChartProps {
@@ -49,11 +49,18 @@ export function FactorContributionChart({
         rawName: f.rawName ?? f.id,
         name: f.label[locale],
         contribution: f.contribution,
-        valueText:
-          f.value !== null && f.value !== undefined
-            ? `${f.value}${f.unit}`
-            : "Proxy / N/A",
-        natAvgText: `${f.nationalAvg}${f.unit}`,
+        valueText: formatIndicatorValue(
+          f.value,
+          f.unit,
+          "Proxy / N/A",
+          f.rawName ?? f.id
+        ),
+        natAvgText: formatIndicatorValue(
+          f.nationalAvg,
+          f.unit,
+          "-",
+          f.rawName ?? f.id
+        ),
       })),
     };
   }, [factors, locale]);

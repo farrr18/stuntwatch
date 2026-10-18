@@ -4,7 +4,10 @@ import React, { useState } from "react";
 import { useTranslations } from "next-intl";
 import { ChevronDown, Info } from "lucide-react";
 import type { RiskFactor } from "@/lib/types";
-import { getComparisonStatusStyle } from "@/lib/colorScale";
+import {
+  getComparisonStatusStyle,
+  formatIndicatorValue,
+} from "@/lib/colorScale";
 import { useAppLocale } from "@/lib/i18n";
 
 interface FactorCardProps {
@@ -40,9 +43,12 @@ export function FactorCard({
               {factor.contribution.toFixed(2)}
             </span>
             <span className="font-mono text-xs font-bold text-foreground">
-              {factor.value !== null && factor.value !== undefined
-                ? `${factor.value}${factor.unit}`
-                : "Proxy"}
+              {formatIndicatorValue(
+                factor.value,
+                factor.unit,
+                "Proxy",
+                factor.rawName ?? factor.id
+              )}
             </span>
           </div>
           <h4 className="mt-1.5 text-sm font-bold leading-snug text-foreground">

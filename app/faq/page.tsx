@@ -154,7 +154,7 @@ const DETERMINANT_INDICATORS = {
     "9. Keragaman Pangan MP-ASI (MDD)",
     "10. Rata-rata Lama Sekolah Perempuan (RLS)",
     "11. Indeks Pembangunan Manusia (IPM)",
-    "12. Pengeluaran per Kapita Disesuaikan (Rp Ribu)",
+    "12. Pengeluaran per Kapita Disesuaikan (Rp)",
   ],
   en: [
     "1. Improved Sanitation Access (%)",
@@ -168,7 +168,7 @@ const DETERMINANT_INDICATORS = {
     "9. Minimum Dietary Diversity (MDD)",
     "10. Female Mean Years of Schooling (MYS)",
     "11. Human Development Index (HDI)",
-    "12. Adjusted Per-Capita Expenditure (IDR k)",
+    "12. Adjusted Per-Capita Expenditure (IDR)",
   ],
 };
 

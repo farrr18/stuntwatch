@@ -102,8 +102,8 @@ const FEATURE_DICTIONARY: Record<string, FeatureDictionaryEntry> = {
       id: "Pengeluaran per Kapita Disesuaikan",
       en: "Adjusted Per-Capita Expenditure",
     },
-    unit: " Rp Ribu",
-    nationalAvg: 11890,
+    unit: "IDR",
+    nationalAvg: 11890000,
     higherIsWorse: false,
     description: {
       id: "Rata-rata pengeluaran konsumsi riil per kapita per tahun di tingkat kabupaten/kota (daya beli rumah tangga).",
@@ -854,9 +854,19 @@ export async function fetchExplanationByKabKota(
   const factors: RiskFactor[] = liveDetail.top_features.map((feat) => {
     const meta = getFeatureMeta(feat.name);
     const shapVal = Number(feat.shap.toFixed(2));
-    const val = feat.value !== null && feat.value !== undefined
-      ? Number(Number(feat.value).toFixed(2))
-      : null;
+    const isIdr = meta.unit === "IDR" || feat.name.includes("pengeluaran");
+    const rawVal =
+      feat.value !== null && feat.value !== undefined
+        ? Number(feat.value)
+        : null;
+    const val =
+      rawVal !== null
+        ? isIdr
+          ? rawVal > 0 && rawVal < 1_000_000
+            ? Math.round(rawVal * 1000)
+            : Math.round(rawVal)
+          : Number(rawVal.toFixed(2))
+        : null;
 
     return {
       id: feat.name,
@@ -864,7 +874,9 @@ export async function fetchExplanationByKabKota(
       label: meta.label,
       value: val,
       unit: meta.unit,
-      provinceAvg: Number((meta.nationalAvg * 0.94).toFixed(1)),
+      provinceAvg: isIdr
+        ? Math.round(meta.nationalAvg * 0.94)
+        : Number((meta.nationalAvg * 0.94).toFixed(1)),
       nationalAvg: meta.nationalAvg,
       contribution: shapVal,
       higherIsWorse: meta.higherIsWorse,

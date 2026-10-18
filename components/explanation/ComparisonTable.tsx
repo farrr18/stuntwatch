@@ -4,7 +4,10 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import { TrendingUp, TrendingDown, Minus } from "lucide-react";
 import type { RiskFactor } from "@/lib/types";
-import { getComparisonStatusStyle } from "@/lib/colorScale";
+import {
+  getComparisonStatusStyle,
+  formatIndicatorValue,
+} from "@/lib/colorScale";
 import { useAppLocale } from "@/lib/i18n";
 
 interface ComparisonTableProps {
@@ -52,9 +55,12 @@ export function ComparisonTable({ factors }: ComparisonTableProps) {
                     </div>
                   </td>
                   <td className="px-3 py-2.5 text-right font-mono font-bold text-slate-900 dark:text-white">
-                    {f.value !== null && f.value !== undefined
-                      ? `${f.value}${f.unit}`
-                      : "Proxy / N/A"}
+                    {formatIndicatorValue(
+                      f.value,
+                      f.unit,
+                      "Proxy / N/A",
+                      f.rawName ?? f.id
+                    )}
                   </td>
                   <td
                     className={`px-3 py-2.5 text-right font-mono font-bold ${
@@ -67,8 +73,12 @@ export function ComparisonTable({ factors }: ComparisonTableProps) {
                     {f.contribution.toFixed(2)}
                   </td>
                   <td className="px-3 py-2.5 text-right font-mono text-slate-500 dark:text-slate-400">
-                    {f.nationalAvg}
-                    {f.unit}
+                    {formatIndicatorValue(
+                      f.nationalAvg,
+                      f.unit,
+                      "-",
+                      f.rawName ?? f.id
+                    )}
                   </td>
                   <td className="px-3.5 py-2.5 text-right">
                     <span

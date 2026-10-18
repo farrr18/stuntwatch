@@ -4,7 +4,7 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import { Sparkles, Loader2, ArrowUpRight, ShieldCheck, Activity } from "lucide-react";
 import type { LocalizedText, RiskLevel, RiskFactor } from "@/lib/types";
-import { getRiskBandConfig } from "@/lib/colorScale";
+import { getRiskBandConfig, formatIndicatorValue } from "@/lib/colorScale";
 import { useAppLocale } from "@/lib/i18n";
 
 interface SummaryCardProps {
@@ -139,12 +139,21 @@ export function SummaryCard({
                 <p className="mt-0.5 font-mono text-[11px] text-muted-foreground">
                   {locale === "id" ? "Nilai Daerah:" : "District Value:"}{" "}
                   <strong className="text-foreground">
-                    {driver.value !== null && driver.value !== undefined
-                      ? `${driver.value}${driver.unit}`
-                      : "Proxy"}
+                    {formatIndicatorValue(
+                      driver.value,
+                      driver.unit,
+                      "Proxy",
+                      driver.rawName ?? driver.id
+                    )}
                   </strong>{" "}
-                  (Nas: {driver.nationalAvg}
-                  {driver.unit})
+                  (Nas:{" "}
+                  {formatIndicatorValue(
+                    driver.nationalAvg,
+                    driver.unit,
+                    "-",
+                    driver.rawName ?? driver.id
+                  )}
+                  )
                 </p>
               </div>
             ))}
@@ -167,11 +176,19 @@ export function SummaryCard({
                     {topBuffer.label[locale]}
                   </p>
                   <p className="font-mono text-[11px] text-muted-foreground">
-                    {topBuffer.value !== null && topBuffer.value !== undefined
-                      ? `${topBuffer.value}${topBuffer.unit}`
-                      : "Proxy"}{" "}
-                    vs Nas {topBuffer.nationalAvg}
-                    {topBuffer.unit}
+                    {formatIndicatorValue(
+                      topBuffer.value,
+                      topBuffer.unit,
+                      "Proxy",
+                      topBuffer.rawName ?? topBuffer.id
+                    )}{" "}
+                    vs Nas{" "}
+                    {formatIndicatorValue(
+                      topBuffer.nationalAvg,
+                      topBuffer.unit,
+                      "-",
+                      topBuffer.rawName ?? topBuffer.id
+                    )}
                   </p>
                 </div>
               </div>

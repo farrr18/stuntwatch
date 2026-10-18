@@ -226,3 +226,35 @@ export function getLegendGradientCSS(): string {
   }
   return `linear-gradient(to right, ${stops.join(", ")})`;
 }
+
+/**
+ * Formats an indicator value according to its unit or identifier.
+ * For per-capita expenditure ("IDR", "Rp", or "pengeluaran_kab"), multiplies raw
+ * "ribu rupiah" values (< 1,000,000) by 1,000 and formats as `Rp. 11.168.000`.
+ */
+export function formatIndicatorValue(
+  value: number | null | undefined,
+  unit: string,
+  fallbackText: string = "Proxy",
+  idOrRawName?: string
+): string {
+  if (value === null || value === undefined || Number.isNaN(Number(value))) {
+    return fallbackText;
+  }
+  const num = Number(value);
+  const isIdr =
+    unit === "IDR" ||
+    unit.includes("Rp") ||
+    Boolean(idOrRawName && idOrRawName.includes("pengeluaran"));
+
+  if (isIdr) {
+    const rupiahAmount = num > 0 && num < 1_000_000 ? num * 1000 : num;
+    const formatted = new Intl.NumberFormat("id-ID", {
+      maximumFractionDigits: 0,
+    }).format(Math.round(rupiahAmount));
+    return `Rp. ${formatted}`;
+  }
+
+  return `${num}${unit}`;
+}
+

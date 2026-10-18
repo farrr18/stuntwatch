@@ -7,7 +7,11 @@ import {
   useExplanation,
   useDistrictNarrative,
 } from "@/lib/hooks/useStuntingData";
-import { getRiskBandConfig, getRiskLabel } from "@/lib/colorScale";
+import {
+  getRiskBandConfig,
+  getRiskLabel,
+  formatIndicatorValue,
+} from "@/lib/colorScale";
 import { useAppLocale } from "@/lib/i18n";
 import { SummaryCard } from "./SummaryCard";
 import { FactorContributionChart } from "./FactorContributionChart";
@@ -97,11 +101,17 @@ export function ExplanationPanel({
 
   const topGapFactor = topDriver1;
   const topGapBadgeText = topGapFactor
-    ? `${topGapFactor.label[locale]} (${
-        topGapFactor.value !== null && topGapFactor.value !== undefined
-          ? topGapFactor.value
-          : "Proxy"
-      } vs ${topGapFactor.nationalAvg}${topGapFactor.unit})`
+    ? `${topGapFactor.label[locale]} (${formatIndicatorValue(
+        topGapFactor.value,
+        topGapFactor.unit,
+        "Proxy",
+        topGapFactor.rawName ?? topGapFactor.id
+      )} vs ${formatIndicatorValue(
+        topGapFactor.nationalAvg,
+        topGapFactor.unit,
+        "-",
+        topGapFactor.rawName ?? topGapFactor.id
+      )})`
     : locale === "id"
     ? "Daya Beli Tertekan"
     : "Purchasing Power Gap";
