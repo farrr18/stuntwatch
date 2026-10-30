@@ -1,7 +1,7 @@
 # Research and archived scripts
 
 Nothing in this directory is imported by the web application or its deployment
-build. The supported data and model workflows are in `src/stuntwatch/` and are
+build. The supported data and model workflows are in `../src/stuntwatch/` and are
 documented in the repository's main README.
 
 - `analysis/` contains model-comparison and baseline-analysis scripts.

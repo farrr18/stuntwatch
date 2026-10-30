@@ -6,16 +6,37 @@ StuntWatch combines socioeconomic and public-health data, an XGBoost model, SHAP
 
 ## Repository layout
 
-- `app/`, `components/`, `lib/`, `messages/`, and `public/` — Next.js dashboard, API routes, translations, and map assets.
-- `src/stuntwatch/` — installable Python package, FastAPI service, data pipeline, and model training code.
-- `data/raw/` — local source datasets; see [`data/raw/README.md`](./data/raw/README.md).
-- `data/processed/` — generated merged datasets (not committed).
-- `models/artifacts/` — the prediction JSON used by the web API and model-training outputs.
-- `mocks/` — offline fallback snapshots imported by the web API adapter.
-- `scripts/` — build-time utilities; `npm run generate-mocks` optionally refreshes the map boundaries and live-data fallbacks.
-- `research/` — archived training/analysis scripts and their outputs; not used to serve the website.
-- `tests/` — Python unit tests.
-- `docs/` — [product requirements](./docs/prd.md), [system design](./docs/design.md), deployment guides, data references, and the generated stakeholder workbook.
+```text
+stuntwatch/
+├── frontend/                 # Next.js dashboard and Cloudflare Worker
+│   ├── app/                  # Pages and same-origin API routes
+│   ├── components/           # Reusable UI
+│   ├── lib/                  # API adapter, hooks, types, and utilities
+│   ├── messages/             # Translations
+│   ├── mocks/                # Offline fallback snapshots
+│   ├── public/               # Static files and map assets
+│   └── scripts/              # Frontend data/map utilities
+├── backend/                  # Python API, data, and ML workflows
+│   ├── src/stuntwatch/       # FastAPI, data pipeline, CLI, and model training
+│   ├── data/raw/             # Local source datasets
+│   ├── data/processed/       # Generated merged datasets
+│   ├── models/artifacts/     # Predictions served by the frontend and model outputs
+│   ├── research/             # Archived analysis and training scripts
+│   ├── tests/                # Python unit tests
+│   ├── README.md             # Backend setup and run instructions
+│   ├── pyproject.toml        # Python package and dependencies
+│   └── scripts/              # Backend checks and utilities
+├── docs/                     # Product, design, data, and deployment documentation
+├── .github/                  # CI workflows
+├── Makefile                  # Shortcuts for backend and frontend commands
+├── package.json              # npm workspace and root command shortcuts
+└── package-lock.json         # Locked frontend dependencies
+```
+
+The backend's raw data inputs are documented in
+[`backend/data/raw/README.md`](./backend/data/raw/README.md). Frontend-specific
+settings are in `frontend/`; backend credentials and local pipeline settings
+remain in the root `.env` file.
 
 ## Requirements
 
@@ -31,7 +52,7 @@ From PowerShell at the repository root:
 py -3 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-python -m pip install -e .
+python -m pip install -e ./backend
 Copy-Item .env.example .env
 npm ci
 ```
@@ -40,7 +61,7 @@ If PowerShell blocks virtual-environment activation, run `Set-ExecutionPolicy -S
 
 On macOS/Linux, create and activate the environment with `python3 -m venv .venv` and `source .venv/bin/activate`, then run the same pip and npm install commands.
 
-Set `BPS_API_KEY` in `.env` to download the BPS data. Set `TOGETHER_API_KEY` only if you want to use AI-generated narratives. Do not commit `.env` or real credentials.
+Set `BPS_API_KEY` in `.env` to download the BPS data. Set `TOGETHER_API_KEY` only if you want to use AI-generated narratives. Do not commit `.env` or real credentials. The frontend uses same-origin API routes by default; optional frontend-specific variables belong in `frontend/.env.local`.
 
 ## Data pipeline and model
 
@@ -51,9 +72,9 @@ python -m stuntwatch.data.pipeline
 python -m stuntwatch.ml.train
 ```
 
-The BPS API key and local source datasets are prerequisites. `data/raw/README.md` documents the exact input filenames. The target stunting dataset and WASH long-form dataset are not distributed in this repository; obtain them from their documented sources and keep them local. The pipeline checks these prerequisites before making a network request and reports missing files explicitly.
+The BPS API key and local source datasets are prerequisites. `backend/data/raw/README.md` documents the exact input filenames. The target stunting dataset and WASH long-form dataset are not distributed in this repository; obtain them from their documented sources and keep them local. The pipeline checks these prerequisites before making a network request and reports missing files explicitly.
 
-Training is computationally intensive. It performs grouped and random cross-validation plus SHAP analysis, and requires `data/processed/stuntwatch_merged_v3.csv` from the pipeline. It updates the prediction/model artifacts used by the dashboard.
+Training is computationally intensive. It performs grouped and random cross-validation plus SHAP analysis, and requires `backend/data/processed/stuntwatch_merged_v3.csv` from the pipeline. It updates the prediction/model artifacts used by the dashboard.
 
 ## Run the local FastAPI backend
 
@@ -82,12 +103,12 @@ The generated stakeholder workbook is saved as [`docs/StuntWatch_Dataset.xlsx`](
 ## Checks
 
 ```powershell
-python -m unittest discover -s tests -v
+python -m unittest discover -s backend/tests -v
 npm run typecheck
 npm run cf:build
 ```
 
-With GNU Make installed, equivalent targets are available via `make help` (for example, `make test`, `make pipeline`, and `make serve`).
+With GNU Make installed, equivalent targets are available via `make help` (for example, `make test`, `make pipeline`, `make serve`, and `make cf-build`).
 
 ## Model limitations and provenance
 

@@ -23,4 +23,4 @@ MERGED_V3 = DATA_PROC / 'stuntwatch_merged_v3.csv'
 PREDICTIONS_JSON = ARTIFACTS / 'stuntwatch_predictions_v3.json'
 
 XGB_MODEL = ARTIFACTS / 'xgboost_model.json'
-DATASET_XLSX = ROOT / 'docs' / 'StuntWatch_Dataset.xlsx'
+DATASET_XLSX = ROOT.parent / 'docs' / 'StuntWatch_Dataset.xlsx'

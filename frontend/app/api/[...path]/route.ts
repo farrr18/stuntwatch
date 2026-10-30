@@ -1,6 +1,6 @@
 import { getCloudflareContext } from "@opennextjs/cloudflare";
 import { NextResponse } from "next/server";
-import predictions from "@/models/artifacts/stuntwatch_predictions_v3.json";
+import predictions from "../../../../backend/models/artifacts/stuntwatch_predictions_v3.json";
 
 declare global {
   interface CloudflareEnv {

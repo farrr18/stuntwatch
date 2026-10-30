@@ -14,7 +14,7 @@ def validate_inputs() -> None:
         paths = "\n".join(f"  - {path}" for path in missing)
         raise FileNotFoundError(
             "Pipeline source data is missing. Add the required files as described "
-            f"in data/raw/README.md:\n{paths}"
+            f"in backend/data/raw/README.md:\n{paths}"
         )
     if not os.getenv("BPS_API_KEY"):
         raise RuntimeError(

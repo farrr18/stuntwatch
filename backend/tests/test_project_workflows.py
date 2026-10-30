@@ -6,17 +6,25 @@ from pathlib import Path
 from unittest.mock import patch
 
 from stuntwatch.api.main import _resolve_province, health
+from stuntwatch.cli.tools import load_predictions
 from stuntwatch.data import pipeline
 from stuntwatch.data.join_target import base_name
 from stuntwatch.data.merge_hdx import to_domain
 from stuntwatch.data.pull_bps import run as pull_bps
-from stuntwatch.utils.config import DATASET_XLSX, ROOT
+from stuntwatch.utils.config import DATASET_XLSX, PREDICTIONS_JSON, ROOT
 
 
 class ProjectWorkflowTests(unittest.TestCase):
-    def test_project_root_is_repository_root(self):
+    def test_backend_and_repository_paths(self):
         self.assertEqual(ROOT, Path(__file__).resolve().parents[1])
-        self.assertEqual(DATASET_XLSX, ROOT / "docs" / "StuntWatch_Dataset.xlsx")
+        self.assertEqual(DATASET_XLSX, ROOT.parent / "docs" / "StuntWatch_Dataset.xlsx")
+        self.assertEqual(
+            PREDICTIONS_JSON,
+            ROOT / "models" / "artifacts" / "stuntwatch_predictions_v3.json",
+        )
+
+    def test_cli_loads_predictions_from_backend_artifacts(self):
+        self.assertEqual(len(load_predictions()["kabupaten"]), 514)
 
     def test_district_name_normalization(self):
         self.assertEqual(base_name("Kabupaten Aceh Besar"), "acehbesar")

@@ -1,17 +1,13 @@
 """StuntWatch — quick data inspection. Run from repo root."""
 import json, sys
-from pathlib import Path
 import pandas as pd
-
-ROOT = Path(__file__).resolve().parent
-ARTIFACTS = ROOT / 'models' / 'artifacts'
-DATA = ROOT / 'data' / 'processed'
+from ..utils.config import MERGED_V3, PREDICTIONS_JSON
 
 # ─────────────────────────────────────────────────────────
 # Load once
 # ─────────────────────────────────────────────────────────
 def load_predictions():
-    with open(ARTIFACTS / 'stuntwatch_predictions_v3.json') as f:
+    with open(PREDICTIONS_JSON) as f:
         return json.load(f)
 
 def predictions_df():
@@ -38,7 +34,7 @@ def predictions_df():
     return pd.DataFrame(rows)
 
 def merged_df():
-    return pd.read_csv(DATA / 'stuntwatch_merged_v3.csv')
+    return pd.read_csv(MERGED_V3)
 
 
 # ─────────────────────────────────────────────────────────

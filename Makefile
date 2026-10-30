@@ -6,8 +6,8 @@ PYTHON ?= python
 help:
 	@echo "install       Install the Python project and its dependencies"
 	@echo "test          Run the Python unit tests"
-	@echo "pipeline      Build the merged dataset (requires local source data and BPS_API_KEY)"
-	@echo "train         Train the model (requires data/processed/stuntwatch_merged_v3.csv)"
+	@echo "pipeline      Build the merged dataset (requires backend/data/raw and BPS_API_KEY)"
+	@echo "train         Train the model (requires backend/data/processed/stuntwatch_merged_v3.csv)"
 	@echo "serve         Run the local FastAPI backend on port 8000"
 	@echo "web-install   Install the Node.js dependencies"
 	@echo "web-typecheck Run the frontend TypeScript checks"
@@ -15,10 +15,10 @@ help:
 	@echo "cf-deploy     Deploy the Cloudflare Worker"
 
 install:
-	$(PYTHON) -m pip install -e .
+	$(PYTHON) -m pip install -e ./backend
 
 test:
-	$(PYTHON) -m unittest discover -s tests -v
+	$(PYTHON) -m unittest discover -s backend/tests -v
 
 pipeline:
 	$(PYTHON) -m stuntwatch.data.pipeline

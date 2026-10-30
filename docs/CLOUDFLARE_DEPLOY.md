@@ -1,6 +1,6 @@
 # Deploying StuntWatch to Cloudflare Workers
 
-The Next.js frontend and its `/api/*` endpoints are deployed together as a Cloudflare Worker through the OpenNext Cloudflare adapter. The Worker serves the checked-in prediction artifact at `models/artifacts/stuntwatch_predictions_v3.json`; the Python pipeline remains responsible for refreshing that artifact and training the model outside the Worker runtime.
+The Next.js frontend and its `/api/*` endpoints are deployed together as a Cloudflare Worker through the OpenNext Cloudflare adapter. The Worker serves the checked-in prediction artifact at `backend/models/artifacts/stuntwatch_predictions_v3.json`; the Python pipeline remains responsible for refreshing that artifact and training the model outside the Worker runtime.
 
 ## Requirements
 
@@ -10,16 +10,16 @@ The Next.js frontend and its `/api/*` endpoints are deployed together as a Cloud
 
 ## Preview locally in the Workers runtime
 
-Install dependencies and start the Cloudflare preview:
+From the repository root, install dependencies and start the Cloudflare preview:
 
 ```powershell
-npm install
+npm ci
 npm run cf:preview
 ```
 
 The preview runs through Wrangler in the Cloudflare Workers runtime rather than the regular Next.js development server.
 
-To test AI-generated district narratives locally, create a `.dev.vars` file in the repository root:
+To test AI-generated district narratives locally, create `frontend/.dev.vars`:
 
 ```dotenv
 TOGETHER_API_KEY=your_together_api_key
@@ -46,7 +46,7 @@ Wrangler will show the deployed `workers.dev` URL when the deployment completes.
 Set the Together AI key as a Worker secret when narrative generation is needed:
 
 ```powershell
-npx wrangler secret put TOGETHER_API_KEY
+npx wrangler secret put TOGETHER_API_KEY --config frontend/wrangler.jsonc
 ```
 
 The secret is only used by `/api/kabupaten/{domain_id}/narrative`; it is never exposed to browser code.
@@ -57,7 +57,7 @@ The repository can also be connected in the Cloudflare dashboard:
 
 1. Open **Workers & Pages** and select **Create application → Connect to Git**.
 2. Select the `farrr18/stuntwatch` repository and the production branch (`main`).
-3. Configure the deploy command as `npm run cf:deploy`.
+3. Use the repository root as the project root and configure the deploy command as `npm run cf:deploy`.
 4. Set the build environment to use Node.js 20 or newer.
 5. Add `TOGETHER_API_KEY` as a Worker secret in the Cloudflare dashboard if AI narratives are required.
 6. Save and deploy.
@@ -71,7 +71,7 @@ The browser uses the same-origin Worker API by default, so no public API URL or 
 ## Notes
 
 - `.open-next` is generated build output and is intentionally ignored by Git.
-- The Worker configuration is in `wrangler.jsonc`; the OpenNext adapter configuration is in `open-next.config.ts`.
+- The Worker and OpenNext configuration are in `frontend/wrangler.jsonc` and `frontend/open-next.config.ts`.
 - The deployed Worker serves precomputed predictions. Run the Python data pipeline/model training separately, then commit the updated prediction artifact before deploying to publish new predictions.
 - The Python training pipeline itself is not executed inside Workers; XGBoost and SHAP are kept in the existing Python environment.
 - See the [OpenNext Cloudflare guide](https://opennext.js.org/cloudflare/get-started) and [Cloudflare Workers documentation](https://developers.cloudflare.com/workers/).

@@ -1,5 +1,6 @@
 # Python
 .venv/
+backend/.venv/
 venv/
 __pycache__/
 *.pyc
@@ -7,10 +8,10 @@ __pycache__/
 *.egg-info/
 *.tsbuildinfo
 .env
-data/raw/*.csv
-data/processed/*.csv
-models/artifacts/*.json
-models/artifacts/*.joblib
+backend/data/raw/*.csv
+backend/data/processed/*.csv
+backend/models/artifacts/*.json
+backend/models/artifacts/*.joblib
 
 # Node / Next.js
 node_modules/
@@ -25,6 +26,7 @@ build/
 # Local env
 .env*.local
 .dev.vars
+frontend/.env
 
 # Test and tool caches
 .pytest_cache/
