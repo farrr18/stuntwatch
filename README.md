@@ -1,5 +1,7 @@
 # StuntWatch
 
+<img width="1920" height="1080" alt="Screenshot (108)" src="https://github.com/user-attachments/assets/ba8c5480-43e0-4738-8850-a2e3bb37531d" />
+
 **An early-warning and decision-support system for district-level stunting risk in Indonesia.**
 
 StuntWatch combines socioeconomic and public-health data, an XGBoost model, SHAP explanations, and an optional Together AI narrative endpoint. The web dashboard is a Next.js application deployed to Cloudflare Workers. A FastAPI backend is also available for local development.
